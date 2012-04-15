@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FLVCoreCuePoints>
+
+  <CuePoint>
+    <Time>2</Time>
+    <Type>actionscript</Type>
+    <Name>第一段 遗传信息的定义</Name>
+  </CuePoint>
+
+  <CuePoint>
+    <Time>106</Time>
+    <Type>actionscript</Type>
+    <Name>第二段 遗传信息的转录</Name>
+  </CuePoint>
+
+  <CuePoint>
+    <Time>214</Time>
+    <Type>actionscript</Type>
+    <Name>第三段 遗传信息的转录过程</Name>
+  </CuePoint>
+
+</FLVCoreCuePoints>

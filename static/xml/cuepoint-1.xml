@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FLVCoreCuePoints>
+
+  <CuePoint>
+    <Time>2</Time>
+    <Type>actionscript</Type>
+    <Name>第一段</Name>
+  </CuePoint>
+
+  <CuePoint>
+    <Time>20</Time>
+    <Type>actionscript</Type>
+    <Name>第二段</Name>
+  </CuePoint>
+
+
+
+</FLVCoreCuePoints>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coverflow 
+	imageWidth="151" 
+	imageHeight="151"
+    imagePadding="1"       
+	coverflowSpacing="40"
+	startIndex="0"
+	startIndexInCenter="yes" 
+	coverLabelPositionY="200"
+	coverSlidePositionY="270"
+    transitionTime="0.5"
+    centerCoverflowZPosition="-125"
+	target="_blank"
+    reflectionAlpha="35"
+    reflectionRatio="50"
+    reflectionDistance="0"
+    reflectionUpdateTime="-1"
+    reflectionDropoff="0.75"
+	>
+<cover 
+	img="images/album1.jpg" 
+	title="华南师范大学：学习论" 
+	link="http://localhost/me/detail.html"	 />
+<cover 
+	img="images/album2.jpg" 
+	title="华南师范大学：教学设计原理与方法" 
+	link="http://localhost/me/detail.html" />
+<cover 
+	img="images/album3.jpg" 
+	title="华南师范大学：运动生理学" 
+	link="http://localhost/me/detail.html" />
+<cover 
+	img="images/album4.jpg" 
+	title="华南师范大学：植物生理学" 
+	link="http://localhost/me/detail.html" />
+<cover 
+	img="images/album5.jpg" 
+	title="华南师范大学：教育心理学" 
+	link="http://localhost/me/detail.html" />
+<cover 
+	img="images/album6.jpg" 
+	title="华南师范大学：自然地理学" 
+	link="http://localhost/me/detail.html" />
+<cover 
+	img="images/album7.jpg" 
+	title="华南师范大学：电视教材编导与制作" 
+	link="http://localhost/me/detail.html" />
+<cover 
+	img="images/album8.jpg" 
+	title="华南师范大学：健美操" 
+	link="http://localhost/me/detail.html"	 />
+<cover 
+	img="images/album9.jpg" 
+	title="华南师范大学：小学教育学" 
+	link="http://localhost/me/detail.html"	/>
+<cover 
+	img="images/album10.jpg" 
+	title="华南师范大学：物理化学" 
+	link="http://localhost/me/detail.html" />
+</coverflow>

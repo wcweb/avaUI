@@ -1,0 +1,27 @@
+<rss version="2.0" xmlns:jwplayer="http://developer.longtailvideo.com/" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Playlist with HTTP Pseudostreaming</title>
+
+    <item>
+      <title>生物-DNA的转录</title>
+      <description>本课分三段，遗传信息的定义，遗传信息的转录，遗传信息的转录过程，.</description>
+      <enclosure url="http://localhost/me/34.flv" type="video/mp4" length="3192846" />
+      <media:thumbnail url="http://localhost/me/images/preview0.jpg" />
+
+      <jwplayer:provider>http</jwplayer:provider>
+      <jwplayer:http.startparam>start</jwplayer:http.startparam>
+
+    </item>
+    <item>
+      <title>jwplayer test</title>
+      <description>Big Buck Bunny is a short animated film by the Blender Institute,
+         part of the Blender Foundation.</description>
+      <enclosure url="http://localhost/me/video.mp4" type="video/flv" length="3192846" />
+      <media:thumbnail url="http://localhost/me/images/preview.jpg" />
+      <jwplayer:provider>http</jwplayer:provider>
+      <jwplayer:http.startparam>start</jwplayer:http.startparam>
+
+    </item>
+  </channel>
+
+</rss>
