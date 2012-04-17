@@ -1,27 +1,28 @@
 
 
 .box{
-  #gradient > .vertical(#ffffff, #f0f0f0);
+  #gradient > .vertical(@white, @darken(@white,6%));
   margin-top:@gridGutterWidth;
+
+  .head{
+
+      // position: relative;
+    //   z-index:20;
+    #gradient > .vertical(#ffffff, #f0f0f0);
+    border:1px solid #cbcbcb;
+    border-bottom:1px solid #cbcbcb;
+  }
+
+  .body{
+    border:1px solid #cbcbcb;
+    position: relative;
+    z-index:10;
+  }
+
 }
 
-.box .head{
-  // position: relative;
-  //   z-index:20;
-  #gradient > .vertical(#ffffff, #f0f0f0);
-  border:1px solid #cbcbcb;
-  border-bottom:1px solid #cbcbcb;
 
-}
-.box .body{
-  border:1px solid #cbcbcb;
-  position: relative;
-  z-index:10;
-}
 
-.mBox .foot,.box .foot{
-  clear: both;
-}
 .catalog{
   width:300px;
 }
@@ -65,7 +66,9 @@
 }
 
 
-
+.mBox .foot,.box .foot{
+  clear: both;
+}
 .mBox .pill-content{
   background-color:transparent;
   border:none;

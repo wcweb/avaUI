@@ -55,15 +55,15 @@ def index():
 
 
 
-@app.route('/entries')
-def show_entries():
+@app.route('/add_comment')
+def show_comments():
 	cur = g.db.execute('select title,text from entries order by id desc')
 	entries = [dict(title=row[0],text=row[1]) for row in cur.fetchall()]
 	return render_template('show_entries.html',entries=entries)
 
 
-@app.route('/add', methods=['POST'])
-def add_entry():
+@app.route('/addComment', methods=['POST'])
+def add_comment():
 	if not session.get('logged_in'):
 		abort(401)
 	g.db.execute('insert into entries(title,text) values(?,?)',
@@ -110,14 +110,14 @@ def schoolIndex(schoolname):
 	return render_template('school/index.html')
 
 
-@app.route('/school/<schoolname>/catalogue')
+@app.route('/school/<schoolname>/catalogues')
 def cat_list_with_school(schoolname):
 	return render_template('school/videolist.html')
 # diffent function diffent render_template
 
 
-@app.route('/school/<schoolname>/video')
-def video_in_school(schoolname):
+@app.route('/school/scnu/video')
+def video_in_school():
 	return render_template('school/video.html')
 
 @app.route('/school/teacher/<teachername>')
