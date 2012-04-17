@@ -80,6 +80,9 @@ class FlaskrTestCase(unittest.TestCase):
 		        assert sess['logged_in'] == True
 				
 		    # once this is reached the session was stored	
+
+
+
 		
 if __name__ == '__main__':
 	unittest.main()

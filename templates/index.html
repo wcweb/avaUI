@@ -3,10 +3,11 @@
 	<div class="row">
         <div class="span16">
           <div id="flashContent">
+
             <script type="text/javascript">
 
             var flashvars = {};
-             flashvars.xmlPath = "xml/data.xml";
+             flashvars.xmlPath = "http://127.0.0.1:5000/static/xml/data.xml";
             flashvars.labelColor = "0xffffff";
             flashvars.backgroundColor = "none";
             var params = {};
@@ -17,7 +18,7 @@
             params.scale = "noscale";
             params.salign = "tl";
             var attributes = {};
-            swfobject.embedSWF("swf/Main.swf", "flashContent", "940", "300", "10.0.0", "swf/expressInstall.swf", flashvars, params, attributes);
+            swfobject.embedSWF("{{url_for('static',filename='swf/Main.swf')}}", "flashContent", "940", "300", "10.0.0", "{{url_for('static',filename='swf/expressInstall.swf')}}", flashvars, params, attributes);
 
             </script>
           </div>

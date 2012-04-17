@@ -52,6 +52,9 @@ def teardown_request(exception):
 @app.route('/')
 def index():
 	return render_template('index.html')
+
+
+
 @app.route('/entries')
 def show_entries():
 	cur = g.db.execute('select title,text from entries order by id desc')
@@ -89,13 +92,52 @@ def logout():
 	flash('You were logged out')
 	return redirect(url_for('show_entries'))
 
-@app.route('/details/<id>')
-def detail(id):
-	return render_template('detail.html')
+@app.route('/video/<id>')
+def video(id):
+	return render_template('video.html')
 	
 @app.route('/videolist')
 def videolist():
 	return render_template('videolist.html')
+
+@app.route('/catalogue')
+def catalogue():
+	return render_template('catalogue.html')
+
+
+@app.route('/school/<schoolname>')
+def schoolIndex(schoolname):
+	return render_template('school/index.html')
+
+
+@app.route('/school/<schoolname>/catalogue')
+def cat_list_with_school(schoolname):
+	return render_template('school/videolist.html')
+# diffent function diffent render_template
+
+
+@app.route('/school/<schoolname>/video')
+def video_in_school(schoolname):
+	return render_template('school/video.html')
+
+@app.route('/school/teacher/<teachername>')
+def teacher_in_school(teachername):
+	return render_template('school/teacher.html')
+
+@app.route('/school/student/<teachername>')
+def student_in_school(teachername):
+	return render_template('school/student.html')
+
+@app.route('/school/<schoolname>/jpkc')
+def jpkc_in_school(schoolname):
+	return render_template('school/jpkc.html')
+
+
+# temp page
+
+
+
+
 
 if __name__ =='__main__':
 	app.run(host='127.0.0.1')

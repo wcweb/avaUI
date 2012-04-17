@@ -18,43 +18,43 @@
     reflectionDropoff="0.75"
 	>
 <cover 
-	img="images/album1.jpg" 
+	img="static/images/album1.jpg" 
 	title="华南师范大学：学习论" 
 	link="http://localhost/me/detail.html"	 />
 <cover 
-	img="images/album2.jpg" 
+	img="static/images/album2.jpg" 
 	title="华南师范大学：教学设计原理与方法" 
 	link="http://localhost/me/detail.html" />
 <cover 
-	img="images/album3.jpg" 
+	img="static/images/album3.jpg" 
 	title="华南师范大学：运动生理学" 
 	link="http://localhost/me/detail.html" />
 <cover 
-	img="images/album4.jpg" 
+	img="static/images/album4.jpg" 
 	title="华南师范大学：植物生理学" 
 	link="http://localhost/me/detail.html" />
 <cover 
-	img="images/album5.jpg" 
+	img="static/images/album5.jpg" 
 	title="华南师范大学：教育心理学" 
 	link="http://localhost/me/detail.html" />
 <cover 
-	img="images/album6.jpg" 
+	img="static/images/album6.jpg" 
 	title="华南师范大学：自然地理学" 
 	link="http://localhost/me/detail.html" />
 <cover 
-	img="images/album7.jpg" 
+	img="static/images/album7.jpg" 
 	title="华南师范大学：电视教材编导与制作" 
 	link="http://localhost/me/detail.html" />
 <cover 
-	img="images/album8.jpg" 
+	img="static/images/album8.jpg" 
 	title="华南师范大学：健美操" 
 	link="http://localhost/me/detail.html"	 />
 <cover 
-	img="images/album9.jpg" 
+	img="static/images/album9.jpg" 
 	title="华南师范大学：小学教育学" 
 	link="http://localhost/me/detail.html"	/>
 <cover 
-	img="images/album10.jpg" 
+	img="static/images/album10.jpg" 
 	title="华南师范大学：物理化学" 
 	link="http://localhost/me/detail.html" />
 </coverflow>
