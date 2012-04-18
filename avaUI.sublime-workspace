@@ -1,0 +1,512 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cat",
+				"catagoue_details"
+			],
+			[
+				"disp",
+				"display	display: block"
+			],
+			[
+				"ul",
+				"ul"
+			],
+			[
+				"back",
+				"background	background-image: url"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"sc",
+				"scroll"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"li",
+				"li"
+			],
+			[
+				"ser",
+				"searchList"
+			],
+			[
+				"bac",
+				"background	background-color: hex"
+			],
+			[
+				"pill",
+				"pill-content"
+			],
+			[
+				"ba",
+				"background	background-color: hex"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "flaskr.py",
+			"settings":
+			{
+				"buffer_size": 3203,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/school/header.html",
+			"settings":
+			{
+				"buffer_size": 1381,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/variables.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/wells.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/accordion.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/utilities.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/type.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/tooltip.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/thumbnails.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/tables.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/sprites.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/scaffolding.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/responsive.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/reset.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/progress-bars.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/popovers.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/pager.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/navs.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/navbar.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/modals.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/mixins.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/layouts.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/labels.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/hero-unit.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/grid.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/forms.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/dropdowns.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/component-animations.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/code.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/close.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/carousel.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/buttons.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/button-groups.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/breadcrumbs.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/bootstrap.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/badges.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/alerts.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/pagination.less",
+		"/E/workspaces/avaUI/templates/school/videolist.html",
+		"/E/workspaces/avaUI/static/less/app/box.less",
+		"/E/workspaces/avaUI/templates/school/index.html",
+		"/E/workspaces/avaUI/static/less/school/school_layout.less",
+		"/E/workspaces/avaUI/static/less/school/school_variables.less",
+		"/E/workspaces/avaUI/templates/school/footer.html",
+		"/E/workspaces/avaUI/static/less/app/variables.less",
+		"/E/workspaces/avaUI/static/less/app/breadcrumb.less",
+		"/E/workspaces/avaUI/templates/school/student.html",
+		"/E/workspaces/avaUI/templates/school/video.html",
+		"/E/workspaces/avaUI/templates/school/teacher.html",
+		"/E/workspaces/avaUI/static/less/app/type.less",
+		"/E/workspaces/avaUI/static/less/app/tabs.less",
+		"/E/workspaces/avaUI/static/less/app/pagination.less",
+		"/E/workspaces/avaUI/static/less/app/page.less",
+		"/E/workspaces/avaUI/templates/videolist.html",
+		"/E/workspaces/avaUI/templates/school/layout.html",
+		"/E/workspaces/avaUI/static/less/app/scaffolding.less",
+		"/E/workspaces/avaUI/static/less/school.less",
+		"/E/workspaces/avaUI/static/less/app.less",
+		"/E/workspaces/avaUI/static/style/school.css",
+		"/E/workspaces/avaUI/schema.sql",
+		"/E/workspaces/avaUI/static/less/school_layout.less",
+		"/E/workspaces/avaUI/templates/video.html",
+		"/E/workspaces/avaUI/flaskr_test.py",
+		"/E/workspaces/avaUI/static/xml/data.xml",
+		"/E/workspaces/avaUI/templates/index.html",
+		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/navs.less",
+		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/navbar.less",
+		"/E/workspaces/avaUI/flaskr.py",
+		"/E/workspaces/avaUI/templates/layout.html",
+		"/E/workspaces/avaUI/templates/header.html",
+		"/E/workspaces/avaUI/static/less/app/functions.less",
+		"/E/workspaces/avaUI/static/less/school/school_navbar.less",
+		"/E/workspaces/avaUI/templates/school/header.html",
+		"/E/workspaces/avaUI/static/less/app/grid.less",
+		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/page.css                E%3A%5Csheke_new%5Chtdocs%5Cgzskl%5Ctemplets%5Cdefault%5Cstyle%5Cpage.css",
+		"/E/sheke_new/htdocs/gzskl/templets/default/style/page.css",
+		"/E/workspaces/avaUI/school_catagoues",
+		"/C/Users/Administrator/Desktop/avaColledge/cubiq-iscroll-712640b/cubiq-iscroll-712640b/README.md",
+		"/C/Users/Administrator/Desktop/source/Flash_10_Coverflow/fla/Coverflow.as",
+		"/E/sheke_new/htdocs/me/detail.html",
+		"/E/sheke_new/htdocs/shenbao.sql",
+		"/E/sheke_new/htdocs/course.sql",
+		"/E/workspaces/avaTv/vender314/school-mingshi.html",
+		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/dedecms.css                E%3A%5Csheke_new%5Chtdocs%5Cgzskl%5Ctemplets%5Cdefault%5Cstyle%5Cdedecms.css",
+		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/index.html                E%3A%5Cworkspaces%5Cyouer%5CyouerEnv%5Chtdocs%5Cindex%5Cindex.html",
+		"/E/sheke_new/htdocs/gzskl/templets/default/style/dedecms.css",
+		"/E/workspaces/youer/youerEnv/htdocs/index/index.html",
+		"/E/sheke_new/htdocs/me/index.html",
+		"/E/sheke_new/htdocs/me/less/forms.less",
+		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/pagination.less",
+		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/type.less",
+		"/E/sheke_new/htdocs/me/less/sprites.less",
+		"/E/sheke_new/htdocs/me/less/page.less",
+		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/pager.less",
+		"/E/sheke_new/htdocs/me/less/pagination.less",
+		"/E/sheke_new/htdocs/me/less/functions.less",
+		"/E/sheke_new/htdocs/me/less/box.less",
+		"/E/sheke_new/htdocs/me/less/grid.less",
+		"/E/sheke_new/htdocs/me/less/scaffolding.less",
+		"/E/sheke_new/htdocs/me/less/layout.less",
+		"/E/sheke_new/htdocs/me/less/reset.less",
+		"/E/sheke_new/htdocs/me/less/type.less",
+		"/E/sheke_new/htdocs/me/less/breadcrumb.less",
+		"/E/sheke_new/htdocs/me/less/tabs.less",
+		"/E/sheke_new/htdocs/me/less/navbar.less",
+		"/E/sheke_new/htdocs/me/less/variables.less",
+		"/E/sheke_new/htdocs/me/less/print.less",
+		"/E/sheke_new/htdocs/me/less/screen.less",
+		"/E/sheke_new/htdocs/me/less/mixins.less",
+		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/mixins.less",
+		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/bootstrap.less",
+		"/E/sheke_new/htdocs/me/xml/data.xml",
+		"/E/sheke_new/htdocs/me/less/media.less",
+		"/E/sheke_new/htdocs/me/videolist.html",
+		"/E/sheke_new/htdocs/me/css/jquery.treeview.css",
+		"/E/sheke_new/htdocs/me/crossdomain.xml",
+		"/E/sheke_new/htdocs/me/xml/cuepoint-0.xml",
+		"/E/sheke_new/htdocs/me/xml/cuepoint.xml",
+		"/E/sheke_new/htdocs/me/js/script.js",
+		"/E/sheke_new/htdocs/me/xml/playlists.xml",
+		"/E/sheke_new/htdocs/me/less/app.less",
+		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/variables.less",
+		"/E/sheke_new/htdocs/me/videoplayer.html",
+		"/C/Users/Administrator/Documents/Tencent Files/596901293/FileRecv/list_category2.htm.重命名",
+		"/E/workspaces/TV/cp.xml",
+		"/G/Program Files/Holdfast/platform 5.0/config/PopNotice/p.html",
+		"/E/DesktopDocument/desktop2012.3.24/ava/colledgevideoPlayer_export_web/colledgevideoPlayer.html",
+		"/E/workspaces/avaTv/vender314/colledge-index.html",
+		"/E/DesktopDocument/desktop2012.3.24/bootstrap/css/bootstrap.css",
+		"/E/document/Html&Css/Alice/solutions/ie-z-index-bug/readme.md"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"E:\\workspaces\\avaUI\\static\\less\\app"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"function[\\w\\W].*\\n[\\w\\W].*</script>",
+			"function[\\w\\W].*\\n[\\w\\W].*",
+			"function[\\n\\N].*[<\\/script>]",
+			"<script>function[\\w\\W].*[<\\/script>]",
+			"<script>\n	function v_gotoPage2(page){if(page<0||page>1)\n	return;var start=(page-1)*20+1;var loc='?start='+start+'&category=[\\w\\W].*';document.location=loc;};</script>",
+			"{{url_for('school/scnu/video')}}",
+			"/brief?[\\w\\W.].*\" target",
+			"/brief?uuid=c913ab31-1332-1000-09b0-4876d02411f6\" target",
+			"/brief?[\\w\\W.].*\" target",
+			"/brief?[\\w\\W].*\" target",
+			"/brief?uuid=c913ab31-1332-1000-09b0-4876d02411f6\" target",
+			"/brief?[\\w\\W.].*\" target",
+			"images/(default.gif)",
+			"images/([\\w\\W].*.gif)",
+			".border",
+			"grad",
+			"copyright",
+			"images/([\\w\\W].*.gif)",
+			"images/featurevedio1.gif",
+			"images/([\\w\\W].*.gif)",
+			"radi",
+			"span6",
+			"@import \"",
+			".list_cat2 .listbox",
+			"school_catagoues",
+			"images/album",
+			".box",
+			"href=\"#\"",
+			".staff",
+			".staff, #nap37_1",
+			".tab-content",
+			".box .head .caption .catalog, .catalog",
+			"nBox",
+			"images/",
+			"staff",
+			"master.png",
+			"{dede:myad name='sysin'/}",
+			"../images/",
+			"treeview",
+			"tree",
+			"reset",
+			"<div class=\"box mbox\" description=\"\" id=\"mishi\">",
+			"id=\"mishi\"",
+			"#mishi",
+			"mishi",
+			"openclass",
+			"http://s1.jingpinke.com/jscss/highCourse/images/video/sprites.gif",
+			"script",
+			"padding-top: 8px;",
+			"会议排行",
+			"class=\"box\"",
+			"class=\"left\"",
+			"showInfo",
+			"comments",
+			".viewby",
+			"viewby",
+			"collgrid6t",
+			"span16",
+			"span4",
+			"$(\"tabs\")",
+			"          <div class=\"vrank\">",
+			"color",
+			"clear",
+			".clear",
+			".pull-right",
+			".mod_today",
+			"#3a95d5",
+			"#46a3dc",
+			".box",
+			"·",
+			"·[社科规划管理]",
+			"·[社科普及与拓展]",
+			".listArea",
+			"is an English electronic music group formed ",
+			"The Prodigy",
+			"clearfix",
+			"./temp4jscss/",
+			"./视频list - 广州市教育视频资源平台_files",
+			"class=\"posterZY\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"</script>",
+			"{{url_for('video_in_school')}}\"",
+			"{{url_for('school/scnu/video')}}\" target",
+			"{{url_for('static',filename='images/$1')}}\" target",
+			"{{url_for('static',filename='images/$1')}}",
+			"{{url_for('static','images/$1')}}",
+			"@import \"app/",
+			"course_catagoues",
+			"static/images/album",
+			"mbox",
+			"img/",
+			"img/master.png",
+			"images/",
+			"<div class=\"box mbox mishi\" description=\"\" >",
+			".mishi",
+			"sprites.gif",
+			"",
+			"class=\"blank\"",
+			"class=\"box\"",
+			"          <div class=\"vrank pill-body\">",
+			"",
+			"#ffffff",
+			"#f0f0f0",
+			"",
+			"是 垃圾剧",
+			"还猪格格",
+			"./newTemp/",
+			"./temp4jscss"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "flaskr.py",
+					"settings":
+					{
+						"buffer_size": 3203,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								836,
+								836
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 342.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/school/header.html",
+					"settings":
+					{
+						"buffer_size": 1381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								986,
+								982
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 228.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.909658350319,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Administrator/Desktop/sheke.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 305.0,
+	"status_bar_visible": true
+}

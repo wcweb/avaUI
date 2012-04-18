@@ -1138,26 +1138,19 @@ input.focused {
   width: 6.382978723%;
 }
 .header {
+  background: #137379 url('app/app/../style/img/header.gif') repeat-x;
   margin: 10 auto;
   padding-top: 10px;
   text-align: center;
   height: 100px;
-  background-color: #d8e9f8;
-  background-image: -moz-linear-gradient(top, #cae1f3, #eef5ff);
-  background-image: -ms-linear-gradient(top, #cae1f3, #eef5ff);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cae1f3), to(#eef5ff));
-  background-image: -webkit-linear-gradient(top, #cae1f3, #eef5ff);
-  background-image: -o-linear-gradient(top, #cae1f3, #eef5ff);
-  background-image: linear-gradient(top, #cae1f3, #eef5ff);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cae1f3', endColorstr='#eef5ff', GradientType=0);
 }
 .header #logo {
-  background: url(/static/images/scnu.gif) no-repeat;
-  text-indent: -9000px;
-  width: 305px;
-  height: 90px;
+  color: #7F151A;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #3a3a3a;
   float: left;
+  margin: 20px;
 }
 .header #u-center {
   float: right;
@@ -1179,16 +1172,13 @@ input.focused {
   border: 1px solid #104f60;
 }
 .navigation {
-  background: #003366 url(school/school/../style/img/nav.gif) repeat-x;
-  -webkit-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  background: url(app/app/../style/img/nav.gif) repeat-x;
+  -moz-box-shadow: 1px 1px 20px #000;
+  -webkit-box-shadow: 1px 1px 20px #000;
+  box-shadow: 1px 1px 20px #000;
 }
 .footer {
-  background: #003366 url(school/school/../style/img/footer.gif) repeat-x;
-}
-.Copyright {
-  text-align: center;
+  background: #137379 url(app/app/../style/img/footer.gif) repeat-x;
 }
 /* 
  *  for swfobject

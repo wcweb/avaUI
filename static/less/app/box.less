@@ -1,7 +1,7 @@
 
 
 .box{
-  #gradient > .vertical(@white, @darken(@white,6%));
+  #gradient > .vertical(@white, darken(@white,6%));
   margin-top:@gridGutterWidth;
 
   .head{
@@ -11,6 +11,7 @@
     #gradient > .vertical(#ffffff, #f0f0f0);
     border:1px solid #cbcbcb;
     border-bottom:1px solid #cbcbcb;
+
   }
 
   .body{
@@ -19,6 +20,63 @@
     z-index:10;
   }
 
+}
+
+
+
+
+
+
+.mbox{
+  .head{
+    height:30px;
+    padding:5px;
+    line-height:30px;
+    border-bottom:2px solid @blueDark;
+    .border-radius(10px 10px 0 0);
+    .title{
+        text-indent:18px;
+        float:left;
+        font-weight:bold;
+        a{
+          color:#7F151A;
+        }
+    }
+    .more{
+      font-size:12px;
+      float:right;
+      margin-right:10px;
+      a{
+        color:#15797F;
+      }
+    }
+
+    .tabs > li {
+      margin-bottom:-2px;
+      a{
+      line-height:24px;
+
+      &:hover{
+          text-decoration: none;
+      }
+      }
+      .active >a{
+          background-color: #f1f0f0;
+          border-bottom-color: transparent;
+        &:hover{
+          background-color: #f1f0f0;
+          border-bottom-color: transparent;
+        }
+      }
+    }
+  }
+  .foot{
+      clear: both;
+  } 
+  .pill-content{
+    background-color:transparent;
+    border:none;
+  }
 }
 
 
@@ -35,72 +93,12 @@
   display: inline;
   bottom:-5px;
 }
-.body ul{
-  list-style:none;
-  margin:0;
-}
 
 .caption {
   margin-left:18px;
 }
 
 
-
-
-.mBox .head .tabs > li {
-  margin-bottom:-2px;
-}
-.mBox .head .tabs > li > a{
-  line-height:24px;
-
-}
-.mBox .head .tabs .active > a, .mBox .head .tabs  .active > a:hover{
-  background-color: #f1f0f0;
-  border-bottom-color: transparent;
-}
-
-
-.mBox .head .tabs > li > a:hover {
-  text-decoration: none;
-
-}
-
-
-.mBox .foot,.box .foot{
-  clear: both;
-}
-.mBox .pill-content{
-  background-color:transparent;
-  border:none;
-}
-
-
-.mbox .head{
-  height:30px;
-  padding:5px;
-  line-height:30px;
-  border-bottom:2px solid @blueDark;
-  .border-radius(10px 10px 0 0)
-}
-.head .title{
-  text-indent:18px;
-  float:left;
-  font-weight:bold;
-}
-.head .title a{
-  color:#7F151A;
-}
-.head .more{
-  font-size:12px;
-  float:right;
-  margin-right:10px;
-}
-.head .more a{
-  color:#15797F;
-}
-.mbox .body{
-  clear:both;
-}
 
 .nBox h3{
   font-size:18px;
@@ -126,13 +124,17 @@ margin-right: 5px;
   margin-bottom:15px;
 }
 
-
-
-.items ul{
-  float: left;
-  margin-left:5px;
+.items{
+  ul{
+    float: left;
+    margin-left:5px;
+  }
 }
 
+
+
+
+// clear
 .items .clearFloat,.box .clearFloat{
   clear: both;
 }

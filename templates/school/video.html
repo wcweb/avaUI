@@ -25,8 +25,8 @@
 
     <div class="span4">
       <div class="toggle">
-      <div class="box mbox">
-            <div class="head">
+      <div class="box ">
+            <div class="">
                    <div class="catalog">
                                             <ul class="tabs">
                                             <li tabidx="rkLst4" id="thrkLst4" class="active"><a href="#cont">课程简介</a></li>
@@ -49,12 +49,12 @@
                 </ul>
   </div>
 
-<div class="pill-content info-span">
+<div class="pill-content">
       <div id="cont" data-pills="thrkLst1" class="active">
 <div class="pill-body textlist">        
 
               <div class="staff">
-                <div class="clear">
+                <div class="clearfix">
                 </div>
                 <p>机械设计课程为大学本科机械类必修的技术基础课程。1995年修订了“机械设计课程教学基本要求”。该课程以常用机械零部件设计理论与方法为主要内容,包括讲课与课程设计,目的是通过学习这些基本内容掌握有关的机械设计步骤、方法、规律和技术措施,从而具有设计其他零部件的能力。课程主要内容包括:机械设计的基本理论(强度、摩擦学等)、连接件、传动件、转动和支承零件等。课程特色:本课程的讲授贯彻“少而精”原则;课程中引入讲课人的实际设计经验和设计范例 ...</p>
                 
@@ -84,7 +84,7 @@
 
 
 
-
+<br class="clearfix" />
 
 
 </div>
@@ -201,5 +201,86 @@
 
 
       </div>
+
+
+   <script src="{{url_for('static',filename='js/jwplayer.js')}}"></script>
+<script>
+
+
+  var flashvars = { autostart:'false' ,
+    'playlistfile': "{{url_for('static',filename='xml/playlists.xml')}}",
+    'playlist.position': 'bottom',
+    'playlist.size': '300',
+    'controlbar': 'over'
+    
+
+
+
+  };
+  var params = { allowfullscreen:'true', allowscriptaccess:'always'    };
+  var attributes = { id:'player1', name:'player1' };
+
+  swfobject.embedSWF('{{url_for('static',filename='swf/player.swf')}}','mediaPlayer','700','700','9.0.115','false',
+    flashvars, params, attributes,flashLoaded);
+      
+function flashLoaded(e) {
+ // e.ref is a reference to the Flash object. We'll pass it to jwplayer() so the API knows where the player is.
+
+ // Add event listeners
+ jwplayer(e.ref).onPlaylistItem(function(e){
+
+  $.ajax({
+  url: "{{url_for('static',filename='xml/playlists.xml')}}"
+  }).done(function(data) { 
+        $(data).find('item:eq('+e.index+')').each(function(){
+          
+
+          // $('#currentItem')
+          //           .html('current :'+$(this).find('title').text()+'  ')
+        });
+        
+        $.ajax({
+          url: "http://localhost:5000/me/xml/cuepoint-"+e.index+".xml"
+        }).done(function(data) { 
+          $(".pack_list").addClass("done");
+          $('#chapterlist').empty();
+          $(data).find('CuePoint').each(function(){
+                var item_text = $(this).text();
+                // <a href="#" onclick="jwplayer().seek(353);">In pursuit</a> (05:53)</li>
+
+                $('<li></li>')
+                    .html("<a href='#' onclick='jwplayer().seek("
+                      +$(this).find('Time').text()+");'>"
+                      +$(this).find('Name').text()+"</a>")
+                    .appendTo('#chapterlist');
+            });
+        });
+
+
+                  console.log("Sample of data:", e.index);
+   });
+            
+});
+
+ // jwplayer(e.ref).onReady(function() { alert('Player is ready'); });
+ // jwplayer(e.ref).onPlay(function() { alert('Player is playing'); });
+
+ // Interact with the player
+ jwplayer(e.ref).play();
+}
+
+      // PlaylistEvent.JWPLAYER_PLAYLIST_ITEM
+</script>
+
+
+
+
+
+
+
+
+
+
+
 
 {% endblock %}

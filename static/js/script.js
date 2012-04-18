@@ -5,7 +5,10 @@
 
 
 
-
+// Preload images
+imageObj = new Image();
+imgs = ["static/images/scnu.gif"];
+for (i = 0; i <= imgs.length; i++) imageObj.src = imgs[i];
 
 
 
@@ -56,6 +59,9 @@ $(function(){
 // tabs
 $(function(){
   $(".tabs").tabs();
+  if($.isFunction('$.fn.carousel')){
+  $('.carousel').carousel();
+  }
 });
 
 
