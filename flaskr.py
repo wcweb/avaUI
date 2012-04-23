@@ -92,6 +92,40 @@ def logout():
 	flash('You were logged out')
 	return redirect(url_for('show_entries'))
 
+
+@app.route('/dashboard')
+def dashboard():
+	return render_template('style/dashboard.html')
+
+
+@app.route('/tables')
+def tables():
+	return render_template('style/tables.html')
+
+
+@app.route('/graphs')
+def graphs():
+	return render_template('style/graphs.html')
+
+@app.route('/forms')
+def forms():
+	return render_template('style/forms.html')
+
+@app.route('/baseStyle')
+def baseStyle():
+	return render_template('style/baseStyle.html')
+
+
+@app.route('/files')
+def files():
+	return render_template('style/files.html')
+
+@app.route('/newOne')
+def newOne():
+	return render_template('style/newOne.html')
+
+
+
 @app.route('/video/<id>')
 def video(id):
 	return render_template('video.html')
@@ -140,4 +174,4 @@ def jpkc_in_school(schoolname):
 
 
 if __name__ =='__main__':
-	app.run(host='127.0.0.1')
+	app.run(host='192.168.0.')

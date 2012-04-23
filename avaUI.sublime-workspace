@@ -56,18 +56,26 @@
 	"buffers":
 	[
 		{
-			"file": "flaskr.py",
+			"file": "templates/style/layout.html",
 			"settings":
 			{
-				"buffer_size": 3203,
+				"buffer_size": 2923,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "templates/school/header.html",
+			"file": "/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/js/README.md",
 			"settings":
 			{
-				"buffer_size": 1381,
+				"buffer_size": 3244,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/style/dashboard.html",
+			"settings":
+			{
+				"buffer_size": 11357,
 				"line_ending": "Windows"
 			}
 		}
@@ -100,6 +108,49 @@
 	},
 	"file_history":
 	[
+		"/E/workspaces/avaUI/README",
+		"/E/workspaces/avaUI/static/style/school.css",
+		"/G/Program Files/Google/google_appengine/demos/guestbook/guestbook.py",
+		"/D/goagent/server/python/fetch.py",
+		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/proxy.py                D%3A%5Cgoagent%5Clocal%5Cproxy.py",
+		"/D/goagent/.gitignore",
+		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/proxy.py                E%3A%5Cworkspaces%5CgoogleAPP_ENGine%5Cgoagent%5Clocal%5Cproxy.py",
+		"/E/workspaces/googleAPP_ENGine/engineapp/main.py",
+		"/E/workspaces/googleAPP_ENGine/engineapp/app.yaml",
+		"/E/workspaces/avaUI/templates/school/layout.html",
+		"/E/workspaces/googleAPP_ENGine/engineapp/index.yaml",
+		"/E/workspaces/avaUI/flaskr.py",
+		"/D/goagent/server/golang/fetch/fetch.go",
+		"/C/Python27/Lib/site-packages/flask/sessions.py",
+		"/E/workspaces/googleAPP_ENGine/wcweb2/__init__.py",
+		"/E/workspaces/googleAPP_ENGine/wcweb2/settings.py",
+		"/E/workspaces/googleAPP_ENGine/wcweb2/models.py",
+		"/E/workspaces/googleAPP_ENGine/wcweb2/views.py",
+		"/E/workspaces/googleAPP_ENGine/wcweb2/base.html",
+		"/E/workspaces/googleAPP_ENGine/wcweb2/list_post.html",
+		"/E/workspaces/googleAPP_ENGine/wcweb2/g/main.py",
+		"/E/workspaces/googleAPP_ENGine/wcweb2/app.yaml",
+		"/C/Users/Administrator/Desktop/MySQL-python-1.2.3/ez_setup.py",
+		"/C/Users/Administrator/Desktop/MySQL-python-1.2.3/README",
+		"/C/Users/Administrator/Desktop/MySQL-python-1.2.3/setup.cfg",
+		"/C/Users/Administrator/Desktop/MySQL-python-1.2.3/setup_windows.py",
+		"/D/goagent/local/proxy.py",
+		"/E/workspaces/googleAPP_ENGine/goagent/local/proxy.py",
+		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/samples-files.html                E%3A%5Cworkspaces%5CavaUI%5Ctemplates%5Cstyle%5Csamples-files.html",
+		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/jquery.min.js                E%3A%5Cworkspaces%5CavaUI%5Cstatic%5Cjs%5Clibs%5Cjquery.min.js",
+		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/jquery.treeview.min.js                E%3A%5Cworkspaces%5CavaUI%5Cstatic%5Cjs%5Clibs%5Cjquery.treeview.min.js",
+		"/E/workspaces/avaUI/templates/header.html",
+		"/E/workspaces/avaUI/templates/footer.html",
+		"/E/workspaces/avaUI/templates/style/baseStyle.html",
+		"/E/workspaces/avaUI/static/less/app/breadcrumb.less",
+		"/E/workspaces/avaUI/templates/style/dashboard.html",
+		"/E/workspaces/avaUI/static/js/script.js",
+		"/E/workspaces/avaUI/static/xml/playlists.xml",
+		"/E/workspaces/avaUI/templates/school/video.html",
+		"/E/workspaces/avaUI/templates/school/header.html",
+		"/E/workspaces/avaUI/templates/school/student.html",
+		"/C/Users/Administrator/Desktop/masonry-site/README.mdown",
+		"/C/Users/Administrator/Desktop/masonry-site/js/modernizr-transitions.js",
 		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/variables.less",
 		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/wells.less",
 		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/accordion.less",
@@ -143,20 +194,15 @@
 		"/E/workspaces/avaUI/static/less/school/school_variables.less",
 		"/E/workspaces/avaUI/templates/school/footer.html",
 		"/E/workspaces/avaUI/static/less/app/variables.less",
-		"/E/workspaces/avaUI/static/less/app/breadcrumb.less",
-		"/E/workspaces/avaUI/templates/school/student.html",
-		"/E/workspaces/avaUI/templates/school/video.html",
 		"/E/workspaces/avaUI/templates/school/teacher.html",
 		"/E/workspaces/avaUI/static/less/app/type.less",
 		"/E/workspaces/avaUI/static/less/app/tabs.less",
 		"/E/workspaces/avaUI/static/less/app/pagination.less",
 		"/E/workspaces/avaUI/static/less/app/page.less",
 		"/E/workspaces/avaUI/templates/videolist.html",
-		"/E/workspaces/avaUI/templates/school/layout.html",
 		"/E/workspaces/avaUI/static/less/app/scaffolding.less",
 		"/E/workspaces/avaUI/static/less/school.less",
 		"/E/workspaces/avaUI/static/less/app.less",
-		"/E/workspaces/avaUI/static/style/school.css",
 		"/E/workspaces/avaUI/schema.sql",
 		"/E/workspaces/avaUI/static/less/school_layout.less",
 		"/E/workspaces/avaUI/templates/video.html",
@@ -165,12 +211,9 @@
 		"/E/workspaces/avaUI/templates/index.html",
 		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/navs.less",
 		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/navbar.less",
-		"/E/workspaces/avaUI/flaskr.py",
 		"/E/workspaces/avaUI/templates/layout.html",
-		"/E/workspaces/avaUI/templates/header.html",
 		"/E/workspaces/avaUI/static/less/app/functions.less",
 		"/E/workspaces/avaUI/static/less/school/school_navbar.less",
-		"/E/workspaces/avaUI/templates/school/header.html",
 		"/E/workspaces/avaUI/static/less/app/grid.less",
 		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/page.css                E%3A%5Csheke_new%5Chtdocs%5Cgzskl%5Ctemplets%5Cdefault%5Cstyle%5Cpage.css",
 		"/E/sheke_new/htdocs/gzskl/templets/default/style/page.css",
@@ -192,42 +235,7 @@
 		"/E/sheke_new/htdocs/me/less/sprites.less",
 		"/E/sheke_new/htdocs/me/less/page.less",
 		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/pager.less",
-		"/E/sheke_new/htdocs/me/less/pagination.less",
-		"/E/sheke_new/htdocs/me/less/functions.less",
-		"/E/sheke_new/htdocs/me/less/box.less",
-		"/E/sheke_new/htdocs/me/less/grid.less",
-		"/E/sheke_new/htdocs/me/less/scaffolding.less",
-		"/E/sheke_new/htdocs/me/less/layout.less",
-		"/E/sheke_new/htdocs/me/less/reset.less",
-		"/E/sheke_new/htdocs/me/less/type.less",
-		"/E/sheke_new/htdocs/me/less/breadcrumb.less",
-		"/E/sheke_new/htdocs/me/less/tabs.less",
-		"/E/sheke_new/htdocs/me/less/navbar.less",
-		"/E/sheke_new/htdocs/me/less/variables.less",
-		"/E/sheke_new/htdocs/me/less/print.less",
-		"/E/sheke_new/htdocs/me/less/screen.less",
-		"/E/sheke_new/htdocs/me/less/mixins.less",
-		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/mixins.less",
-		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/bootstrap.less",
-		"/E/sheke_new/htdocs/me/xml/data.xml",
-		"/E/sheke_new/htdocs/me/less/media.less",
-		"/E/sheke_new/htdocs/me/videolist.html",
-		"/E/sheke_new/htdocs/me/css/jquery.treeview.css",
-		"/E/sheke_new/htdocs/me/crossdomain.xml",
-		"/E/sheke_new/htdocs/me/xml/cuepoint-0.xml",
-		"/E/sheke_new/htdocs/me/xml/cuepoint.xml",
-		"/E/sheke_new/htdocs/me/js/script.js",
-		"/E/sheke_new/htdocs/me/xml/playlists.xml",
-		"/E/sheke_new/htdocs/me/less/app.less",
-		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/variables.less",
-		"/E/sheke_new/htdocs/me/videoplayer.html",
-		"/C/Users/Administrator/Documents/Tencent Files/596901293/FileRecv/list_category2.htm.重命名",
-		"/E/workspaces/TV/cp.xml",
-		"/G/Program Files/Holdfast/platform 5.0/config/PopNotice/p.html",
-		"/E/DesktopDocument/desktop2012.3.24/ava/colledgevideoPlayer_export_web/colledgevideoPlayer.html",
-		"/E/workspaces/avaTv/vender314/colledge-index.html",
-		"/E/DesktopDocument/desktop2012.3.24/bootstrap/css/bootstrap.css",
-		"/E/document/Html&Css/Alice/solutions/ie-z-index-bug/readme.md"
+		"/E/sheke_new/htdocs/me/less/pagination.less"
 	],
 	"find":
 	{
@@ -246,6 +254,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"files",
+			"baseStyle",
+			"tables",
+			"http://localhost/me/",
 			"function[\\w\\W].*\\n[\\w\\W].*</script>",
 			"function[\\w\\W].*\\n[\\w\\W].*",
 			"function[\\n\\N].*[<\\/script>]",
@@ -332,6 +344,11 @@
 		"regex": true,
 		"replace_history":
 		[
+			"newOne",
+			"files",
+			"forms",
+			"graphs",
+			"http://localhost:5000/static/",
 			"</script>",
 			"{{url_for('video_in_school')}}\"",
 			"{{url_for('school/scnu/video')}}\" target",
@@ -370,69 +387,89 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "flaskr.py",
+					"file": "templates/style/layout.html",
 					"settings":
 					{
-						"buffer_size": 3203,
+						"buffer_size": 2923,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								836,
-								836
+								530,
+								530
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 342.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "templates/school/header.html",
+					"file": "/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/js/README.md",
 					"settings":
 					{
-						"buffer_size": 1381,
+						"buffer_size": 3244,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								986,
-								982
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1729.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/style/dashboard.html",
+					"settings":
+					{
+						"buffer_size": 11357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2921
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 228.0,
+						"translation.y": 1368.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				}
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
@@ -453,18 +490,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.909658350319,
 			1.0
 		],
 		"rows":
@@ -474,10 +504,6 @@
 		]
 	},
 	"menu_visible": true,
-	"output.exec":
-	{
-		"height": 124.0
-	},
 	"replace":
 	{
 		"height": 64.0
@@ -507,6 +533,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 305.0,
+	"side_bar_width": 352.0,
 	"status_bar_visible": true
 }
