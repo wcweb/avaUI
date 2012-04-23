@@ -213,8 +213,8 @@
 {% endblock body %}
 
 {% block addscripts %}
-	<script src="{{ url_for('static',filename='js/jwplayer.js' )}}"></script>
-	<script src="{{ url_for('static',filename='js/swfobject.js' )}}"></script>
+	<script src="{{ js_url('jwplayer.js' )}}"></script>
+	<script src="{{ js_url('swfobject.js' )}}"></script>
 	<script type="text/javascript" charset="utf-8">
 		// jwplayer with swfobject
 		if($.isFunction('jwplayer')){

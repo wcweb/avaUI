@@ -95,34 +95,34 @@ def logout():
 
 @app.route('/dashboard')
 def dashboard():
-	return render_template('style/dashboard.html')
+	return render_template('baseStyle/dashboard.html')
 
 
 @app.route('/tables')
 def tables():
-	return render_template('style/tables.html')
+	return render_template('baseStyle/tables.html')
 
 
 @app.route('/graphs')
 def graphs():
-	return render_template('style/graphs.html')
+	return render_template('baseStyle/graphs.html')
 
 @app.route('/forms')
 def forms():
-	return render_template('style/forms.html')
+	return render_template('baseStyle/forms.html')
 
 @app.route('/baseStyle')
 def baseStyle():
-	return render_template('style/baseStyle.html')
+	return render_template('baseStyle/baseStyle.html')
 
 
 @app.route('/files')
 def files():
-	return render_template('style/files.html')
+	return render_template('baseStyle/samples-files.html')
 
 @app.route('/newOne')
 def newOne():
-	return render_template('style/newOne.html')
+	return render_template('baseStyle/samples-products.html')
 
 
 
@@ -169,9 +169,19 @@ def jpkc_in_school(schoolname):
 
 # temp page
 
+@app.context_processor
+def inject_user():
+    return dict(title='chanry',keywords='',description='')
 
+@app.context_processor
+def utility_processor():
+    def js_url(file):
+        return url_for('static',filename='js/'+file)
+    def static_url(file):
+        return url_for('static',filename=file)
+    return dict(js_url=js_url,static_url=static_url)
 
 
 
 if __name__ =='__main__':
-	app.run(host='192.168.0.')
+	app.run(host='127.0.0.1')

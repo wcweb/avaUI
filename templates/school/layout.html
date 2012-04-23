@@ -16,12 +16,12 @@
   <meta name="viewport" content="width=device-width">
 
   
-  <script src="{{ url_for('static', filename='js/swfobject.js')}}"></script>
 
+<!-- Use less.js or not -->
 
 <!-- <link rel=stylesheet type=text/less href="{{ url_for('static', filename='less/school.less') }}"> -->
  <!-- <script type="text/javascript" src="{{ url_for('static', filename='js/less-1.3.0.min.js') }}" charset="utf-8"> 	</script> -->
-
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style/school.css') }}">
 
 <!-- Internet Explorer Fixes --> 
 <!--[if IE]>
@@ -33,10 +33,13 @@
 <script src="{{ url_for('static', filename='js/IE9.js')}}"></script>
 <![endif]-->
 
-  <script src="{{ url_for('static', filename='js/libs/modernizr-2.5.3.min.js') }}"></script>
-  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style/school.css') }}">
+  <script src="{{ js_url('swfobject.js')}}"></script>
+
+  <script src="{{ js_url('libs/modernizr-2.5.3.min.js') }}"></script>
+
 </head>
 <body class="bg" >
+
 <!--[if lt IE 7]><p class=chromeframe>抱歉，您的浏览器 ie6.0版本 <em>太旧了!</em> 为了满足日后移动版的应用需求，<a href="http://browsehappy.com/">请点击这里，更新您的浏览器</a> 或者 <a href="http://www.google.com/chromeframe/?redirect=true">选择安装  Internet Explorer的Google Chrome 插件 </a> 浏览本站。</p><![endif]-->
 
 {% include "school/header.html" %}
@@ -48,7 +51,9 @@
    <div class=flash>{{ message }}</div>
  {% endfor %}
 
- {% block body %}{% endblock %}
+ {% block body %}
+ {% endblock %}
+ 
   </div>
 </div>
 
@@ -60,13 +65,27 @@
 
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="{{ url_for('static',filename='js/jquery-1.7.1.min.js')}}"><\/script>')</script>
+  <script>window.jQuery || document.write('<script src="{{ js_url('jquery-1.7.1.min.js')}}"><\/script>')</script>
 	{% block addscripts %}
-		
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.ui.core.min.js')}}"></script>
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.ui.widget.min.js')}}"></script>
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.ui.tabs.min.js')}}"></script>
+    <!-- jQuery tooltips -->
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.tipTip.min.js')}}"></script>
+    <!-- Superfish navigation -->
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.superfish.min.js')}}"></script>
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.supersubs.min.js')}}"></script>
+    <!-- jQuery form validation -->
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.validate_pack.js')}}"></script>
+    <!-- jQuery popup box -->
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.nyroModal.pack.js')}}"></script>
+    <!-- jQuery graph plugins -->
+    <!--[if IE]><script type="text/javascript" SRC="{{ js_url('libs/flot/excanvas.min.js')}}"></script><![endif]-->
+    <script type="text/javascript" SRC="{{ js_url('libs/flot/jquery.flot.min.js')}}"></script>
 	{% endblock %}
-  <script src="{{ url_for('static',filename='js/plugins.js' )}}"></script>
-  <script src="{{ url_for('static',filename='js/script.js' )}}"></script>
-  <script src="{{ url_for('static',filename='js/libs/bootstrap-tabs.js' )}}" type="text/javascript" charset="utf-8"></script>
+  <script src="{{ js_url('plugins.js' )}}"></script>
+  <script src="{{ js_url('script.js' )}}"></script>
+  <script src="{{ js_url('libs/bootstrap-tabs.js' )}}" type="text/javascript" charset="utf-8"></script>
 
   <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

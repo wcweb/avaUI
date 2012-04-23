@@ -2,7 +2,37 @@
 
 */
 
+$(document).ready(function(){
+  if($_isFunction('Administry'))
+  {  /* setup navigation, content boxes, etc... */
+    Administry.setup();
+    
+    /* progress bar animations - setting initial values */
+    Administry.progress("#progress1", 1, 5);
+    Administry.progress("#progress2", 2, 5);
+    Administry.progress("#progress3", 2, 5);
 
+    /* flot graphs */
+    var sales = [{
+      label: 'Total Paid',
+      data: [[1, 0],[2,0],[3,0],[4,0],[5,0],[6,0],[7,900],[8,0],[9,0],[10,0],[11,0],[12,0]]
+    },{
+      label: 'Total Due',
+      data: [[1, 0],[2,0],[3,0],[4,0],[5,0],[6,422.10],[7,0],[8,0],[9,0],[10,0],[11,0],[12,0]]
+    }
+    ];
+
+    var plot = $.plot($("#placeholder"), sales, {
+      bars: { show: true, lineWidth: 1 },
+      legend: { position: "nw" },
+      xaxis: { ticks: [[1, "Jan"], [2, "Feb"], [3, "Mar"], [4, "Apr"], [5, "May"], [6, "Jun"], [7, "Jul"], [8, "Aug"], [9, "Sep"], [10, "Oct"], [11, "Nov"], [12, "Dec"]] },
+      yaxis: { min: 0, max: 1000 },
+      grid: { color: "#666" },
+      colors: ["#0a0", "#f00"]      
+      });
+  }
+
+});
 
 
 // Preload images

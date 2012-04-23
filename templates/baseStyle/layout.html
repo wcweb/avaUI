@@ -1,57 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html>
 <head>
-<meta charset="utf-8" />
-<title></title>
-<meta name="description" content="Administry - Admin Template by www.865171.cn" />
-<meta name="keywords" content="Admin,Template" />
-<!-- We need to emulate IE7 only when we are to use excanvas -->
-<!--[if IE]>
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-<![endif]-->
-<!-- Favicons --> 
-<link rel="shortcut icon" type="image/png" HREF="img/favicons/favicon.png"/>
-<link rel="icon" type="image/png" HREF="img/favicons/favicon.png"/>
-<link rel="apple-touch-icon" HREF="img/favicons/apple.png" />
-<!-- Main Stylesheet --> 
-<link rel="stylesheet" href="css/style.css" type="text/css" />
-<!-- Colour Schemes
-Default colour scheme is blue. Uncomment prefered stylesheet to use it.
-<link rel="stylesheet" href="css/brown.css" type="text/css" media="screen" />  
-<link rel="stylesheet" href="css/gray.css" type="text/css" media="screen" />  
-<link rel="stylesheet" href="css/green.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="css/pink.css" type="text/css" media="screen" />  
-<link rel="stylesheet" href="css/red.css" type="text/css" media="screen" />
--->
-<!-- Your Custom Stylesheet --> 
-<link rel="stylesheet" href="css/custom.css" type="text/css" />
-<!--swfobject - needed only if you require <video> tag support for older browsers -->
-<script type="text/javascript" SRC="js/swfobject.js"></script>
-<!-- jQuery with plugins -->
-<script type="text/javascript" SRC="js/jquery-1.4.2.min.js"></script>
-<!-- Could be loaded remotely from Google CDN : <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
-<script type="text/javascript" SRC="js/jquery.ui.core.min.js"></script>
-<script type="text/javascript" SRC="js/jquery.ui.widget.min.js"></script>
-<script type="text/javascript" SRC="js/jquery.ui.tabs.min.js"></script>
-<!-- jQuery tooltips -->
-<script type="text/javascript" SRC="js/jquery.tipTip.min.js"></script>
-<!-- Superfish navigation -->
-<script type="text/javascript" SRC="js/jquery.superfish.min.js"></script>
-<script type="text/javascript" SRC="js/jquery.supersubs.min.js"></script>
-<!-- jQuery form validation -->
-<script type="text/javascript" SRC="js/jquery.validate_pack.js"></script>
-<!-- jQuery popup box -->
-<script type="text/javascript" SRC="js/jquery.nyroModal.pack.js"></script>
-<!-- jQuery graph plugins -->
-<!--[if IE]><script type="text/javascript" src="js/flot/excanvas.min.js"></script><![endif]-->
-<script type="text/javascript" SRC="js/flot/jquery.flot.min.js"></script>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>{{ title }}</title>
+  <meta content="zh-CN" http-equiv="Content-Language">
+  <meta content="{{ title }}" name="title">
+  <meta content="{{ keywords }}" name="keywords">
+  <meta content="{{ description }}" name="description">
+  <meta name="viewport" content="width=device-width">
+
+  
+
+<!-- Use less.js or not -->
+
+<!-- <link rel=stylesheet type=text/less href="{{ url_for('static', filename='less/school.less') }}"> -->
+ <!-- <script type="text/javascript" src="{{ url_for('static', filename='js/less-1.3.0.min.js') }}" charset="utf-8"> 	</script> -->
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style/school.css') }}">
+
 <!-- Internet Explorer Fixes --> 
 <!--[if IE]>
 <link rel="stylesheet" type="text/css" media="all" href="css/ie.css"/>
-<script src="js/html5.js"></script>
+<script src="{{ url_for('static', filename='js/html5.js')}}"></script>
 <![endif]-->
 <!--Upgrade MSIE5.5-7 to be compatible with MSIE8: http://ie7-js.googlecode.com/svn/version/2.1(beta3)/IE8.js -->
 <!--[if lt IE 8]>
-<script src="js/IE8.js"></script>
+<script src="{{ url_for('static', filename='js/IE9.js')}}"></script>
 <![endif]-->
 
+  <script src="{{ js_url('swfobject.js')}}"></script>
+
+  <script src="{{ js_url('libs/modernizr-2.5.3.min.js') }}"></script>
+
+</head>
+<body class="bg" >
+
+<!--[if lt IE 7]><p class=chromeframe>抱歉，您的浏览器 ie6.0版本 <em>太旧了!</em> 为了满足日后移动版的应用需求，<a href="http://browsehappy.com/">请点击这里，更新您的浏览器</a> 或者 <a href="http://www.google.com/chromeframe/?redirect=true">选择安装  Internet Explorer的Google Chrome 插件 </a> 浏览本站。</p><![endif]-->
+
+{% include "baseStyle/header.html" %}
+
+
+<div role="main" >
+  <div class="container">
+ {% for message in get_flashed_messages() %}
+   <div class=flash>{{ message }}</div>
+ {% endfor %}
+
+ {% block body %}
+ {% endblock %}
+ 
+  </div>
+</div>
+
+
+{% include "baseStyle/footer.html" %}
+
+
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="{{ js_url('jquery-1.7.1.min.js')}}"><\/script>')</script>
+	{% block addscripts %}
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.ui.core.min.js')}}"></script>
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.ui.widget.min.js')}}"></script>
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.ui.tabs.min.js')}}"></script>
+    <!-- jQuery tooltips -->
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.tipTip.min.js')}}"></script>
+    <!-- Superfish navigation -->
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.superfish.min.js')}}"></script>
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.supersubs.min.js')}}"></script>
+    <!-- jQuery form validation -->
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.validate_pack.js')}}"></script>
+    <!-- jQuery popup box -->
+    <script type="text/javascript" SRC="{{ js_url('libs/jquery.nyroModal.pack.js')}}"></script>
+    <!-- jQuery graph plugins -->
+    <!--[if IE]><script type="text/javascript" SRC="{{ js_url('libs/flot/excanvas.min.js')}}"></script><![endif]-->
+    <script type="text/javascript" SRC="{{ js_url('libs/flot/jquery.flot.min.js')}}"></script>
+	{% endblock %}
+  <script src="{{ js_url('plugins.js' )}}"></script>
+  <script src="{{ js_url('script.js' )}}"></script>
+  <script src="{{ js_url('libs/bootstrap-tabs.js' )}}" type="text/javascript" charset="utf-8"></script>
+
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body></html>

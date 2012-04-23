@@ -56,26 +56,114 @@
 	"buffers":
 	[
 		{
-			"file": "templates/style/layout.html",
+			"file": "templates/baseStyle/dashboard.html",
 			"settings":
 			{
-				"buffer_size": 2923,
+				"buffer_size": 4915,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/js/README.md",
+			"file": "templates/baseStyle/footer.html",
 			"settings":
 			{
-				"buffer_size": 3244,
-				"line_ending": "Unix"
+				"buffer_size": 988,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "templates/style/dashboard.html",
+			"file": "templates/baseStyle/header.html",
 			"settings":
 			{
-				"buffer_size": 11357,
+				"buffer_size": 1552,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/baseStyle/forms.html",
+			"settings":
+			{
+				"buffer_size": 8019,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/baseStyle/graphs.html",
+			"settings":
+			{
+				"buffer_size": 2844,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/baseStyle/baseStyle.html",
+			"settings":
+			{
+				"buffer_size": 20154,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/samples-files.html                E%3A%5Cworkspaces%5CavaUI%5Ctemplates%5CbaseStyle%5Csamples-files.html",
+			"settings":
+			{
+				"buffer_size": 10858,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/baseStyle/samples-products.html",
+			"settings":
+			{
+				"buffer_size": 3705,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/baseStyle/tables.html",
+			"settings":
+			{
+				"buffer_size": 15773,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/school/layout.html",
+			"settings":
+			{
+				"buffer_size": 4093,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/sheng/layout.html",
+			"settings":
+			{
+				"buffer_size": 2617,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/sheng/video.html",
+			"settings":
+			{
+				"buffer_size": 8483,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/js/script.js",
+			"settings":
+			{
+				"buffer_size": 2077,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "flaskr.py",
+			"settings":
+			{
+				"buffer_size": 4191,
 				"line_ending": "Windows"
 			}
 		}
@@ -108,6 +196,15 @@
 	},
 	"file_history":
 	[
+		"/E/workspaces/avaUI/templates/baseStyle/samples-files.html",
+		"/E/workspaces/avaUI/templates/baseStyle/graphs.html",
+		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/samples-files.html                E%3A%5Cworkspaces%5CavaUI%5Ctemplates%5CbaseStyle%5Csamples-files.html",
+		"/E/workspaces/avaUI/templates/baseStyle/layout.html",
+		"/C/Users/Administrator/Desktop/admin-template/css/style.css",
+		"/C/Users/Administrator/Desktop/admin-template/css/custom.css",
+		"/E/workspaces/avaUI/templates/style/dashboard.html",
+		"/E/workspaces/avaUI/templates/style/layout.html",
+		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/js/README.md",
 		"/E/workspaces/avaUI/README",
 		"/E/workspaces/avaUI/static/style/school.css",
 		"/G/Program Files/Google/google_appengine/demos/guestbook/guestbook.py",
@@ -143,7 +240,6 @@
 		"/E/workspaces/avaUI/templates/footer.html",
 		"/E/workspaces/avaUI/templates/style/baseStyle.html",
 		"/E/workspaces/avaUI/static/less/app/breadcrumb.less",
-		"/E/workspaces/avaUI/templates/style/dashboard.html",
 		"/E/workspaces/avaUI/static/js/script.js",
 		"/E/workspaces/avaUI/static/xml/playlists.xml",
 		"/E/workspaces/avaUI/templates/school/video.html",
@@ -227,15 +323,7 @@
 		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/dedecms.css                E%3A%5Csheke_new%5Chtdocs%5Cgzskl%5Ctemplets%5Cdefault%5Cstyle%5Cdedecms.css",
 		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/index.html                E%3A%5Cworkspaces%5Cyouer%5CyouerEnv%5Chtdocs%5Cindex%5Cindex.html",
 		"/E/sheke_new/htdocs/gzskl/templets/default/style/dedecms.css",
-		"/E/workspaces/youer/youerEnv/htdocs/index/index.html",
-		"/E/sheke_new/htdocs/me/index.html",
-		"/E/sheke_new/htdocs/me/less/forms.less",
-		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/pagination.less",
-		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/type.less",
-		"/E/sheke_new/htdocs/me/less/sprites.less",
-		"/E/sheke_new/htdocs/me/less/page.less",
-		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/less/pager.less",
-		"/E/sheke_new/htdocs/me/less/pagination.less"
+		"/E/workspaces/youer/youerEnv/htdocs/index/index.html"
 	],
 	"find":
 	{
@@ -243,17 +331,27 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"E:\\workspaces\\avaUI\\templates\\baseStyle",
+			"E:\\workspaces\\avaUI\\templates",
 			"E:\\workspaces\\avaUI\\static\\less\\app"
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"<!-- Page footer -->\n	<footer id=\"bottom\">\n		<div class=\"wrapper\">\n			<nav>\n				<a href=\"#\">Dashboard</a> &middot;\n				<a href=\"#\">Content</a> &middot;\n				<a href=\"#\">Reports</a> &middot;\n				<a href=\"#\">Users</a> &middot;\n				<a href=\"#\">Media</a> &middot;\n				<a href=\"#\">Events</a> &middot;\n				<a href=\"#\">Newsletter</a> &middot;\n				<a href=\"#\">Settings</a>\n			</nav>\n			<p>Copyright &copy; 2010 <b><a HREF=\"http://www.865171.cn\" title=\"www.865171.cn\">www.865171.cn</a></b> | Icons by <a HREF=\"http://www.865171.cn\">865171.cn</a></p>\n		</div>\n	</footer>\n	<!-- End of Page footer -->\n	\n	<!-- Animated footer -->\n	<footer id=\"animated\">\n		<ul>\n			<li><a href=\"#\">Dashboard</a></li>\n			<li><a href=\"#\">Content</a></li>\n			<li><a href=\"#\">Reports</a></li>\n			<li><a href=\"#\">Users</a></li>\n			<li><a href=\"#\">Media</a></li>\n			<li><a href=\"#\">Events</a></li>\n			<li><a href=\"#\">Newsletter</a></li>\n			<li><a href=\"#\">Settings</a></li>\n		</ul>\n	</footer>\n	<!-- End of Animated footer -->",
+			")\"}}",
+			"href=\"css/([\\w\\W].*\\.css)",
+			"style",
+			"lib",
+			".js\"",
+			"SRC=\"js/",
+			"{{ url_for('static',filename='js/",
 			"files",
 			"baseStyle",
 			"tables",
@@ -341,9 +439,17 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"",
+			")}}\"",
+			"href=\"{{  static_url('$1')}}\"",
+			"baseStyle",
+			"libs",
+			".js')\"}}",
+			"SRC=\"{{ js_url('lib/",
+			"{{ js_url('",
 			"newOne",
 			"files",
 			"forms",
@@ -387,27 +493,56 @@
 	"groups":
 	[
 		{
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "templates/style/layout.html",
+					"file": "templates/baseStyle/dashboard.html",
 					"settings":
 					{
-						"buffer_size": 2923,
+						"buffer_size": 4915,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								530,
-								530
+								4915,
+								4901
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3564.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/baseStyle/footer.html",
+					"settings":
+					{
+						"buffer_size": 988,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								386,
+								386
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -416,11 +551,65 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/js/README.md",
+					"buffer": 2,
+					"file": "templates/baseStyle/header.html",
 					"settings":
 					{
-						"buffer_size": 3244,
+						"buffer_size": 1552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								549,
+								549
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/baseStyle/forms.html",
+					"settings":
+					{
+						"buffer_size": 8019,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8019,
+								8019
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5778.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/baseStyle/graphs.html",
+					"settings":
+					{
+						"buffer_size": 2844,
 						"regions":
 						{
 						},
@@ -433,30 +622,29 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1729.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "templates/style/dashboard.html",
+					"buffer": 5,
+					"file": "templates/baseStyle/baseStyle.html",
 					"settings":
 					{
-						"buffer_size": 11357,
+						"buffer_size": 20154,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								2921
+								22,
+								22
 							]
 						],
 						"settings":
@@ -465,7 +653,239 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1368.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/samples-files.html                E%3A%5Cworkspaces%5CavaUI%5Ctemplates%5CbaseStyle%5Csamples-files.html",
+					"settings":
+					{
+						"buffer_size": 10858,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7120.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "templates/baseStyle/samples-products.html",
+					"settings":
+					{
+						"buffer_size": 3705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3705,
+								3705
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2557.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "templates/baseStyle/tables.html",
+					"settings":
+					{
+						"buffer_size": 15773,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15682,
+								15682
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 11201.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 9,
+					"file": "templates/school/layout.html",
+					"settings":
+					{
+						"buffer_size": 4093,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								4093
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 855.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "templates/sheng/layout.html",
+					"settings":
+					{
+						"buffer_size": 2617,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								328,
+								328
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "templates/sheng/video.html",
+					"settings":
+					{
+						"buffer_size": 8483,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 12,
+					"file": "static/js/script.js",
+					"settings":
+					{
+						"buffer_size": 2077,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1032,
+								1032
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "flaskr.py",
+					"settings":
+					{
+						"buffer_size": 4191,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2452,
+								2452
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1767.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -490,11 +910,25 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.48543071161,
+			0.666666666667,
 			1.0
 		],
 		"rows":
@@ -504,6 +938,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
 	"replace":
 	{
 		"height": 64.0
@@ -533,6 +971,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 352.0,
+	"side_bar_width": 318.0,
 	"status_bar_visible": true
 }
