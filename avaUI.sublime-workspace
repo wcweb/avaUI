@@ -166,6 +166,14 @@
 				"buffer_size": 4191,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "static/less/app/functions.less",
+			"settings":
+			{
+				"buffer_size": 445,
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "",
@@ -331,7 +339,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"E:\\workspaces\\avaUI\\templates\\baseStyle",
@@ -643,8 +651,8 @@
 						"selection":
 						[
 							[
-								22,
-								22
+								507,
+								507
 							]
 						],
 						"settings":
@@ -832,7 +840,7 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -875,8 +883,8 @@
 						"selection":
 						[
 							[
-								2452,
-								2452
+								2928,
+								2928
 							]
 						],
 						"settings":
@@ -886,6 +894,34 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 1767.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "static/less/app/functions.less",
+					"settings":
+					{
+						"buffer_size": 445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								102,
+								102
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

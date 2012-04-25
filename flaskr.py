@@ -179,7 +179,11 @@ def utility_processor():
         return url_for('static',filename='js/'+file)
     def static_url(file):
         return url_for('static',filename=file)
-    return dict(js_url=js_url,static_url=static_url)
+    def css_url(file):
+    	return url_for('static',filename='style/'+file)
+    def temp_img(file):
+    	return url_for('static',filename='images/'+file)
+    return dict(js_url=js_url,static_url=static_url,css_url=css_url,temp_img=temp_img)
 
 
 

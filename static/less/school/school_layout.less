@@ -1,26 +1,35 @@
-.header{
 
+
+#header, header#top{
   margin:10 auto;
   padding-top:10px;
-  text-align:center;
-  height:100px;
+  #gradient > .vertical(#cae1f3, #eef5ff);
 
- #gradient > .vertical(#cae1f3, #eef5ff);
+  #title{
 
+  }
+  #logo{
+    background: url(/static/images/scnu.gif) no-repeat;
+    text-indent:-9000px;
+    float:left;
+    margin:20px;
+  }
+  #topnav{
+    float:right;
+    font-size:12px;
+  }
+  #searchbar{
+    float:right;
+    margin:20px 10px;
+  }
 }
-
 
   // .border-radius(4px);
   // @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
   // .box-shadow(@shadow);
 
-
-.header #logo{
-  background: url(/static/images/scnu.gif) no-repeat;
-  text-indent:-9000px;
-  width:305px;
-  height:90px; 
-  float:left; 
+.content{
+   #gradient > .vertical(#eef5ff,#cae1f3);
 }
 
 .header #u-center{
@@ -33,22 +42,9 @@
   margin:20px 10px;
 }
 
-.header #searchbar .btn{
-    background-color: #104f54;
-    background-image:none;
-     border: 1px solid #104f60;
-     color:#fff;
-}
- 
-.header #searchbar button:hover{
-    background-color: #fff;
-    color:#000;
-     border: 1px solid #104f60;
-}
 
 
-
-.navigation{
+nav#menu , .navigation{
   background:#003366 url(../style/img/nav.gif) repeat-x;
   @shadow: 1px 1px 20px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
   .box-shadow(@shadow);
