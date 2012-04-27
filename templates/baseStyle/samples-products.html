@@ -1,21 +1,13 @@
 {% extends "baseStyle/layout.html" %}
 {% block body %}
-	<!-- Page title -->
-	<div id="pagetitle">
-		<div class="wrapper">
-			<h1>Samples &rarr; <span>Products</span></h1>
-			<!-- Quick search box -->
-			<form action="" method="get"><input class="" type="text" id="q" name="q" /></form>
-		</div>
-	</div>
-	<!-- End of Page title -->
+
 	
 	<!-- Page content -->
-	<div id="page">
+	<div class="">
 		<!-- Wrapper -->
-		<div class="wrapper">
+		<div class="row">
 				<!-- Left column/section -->
-				<section class="column width6 first">					
+				<section class="span10">					
 
 					<h3>Add new product</h3>
 					
@@ -32,7 +24,7 @@
 
 							<p>
 								<label for="productdesc">Describe your product</label><br/>
-								<textarea id="productdesc" class="large full" name="productdesc"></textarea>
+								<textarea id="productdesc" class="" name="productdesc"></textarea>
 							</p>
 							
 							<div class="clearfix leading">
@@ -61,7 +53,7 @@
 								</div>
 							</div>
 						
-							<p class="box"><input type="submit" class="btn btn-green big" value="Save"/> or <a href="#">Cancel</a></p>
+							<p class="pit"><input type="submit" class="btn btn-green big" value="Save"/> or <a href="#">Cancel</a></p>
 
 						</fieldset>
 
@@ -71,9 +63,9 @@
 				<!-- End of Left column/section -->
 				
 				<!-- Right column/section -->
-				<aside class="column width2">
-					<p><a href="#" class="btn btn-special btn-green"><img SRC="img/page_white_go.png" class="icon" alt=""/>Preview Product</a></p>
-					<p><a href="#" class="btn btn-special"><img SRC="img/page_save.png" class="icon" alt=""/>Save Draft</a></p>
+				<aside class="span6">
+					<p><a href="#" class="btn btn-special btn-green"><img SRC="{{ css_url('img/page_white_go.png')}}" class="icon" alt=""/>Preview Product</a></p>
+					<p><a href="#" class="btn btn-special"><img SRC="{{ css_url('img/page_save.png')}}" class="icon" alt=""/>Save Draft</a></p>
 					<div class="content-box">
 						<header>
 							<h3>Product Visibility</h3>
@@ -99,7 +91,7 @@
 					</div>
 					<div id="rightmenu">
 						<dl class="first">
-							<dt><img width="16" height="16" alt="" SRC="img/help.png"></dt>
+							<dt><img width="16" height="16" alt="" SRC="{{ css_url('img/help.png')}}"></dt>
 							<dd><a href="#">Help</a></dd>
 							<dd class="last">If you are a new user, you should read "Getting started"</dd>							
 						</dl>

@@ -1,4 +1,4 @@
-# [HTML5 Boilerplate]
+# [themeplates in flask]
 
 
 
@@ -33,6 +33,7 @@ Clone the git repo - `git clone git://github.com/wcweb/avaUI.git` - or [download
 
 ### Major components:
 
+* HTML5 Boilerplate
 * jQuery: MIT/GPL license
 * Bootstrap:
 * Modernizr: MIT/BSD license

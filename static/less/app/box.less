@@ -1,8 +1,8 @@
-
+// here is also typegraphy
 
 .box{
   #gradient > .vertical(@white, darken(@white,6%));
-  margin-top:@gridGutterWidth;
+  margin:@gridGutterWidth/2 auto;
 
   .head{
 
@@ -16,22 +16,23 @@
 
   .body{
     border:1px solid #cbcbcb;
-    position: relative;
-    z-index:10;
+
   }
 
 }
 
 
+.pit{
 
+}
 
 
 
 .mbox{
   .head{
-    height:30px;
+    height: @baseLineHeight*1.2 ;
     padding:5px;
-    line-height:30px;
+    line-height:@baseLineHeight ;
     border-bottom:2px solid @blueDark;
     .border-radius(10px 10px 0 0);
     .title{
@@ -407,4 +408,8 @@ text-decoration: none;
 .personInfo{
   margin: 0 auto;
   text-align:center;
+}
+
+#bulletin_Board{
+  list-style:none;
 }

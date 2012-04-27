@@ -13,40 +13,15 @@
   <meta content="{{ title }}" name="title">
   <meta content="{{ keywords }}" name="keywords">
   <meta content="{{ description }}" name="description">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
+
   
 
 <!-- Use less.js or not -->
 
-<link rel=stylesheet type=text/less href="{{ url_for('static', filename='less/school.less') }}"> 
-<script type="text/javascript" src="{{ url_for('static', filename='js/less-1.3.0.min.js') }}" charset="utf-8">   </script> 
-
-<!--[if IE]>
-<link rel=stylesheet type=text/css href="{{ url_for('static', filename='less/school.css') }}"> 
-<![endif]-->
-
-</head>
-<body  >
-
-<!--[if lt IE 7]><p class=chromeframe>抱歉，您的浏览器 ie6.0版本 <em>太旧了!</em> 为了满足日后移动版的应用需求，<a href="http://browsehappy.com/">请点击这里，更新您的浏览器</a> 或者 <a href="http://www.google.com/chromeframe/?redirect=true">选择安装  Internet Explorer的Google Chrome 插件 </a> 浏览本站。</p><![endif]-->
-
-{% include "baseStyle/header.html" %}
-
-
-<div role="main" class="content" >
-  <div class="container">
- {% for message in get_flashed_messages() %}
-   <div class=flash>{{ message }}</div>
- {% endfor %}
-
- {% block body %}
- {% endblock %}
- 
-  </div>
-</div>
-
-
-{% include "baseStyle/footer.html" %}
+<!-- <link rel=stylesheet type=text/less href="{{ url_for('static', filename='less/school.less') }}"> -->
+ <!-- <script type="text/javascript" src="{{ url_for('static', filename='js/less-1.3.0.min.js') }}" charset="utf-8"> 	</script> -->
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style/school.css') }}">
 
 <!-- Internet Explorer Fixes --> 
 <!--[if IE]>
@@ -61,6 +36,31 @@
   <script src="{{ js_url('swfobject.js')}}"></script>
 
   <script src="{{ js_url('libs/modernizr-2.5.3.min.js') }}"></script>
+
+</head>
+<body class="bg" >
+
+<!--[if lt IE 7]><p class=chromeframe>抱歉，您的浏览器 ie6.0版本 <em>太旧了!</em> 为了满足日后移动版的应用需求，<a href="http://browsehappy.com/">请点击这里，更新您的浏览器</a> 或者 <a href="http://www.google.com/chromeframe/?redirect=true">选择安装  Internet Explorer的Google Chrome 插件 </a> 浏览本站。</p><![endif]-->
+
+{% include "school/header.html" %}
+
+
+<div role="main" >
+  <div class="container">
+ {% for message in get_flashed_messages() %}
+   <div class=flash>{{ message }}</div>
+ {% endfor %}
+
+ {% block body %}
+ {% endblock %}
+ 
+  </div>
+</div>
+
+
+{% include "school/footer.html" %}
+
+
 
 
 
@@ -82,41 +82,11 @@
     <!-- jQuery graph plugins -->
     <!--[if IE]><script type="text/javascript" SRC="{{ js_url('libs/flot/excanvas.min.js')}}"></script><![endif]-->
     <script type="text/javascript" SRC="{{ js_url('libs/flot/jquery.flot.min.js')}}"></script>
-<script type="text/javascript" src="{{ js_url('libs/flot/jquery.flot.selection.min.js')}}"></script>
-
-
-<script type="text/javascript" SRC="{{ js_url('libs/jquery.validate_pack.js')}}"></script>
-<script type="text/javascript" SRC="{{ js_url('libs/jquery.wysiwyg.min.js')}}"></script>
-
-<!-- jQuery tag input -->
-<script type="text/javascript" SRC="{{ js_url('libs/jquery.tagInput.min.js')}}"></script>
-
-<script type="text/javascript" src="{{ js_url('libs/jquery.sparkline.min.js')}}"></script>
-
-
-<script type="text/javascript" src="{{ js_url('libs/jquery.dataTables.min.js')}}"></script>
-
-
-
-  <script src="{{ js_url('libs/administry.js')}}"></script>
-
- <!-- bootstrap library -->
-  <script src="{{ js_url('libs/bootstrap-dropdown.js' )}}" type="text/javascript" charset="utf-8"></script>
-  <script src="{{ js_url('libs/bootstrap-collapse.js' )}}" type="text/javascript" charset="utf-8"></script>
-
-
-
 	{% endblock %}
   <script src="{{ js_url('plugins.js' )}}"></script>
   <script src="{{ js_url('script.js' )}}"></script>
-
-  
   <script src="{{ js_url('libs/bootstrap-tabs.js' )}}" type="text/javascript" charset="utf-8"></script>
 
-
-
-
-<!-- google-analytics -->
   <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

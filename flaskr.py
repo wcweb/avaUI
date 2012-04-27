@@ -132,7 +132,7 @@ def video(id):
 	
 @app.route('/videolist')
 def videolist():
-	return render_template('videolist.html')
+	return render_template('school/videolist.html')
 
 @app.route('/catalogue')
 def catalogue():

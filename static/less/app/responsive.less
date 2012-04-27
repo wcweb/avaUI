@@ -138,13 +138,16 @@
 
   // Padding to set content in a bit
   body {
-    padding-left: 20px;
-    padding-right: 20px;
+
   }
-  .navbar-fixed-top {
-    margin-left: -20px;
-    margin-right: -20px;
+  .navbar-fixed-top{
+
   }
+  // .navbar-form, .navbar-search{
+  //   padding:0;
+  //   margin:0;
+  //   border:none;
+  // }
 
   // GRID & CONTAINERS
   // -----------------
@@ -189,7 +192,36 @@
   .input-append input[class*="span"] {
     width: auto;
   }
+  
 
+
+  /* Subnav */
+  .subnav {
+    position: static;
+    top: auto;
+    z-index: auto;
+    width: auto;
+    height: auto;
+    background: #fff; /* whole background property since we use a background-image for gradient */
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+  }
+  .subnav .nav > li {
+    float: none;
+  }
+  .subnav .nav > li > a {
+    border: 0;
+  }
+  .subnav .nav > li + li > a {
+    border-top: 1px solid #e5e5e5;
+  }
+  .subnav .nav > li:first-child > a,
+  .subnav .nav > li:first-child > a:hover {
+      -webkit-border-radius: 4px 4px 0 0;
+         -moz-border-radius: 4px 4px 0 0;
+              border-radius: 4px 4px 0 0;
+  }
 }
 
 
@@ -223,7 +255,7 @@
     padding-top: 0;
   }
   // Unfix the navbar
-  .navbar-fixed-top {
+  .navbar-fixed-top ,.navbar{
     position: static;
     margin-bottom: @baseLineHeight;
   }
@@ -283,7 +315,7 @@
     top: auto;
     left: auto;
     float: none;
-    display: block;
+    display: inline-block;
     max-width: none;
     margin: 0 15px;
     padding: 0;
@@ -291,6 +323,9 @@
     border: none;
     .border-radius(0);
     .box-shadow(none);
+  }
+  .navbar .dropdown-menu>li{
+
   }
   .navbar .dropdown-menu:before,
   .navbar .dropdown-menu:after {
@@ -303,6 +338,7 @@
   .navbar-form,
   .navbar-search {
     float: none;
+    // height:@baseLineHeight;
     padding: (@baseLineHeight / 2) 15px;
     margin: (@baseLineHeight / 2) 0;
     border-top: 1px solid @navbarBackground;
@@ -330,6 +366,34 @@
     overflow: hidden;
     height: 0;
   }
+
+  .subnav-fixed {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
+    border-color: #d5d5d5;
+    border-width: 0 0 1px; /* drop the border on the fixed edges */
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+       -moz-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+            box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); /* IE6-9 */
+  }
+  .subnav-fixed .nav {
+    width: 938px;
+    margin: 0 auto;
+    padding: 0 1px;
+  }
+  .subnav .nav > li:first-child > a,
+  .subnav .nav > li:first-child > a:hover {
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+  }
 }
 
 
@@ -349,23 +413,23 @@
 // LARGE DESKTOP & UP
 // ------------------
 
-@media (min-width: 1200px) {
+// @media (min-width: 1200px) {
 
-  // Fixed grid
-  #grid > .core(70px, 30px);
+//   // Fixed grid
+//   #grid > .core(70px, 30px);
 
-  // Fluid grid
-  #grid > .fluid(5.982905983%, 2.564102564%);
+//   // Fluid grid
+//   #grid > .fluid(5.982905983%, 2.564102564%);
 
-  // Input grid
-  #grid > .input(70px, 30px);
+//   // Input grid
+//   #grid > .input(70px, 30px);
 
-  // Thumbnails
-  .thumbnails {
-    margin-left: -30px;
-  }
-  .thumbnails > li {
-    margin-left: 30px;
-  }
+//   // Thumbnails
+//   .thumbnails {
+//     margin-left: -30px;
+//   }
+//   .thumbnails > li {
+//     margin-left: 30px;
+//   }
 
-}
+// }
