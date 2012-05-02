@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
 				"tem",
 				"temp_img"
 			],
@@ -64,151 +68,71 @@
 	"buffers":
 	[
 		{
-			"file": "templates/baseStyle/tables.html",
-			"settings":
-			{
-				"buffer_size": 15902,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "templates/school/header.html",
 			"settings":
 			{
-				"buffer_size": 3763,
+				"buffer_size": 3234,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "templates/baseStyle/layout.html",
+			"file": "/E/output/index.htm",
 			"settings":
 			{
-				"buffer_size": 5068,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "templates/baseStyle/footer.html",
-			"settings":
-			{
-				"buffer_size": 509,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/less/school/school_layout.less",
-			"settings":
-			{
-				"buffer_size": 1511,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/less/app/progress-bars.less",
-			"settings":
-			{
-				"buffer_size": 2192,
+				"buffer_size": 23496,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "static/less/app/mixins.less",
+			"file": "/E/output/index_files/school.css",
 			"settings":
 			{
-				"buffer_size": 19148,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "templates/baseStyle/header.html",
-			"settings":
-			{
-				"buffer_size": 2863,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/less/app/forms.less",
-			"settings":
-			{
-				"buffer_size": 11128,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/less/app/responsive.less",
-			"settings":
-			{
-				"buffer_size": 9110,
+				"buffer_size": 139923,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/forms.less",
+			"file": "/E/output/videolist.htm",
 			"settings":
 			{
-				"buffer_size": 11128,
+				"buffer_size": 28620,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "static/less/app/grid.less",
+			"file": "/E/output/video.htm",
 			"settings":
 			{
-				"buffer_size": 682,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/less/school.less",
-			"settings":
-			{
-				"buffer_size": 883,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/less/app/variables.less",
-			"settings":
-			{
-				"buffer_size": 5842,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/less/app/navs.less",
-			"settings":
-			{
-				"buffer_size": 9971,
+				"buffer_size": 14994,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/docs/assets/css/docs.css",
+			"file": "/E/output/wenhuadajiangtan.htm",
 			"settings":
 			{
-				"buffer_size": 17243,
+				"buffer_size": 17093,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "static/js/script.js",
+			"file": "/E/output/shifan_files/school.css",
 			"settings":
 			{
-				"buffer_size": 10853,
-				"line_ending": "Windows"
+				"buffer_size": 139924,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "flaskr.py",
+			"file": "/E/output/videolist.htm",
 			"settings":
 			{
-				"buffer_size": 4386,
-				"line_ending": "Windows"
+				"buffer_size": 28620,
+				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/Python/Python.sublime-build",
 	"command_palette":
 	{
 		"height": 392.0,
@@ -223,7 +147,7 @@
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 160.0
 	},
 	"distraction_free":
 	{
@@ -236,14 +160,58 @@
 	},
 	"file_history":
 	[
-		"/E/workspaces/avaUI/static/js/libs/administry.js",
+		"/E/workspaces/avaUI/templates/school/index.html",
+		"/E/workspaces/avaUI/templates/school/layout.html",
+		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/Terminal/Terminal.sublime-settings",
+		"/E/workspaces/avaUI/templates/school/shifanjineng.html",
+		"/E/workspaces/avaUI/templates/school/video.html",
+		"/E/workspaces/avaUI/static/js/libs/modernizr-2.5.3.min.js",
+		"/E/workspaces/avaUI/static/less/app/scaffolding.less",
+		"/E/workspaces/avaUI/templates/school/videolist.html",
+		"/E/workspaces/avaUI/static/less/app/box.less",
+		"/E/workspaces/avaUI/static/less/app/grid.less",
+		"/E/workspaces/avaUI/static/less/app/media.less",
+		"/E/workspaces/avaUI/static/less/app/variables.less",
+		"/E/workspaces/avaUI/static/js/script.js",
+		"/E/workspaces/avaUI/static/style/school.css",
+		"/E/workspaces/avaUI/static/less/school.less",
+		"/E/workspaces/avaUI/static/less/school/school_layout.less",
+		"/E/workspaces/avaUI/flaskr.py",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI01.822/readme.md",
 		"/E/workspaces/avaUI/static/less/app/pagination.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/pagination.less",
+		"/C/Users/Administrator/Desktop/mitsuhiko-flask-feedback-d50afd9/feedback.py",
+		"/C/Users/Administrator/Desktop/mitsuhiko-flask-feedback-d50afd9/README",
+		"/E/workspaces/avaUI/templates/school/jpkc.html",
+		"/E/workspaces/avaUI/static/js/libs/bootstrap-tabs.js",
+		"/E/workspaces/avaUI/static/xml/playlists.xml",
+		"/E/workspaces/avaUI/static/less/app/functions.less",
+		"/E/workspaces/avaUI/templates/school/header.html",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/docs/assets/css/docs.css",
+		"/E/workspaces/avaUI/static/less/app/navs.less",
+		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/forms.less",
+		"/E/workspaces/avaUI/static/less/app/responsive.less",
+		"/E/workspaces/avaUI/static/less/app/breadcrumb.less",
+		"/E/workspaces/avaUI/manage.py",
+		"/E/workspaces/avaUI/static/less/app/mixins.less",
+		"/E/workspaces/avaUI/static/style/posterOnePic2.css",
+		"/E/workspaces/avaUI/static/js/posterOnePic2.js",
+		"/E/workspaces/avaUI/static/less/school.css",
+		"/E/workspaces/avaTv/venderColledge/school.html",
+		"/E/workspaces/avaUI/templates/school/layout_backup.html",
+		"/E/workspaces/avaUI/static/less/app/navbar.less",
+		"/E/workspaces/avaUI/static/less/app/forms.less",
+		"/E/workspaces/avaUI/static/less/app/progress-bars.less",
+		"/E/workspaces/avaUI/templates/baseStyle/footer.html",
+		"/E/workspaces/avaUI/templates/baseStyle/layout.html",
+		"/E/workspaces/avaUI/templates/baseStyle/tables.html",
+		"/E/workspaces/avaUI/templates/baseStyle/header.html",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DI00.079/manage.py",
+		"/E/workspaces/avaUI/static/js/libs/administry.js",
 		"/E/workspaces/avaUI/static/less/app/tabs.less",
 		"/E/workspaces/avaUI/static/less/app/tables.less",
 		"/E/workspaces/avaUI/static/less/app/layout.less",
-		"/E/workspaces/avaUI/static/less/school/school_layout.less",
 		"/E/workspaces/avaUI/static/less/app/wysiwyg.less",
-		"/E/workspaces/avaUI/static/less/app/forms.less",
 		"/C/Users/Administrator/Desktop/danjac-newsmeme-4127638/manage.py",
 		"/C/Users/Administrator/Desktop/danjac-newsmeme-4127638/deploy.py",
 		"/C/Users/Administrator/Desktop/danjac-newsmeme-4127638/setup.py",
@@ -251,29 +219,13 @@
 		"/C/Users/Administrator/Desktop/danjac-newsmeme-4127638/tests/test_views.py",
 		"/C/Users/Administrator/Desktop/danjac-newsmeme-4127638/newsmeme/views/frontend.py",
 		"/E/workspaces/avaUI/templates/baseStyle/baseStyle.html",
-		"/E/workspaces/avaUI/templates/baseStyle/tables.html",
 		"/E/workspaces/avaUI/templates/baseStyle/graphs.html",
-		"/E/workspaces/avaUI/templates/baseStyle/layout.html",
-		"/E/workspaces/avaUI/flaskr.py",
-		"/E/workspaces/avaUI/static/less/app/functions.less",
 		"/C/Users/Administrator/Desktop/danjac-newsmeme-4127638/newsmeme/forms/comment.py",
-		"/E/workspaces/avaUI/templates/baseStyle/footer.html",
-		"/E/workspaces/avaUI/static/less/app/media.less",
-		"/E/workspaces/avaUI/templates/school/layout.html",
-		"/E/workspaces/avaUI/static/less/app/variables.less",
-		"/E/workspaces/avaUI/static/less/app/box.less",
-		"/E/workspaces/avaUI/templates/school/videolist.html",
-		"/E/workspaces/avaUI/templates/school/index.html",
 		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/samples-files.html                E%3A%5Cworkspaces%5CavaUI%5Ctemplates%5CbaseStyle%5Csamples-files.html",
 		"/E/workspaces/avaUI/templates/baseStyle/samples-products.html",
 		"/E/workspaces/avaUI/templates/baseStyle/forms.html",
 		"/E/workspaces/avaUI/templates/school/footer.html",
-		"/E/workspaces/avaUI/static/less/school.less",
-		"/E/workspaces/avaUI/static/js/script.js",
-		"/E/workspaces/avaUI/static/less/app/responsive.less",
-		"/E/workspaces/avaUI/static/less/app/navbar.less",
 		"/E/workspaces/avaUI/templates/baseStyle/dashboard.html",
-		"/E/workspaces/avaUI/static/style/posterOnePic2.css",
 		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/messages.po                C%3A%5CUsers%5CAdministrator%5CDesktop%5Cdanjac-newsmeme-4127638%5Cnewsmeme%5Ctranslations%5Cfi%5CLC_MESSAGES%5Cmessages.po",
 		"/C/Users/Administrator/Desktop/danjac-newsmeme-4127638/newsmeme/translations/fi/LC_MESSAGES/messages.po",
 		"/E/workspaces/avaUI/templates/baseStyle/samples-files.html",
@@ -289,15 +241,10 @@
 		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/variables.less",
 		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/type.less",
 		"/C/Users/Administrator/AppData/Roaming/npm/node_modules/watch/readme.mkd",
-		"/E/workspaces/avaUI/static/less/app/scaffolding.less",
 		"/E/workspaces/avaUI/templates/school/student.html",
 		"/E/workspaces/avaUI/static/less/app/type.less",
-		"/E/workspaces/avaUI/static/less/app/mixins.less",
-		"/E/workspaces/avaUI/static/less/school.css",
 		"/C/Users/Administrator/Desktop/alexkwolfe-node-less-compiler-112c72d/index.js",
 		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/code.less",
-		"/E/workspaces/avaUI/templates/baseStyle/header.html",
-		"/E/workspaces/avaUI/static/less/app/grid.less",
 		"/E/workspaces/avaUI/static/less/app/code.less",
 		"/E/workspaces/avaUI/readme.md",
 		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/modals.less",
@@ -314,7 +261,6 @@
 		"/E/workspaces/avaUI/templates/style/layout.html",
 		"/E/DesktopDocument/desktop2012.3.24/download/twitter-bootstrap-59503e7/js/README.md",
 		"/E/workspaces/avaUI/README",
-		"/E/workspaces/avaUI/static/style/school.css",
 		"/G/Program Files/Google/google_appengine/demos/guestbook/guestbook.py",
 		"/D/goagent/server/python/fetch.py",
 		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/proxy.py                D%3A%5Cgoagent%5Clocal%5Cproxy.py",
@@ -341,29 +287,7 @@
 		"/E/workspaces/googleAPP_ENGine/goagent/local/proxy.py",
 		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/samples-files.html                E%3A%5Cworkspaces%5CavaUI%5Ctemplates%5Cstyle%5Csamples-files.html",
 		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/jquery.min.js                E%3A%5Cworkspaces%5CavaUI%5Cstatic%5Cjs%5Clibs%5Cjquery.min.js",
-		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/jquery.treeview.min.js                E%3A%5Cworkspaces%5CavaUI%5Cstatic%5Cjs%5Clibs%5Cjquery.treeview.min.js",
-		"/E/workspaces/avaUI/templates/header.html",
-		"/E/workspaces/avaUI/templates/footer.html",
-		"/E/workspaces/avaUI/templates/style/baseStyle.html",
-		"/E/workspaces/avaUI/static/less/app/breadcrumb.less",
-		"/E/workspaces/avaUI/static/xml/playlists.xml",
-		"/E/workspaces/avaUI/templates/school/video.html",
-		"/E/workspaces/avaUI/templates/school/header.html",
-		"/C/Users/Administrator/Desktop/masonry-site/README.mdown",
-		"/C/Users/Administrator/Desktop/masonry-site/js/modernizr-transitions.js",
-		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/accordion.less",
-		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/utilities.less",
-		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/tooltip.less",
-		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/thumbnails.less",
-		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/tables.less",
-		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/scaffolding.less",
-		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/reset.less",
-		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/progress-bars.less",
-		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/popovers.less",
-		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/pager.less",
-		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/navbar.less",
-		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/mixins.less",
-		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/layouts.less"
+		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/jquery.treeview.min.js                E%3A%5Cworkspaces%5CavaUI%5Cstatic%5Cjs%5Clibs%5Cjquery.treeview.min.js"
 	],
 	"find":
 	{
@@ -375,6 +299,8 @@
 		"where_history":
 		[
 			"E:\\workspaces\\avaUI\\static\\less\\app",
+			"E:\\workspaces\\avaUI",
+			"E:\\workspaces\\avaUI\\static\\less\\app",
 			"E:\\workspaces\\avaUI\\templates\\baseStyle",
 			"E:\\workspaces\\avaUI\\static\\less\\app",
 			"E:\\workspaces\\avaUI\\templates\\baseStyle",
@@ -384,9 +310,29 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"/style/img/",
+			"/static/images",
+			"../../style/",
+			"app/app/../../style/",
+			"ie7",
+			"png",
+			"timebg.png ",
+			"fade",
+			"border",
+			"•",
+			"text-align",
+			"五分钟就让你明白中国的税",
+			"height:280px",
+			"id_XMzIyNzc3Mjg4.html",
+			"post",
+			"alpha",
+			"opacity",
+			"filter",
+			"left",
+			"detail.html",
 			" .nav-collapse",
 			"Path",
 			"class=\"center\"",
@@ -494,28 +440,22 @@
 			"color",
 			"clear",
 			".clear",
-			".pull-right",
-			".mod_today",
-			"#3a95d5",
-			"#46a3dc",
-			".box",
-			"·",
-			"·[社科规划管理]",
-			"·[社科普及与拓展]",
-			".listArea",
-			"is an English electronic music group formed ",
-			"The Prodigy",
-			"clearfix",
-			"./temp4jscss/",
-			"./视频list - 广州市教育视频资源平台_files",
-			"class=\"posterZY\""
+			".pull-right"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"style/img/",
+			"static/images",
+			"/style/",
+			"../../style/",
+			"",
+			"系统公告，修正1023号错误",
+			"height:210px",
+			"{{url_for('video')}}",
 			"class=\"al-center\"",
 			"filename='images/tmp/",
 			"filename='images/tmp",
@@ -574,50 +514,51 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "templates/baseStyle/tables.html",
+					"file": "templates/school/header.html",
 					"settings":
 					{
-						"buffer_size": 15902,
+						"buffer_size": 3234,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15244,
-								15244
+								2861,
+								2861
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 9898.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "templates/school/header.html",
+					"file": "/E/output/index.htm",
 					"settings":
 					{
-						"buffer_size": 3763,
+						"buffer_size": 23496,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1869,
-								3451
+								0,
+								1094
 							]
 						],
 						"settings":
@@ -627,100 +568,163 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1100.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "templates/baseStyle/layout.html",
+					"file": "/E/output/index_files/school.css",
 					"settings":
 					{
-						"buffer_size": 5068,
+						"buffer_size": 139923,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								995,
-								995
+								5181,
+								5181
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 456.0,
+						"translation.y": 5503.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "templates/baseStyle/footer.html",
+					"file": "/E/output/videolist.htm",
 					"settings":
 					{
-						"buffer_size": 509,
+						"buffer_size": 28620,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								509,
-								509
+								1372,
+								1372
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
 				{
 					"buffer": 4,
-					"file": "static/less/school/school_layout.less",
+					"file": "/E/output/video.htm",
 					"settings":
 					{
-						"buffer_size": 1511,
+						"buffer_size": 14994,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								152,
-								152
+								1094,
+								1094
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 96.0,
-						"translation.y": 0.0,
+						"translation.x": 0.0,
+						"translation.y": 10853.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "static/less/app/progress-bars.less",
+					"file": "/E/output/wenhuadajiangtan.htm",
 					"settings":
 					{
-						"buffer_size": 2192,
+						"buffer_size": 17093,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11026,
+								11026
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6652.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/E/output/shifan_files/school.css",
+					"settings":
+					{
+						"buffer_size": 139924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5198,
+								5198
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5763.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/E/output/videolist.htm",
+					"settings":
+					{
+						"buffer_size": 28620,
 						"regions":
 						{
 						},
@@ -733,356 +737,21 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "static/less/app/mixins.less",
-					"settings":
-					{
-						"buffer_size": 19148,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7354,
-								7354
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3515.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "templates/baseStyle/header.html",
-					"settings":
-					{
-						"buffer_size": 2863,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2614,
-								2160
-							]
-						],
-						"settings":
-						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 798.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "static/less/app/forms.less",
-					"settings":
-					{
-						"buffer_size": 11128,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10131,
-								10131
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 9671.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 5,
-			"sheets":
-			[
-				{
-					"buffer": 9,
-					"file": "static/less/app/responsive.less",
-					"settings":
-					{
-						"buffer_size": 9110,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6684,
-								6402
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5453.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/forms.less",
-					"settings":
-					{
-						"buffer_size": 11128,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								687,
-								687
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1140.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "static/less/app/grid.less",
-					"settings":
-					{
-						"buffer_size": 682,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								373,
-								373
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "static/less/school.less",
-					"settings":
-					{
-						"buffer_size": 883,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								581,
-								581
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 171.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "static/less/app/variables.less",
-					"settings":
-					{
-						"buffer_size": 5842,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3730,
-								3730
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
-						},
-						"translation.x": 100.0,
-						"translation.y": 2280.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "static/less/app/navs.less",
-					"settings":
-					{
-						"buffer_size": 9971,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9969,
-								9074
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 8383.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/docs/assets/css/docs.css",
-					"settings":
-					{
-						"buffer_size": 17243,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15274,
-								15951
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 13889.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 16,
-					"file": "static/js/script.js",
-					"settings":
-					{
-						"buffer_size": 10853,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9958,
-								9958
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5871.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "flaskr.py",
-					"settings":
-					{
-						"buffer_size": 4386,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3912,
-								3912
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3244.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1120,8 +789,8 @@
 		"cols":
 		[
 			0.0,
-			0.537028714107,
-			0.793583021223,
+			0.427008750994,
+			0.858194112967,
 			1.0
 		],
 		"rows":
@@ -1133,13 +802,13 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 124.0
+		"height": 130.0
 	},
 	"replace":
 	{
 		"height": 64.0
 	},
-	"save_all_on_build": true,
+	"save_all_on_build": false,
 	"select_file":
 	{
 		"height": 0.0,
@@ -1164,6 +833,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 318.0,
+	"side_bar_width": 244.0,
 	"status_bar_visible": true
 }

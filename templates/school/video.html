@@ -27,20 +27,23 @@
       <div class="toggle">
       <div class="box ">
             <div class="">
-                   <div class="catalog">
-                                            <s="tabs">
-                                            <li tabidx="rkLst4" id="thrkLst4" class="active"><a href="#cont">课程简介</a></li>
-                                            <li tabidx="rkLst5" id="thrkLst5" ><a href="#cont2">本单元简介</a>                                           
-                                            
-                                            </ul></div>
+                  <div class="">
+                    <ul class="nav nav-tabs tabs">
+                    <li tabidx="rkLst4" id="thrkLst1" class="active"><a href="#cont">课程简介</a></li>
+                    <li tabidx="rkLst5" id="thrkLst2" ><a href="#cont2">本单元简介</a>                                           
+                    
+                    </ul>
+                  </div>
 
 
             </div>
             <!--head end-->
             <div class="body tabwrap" id="slide-con1">
  <div class="staff">
+
                 <!--列表模式-->
                 <ul>
+                  <li><img src="{{url_for('static',filename='images/tmp/poplar1.gif')}}" /></li>
                   <li>主讲教师：<a href="#"><span>吴宗泽</span></a></li>
                   <li>本讲教师：<a href="#"><span>吴宗泽</span></a></li>
                   <li>课程学校<a href="#"><span>：清华大学</span></a></li>
@@ -62,9 +65,6 @@
 </div>
                 
     </div>  
-
-
-
 
 <div id="cont2" data-pills="thrkLst2" class="">
        <div class="pill-body"> 
@@ -192,16 +192,29 @@
 
       </div>
 
+</div>
 
-   <script src="{{url_for('static',filename='js/jwplayer.js')}}"></script>
+{% endblock %}
+{% block addScripts %}
+
+  <script src="{{ js_url('libs/bootstrap-dropdown.js' )}}" type="text/javascript" charset="utf-8"></script>
+  <script src="{{ js_url('libs/bootstrap-collapse.js' )}}" type="text/javascript" charset="utf-8"></script>
+
+  <script src="{{ js_url('libs/bootstrap-tabs.js' )}}" type="text/javascript" charset="utf-8"></script>
+
+  <script src="{{ js_url('swfobject.js')}}"></script>
+<script src="{{url_for('static',filename='js/jwplayer.js')}}"></script>
 <script>
+$(function() {
+    $('.tabs').tabs()
+  })
 
-
-  var flashvars = { autostart:'false' ,
-    'playlistfile': "{{url_for('static',filename='xml/playlists.xml')}}",
+  var flashvars = { 'autostart':false ,
+    'playlistfile': "http://localhost/me/video.mp4",
     'playlist.position': 'bottom',
     'playlist.size': '300',
     'controlbar': 'over'
+
     
 
 
@@ -229,22 +242,22 @@ function flashLoaded(e) {
           //           .html('current :'+$(this).find('title').text()+'  ')
         });
         
-        $.ajax({
-          url: "http://localhost:5000/me/xml/cuepoint-"+e.index+".xml"
-        }).done(function(data) { 
-          $(".pack_list").addClass("done");
-          $('#chapterlist').empty();
-          $(data).find('CuePoint').each(function(){
-                var item_text = $(this).text();
-                // <a href="#" onclick="jwplayer().seek(353);">In pursuit</a> (05:53)</li>
+        // $.ajax({
+        //   url: "http://localhost:5000/me/xml/cuepoint-"+e.index+".xml"
+        // }).done(function(data) { 
+        //   $(".pack_list").addClass("done");
+        //   $('#chapterlist').empty();
+        //   $(data).find('CuePoint').each(function(){
+        //         var item_text = $(this).text();
+        //         // <a href="#" onclick="jwplayer().seek(353);">In pursuit</a> (05:53)</li>
 
-                $('<li></li>')
-                    .html("<a href='#' onclick='jwplayer().seek("
-                      +$(this).find('Time').text()+");'>"
-                      +$(this).find('Name').text()+"</a>")
-                    .appendTo('#chapterlist');
-            });
-        });
+        //         $('<li></li>')
+        //             .html("<a href='#' onclick='jwplayer().seek("
+        //               +$(this).find('Time').text()+");'>"
+        //               +$(this).find('Name').text()+"</a>")
+        //             .appendTo('#chapterlist');
+        //     });
+        // });
 
 
                   console.log("Sample of data:", e.index);
@@ -260,17 +273,8 @@ function flashLoaded(e) {
 }
 
       // PlaylistEvent.JWPLAYER_PLAYLIST_ITEM
+
+
 </script>
-
-
-
-
-
-
-
-
-
-
-
 
 {% endblock %}
