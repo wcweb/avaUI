@@ -15,10 +15,10 @@
         </div>
 
         <div class="span6">
-            <div class="box mbox">
+            <div class="box mbox " id="bulletin_Board">
               <div class="head"><a href="videolist.html" class="title">系统公告</a></div>
               <div class="body ">
-                <ul id="bulletin_Board">
+                <ul>
         <li> <a  title="系统公告，修正1023号错误" href="" class="">系统公告，修正1023号错误</a>
     <a  title="给力" href="#" class="barName"> [分类]</a> </li>
            <li> <a  title="系统公告，修正1023号错误" href="" class="">系统公告，修正1023号错误</a>
@@ -334,12 +334,22 @@
 
 {% block addScripts %}
 
+ <!-- poster -->
+
+<link type="text/css" rel="stylesheet" href="{{css_url('posterOnePic2.css')}}">
+
+<script language="javascript" type="text/javascript" src="{{js_url('fx.js')}}"></script>
+
+<script language="javascript" type="text/javascript" src="{{js_url('posterOnePic2.js')}}"></script>
 
 
-  <script src="{{ js_url('libs/bootstrap-dropdown.js' )}}" type="text/javascript" charset="utf-8"></script>
+
+<script src="{{ js_url('libs/bootstrap-dropdown.js' )}}" type="text/javascript" charset="utf-8"></script>
 
 
 <script type="text/javascript">
+
+
 var posterOnePic248404 = new PosterOnePic2({
 parent: 'posterOnePic248404',
 delay: 6000,

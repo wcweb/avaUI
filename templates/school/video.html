@@ -92,9 +92,9 @@
 
           </div>
       
-      <div id="VideoTimeInfo_wrap">
+      <div id="VideoTimeInfo_wrap ">
         <div>
-          <div class="box mbox">
+          <div class="box mbox content-box">
             <div class="head">
               <div class="caption">
                 <div class="title">
@@ -120,7 +120,7 @@
         </div>
       </div>
 
-      <div class="box mbox">
+      <div class="box mbox content-box">
             <div class="head">
 
                 <div class="title">
@@ -166,7 +166,7 @@
       
       <div id="VideoAttachment_wrap">
         <div>
-          <div class="box mbox">
+          <div class="box mbox content-box">
             <div class="head">
               <div class="caption">
                 <div class="title ">
@@ -197,28 +197,41 @@
 {% endblock %}
 {% block addScripts %}
 
+<!-- treeview -->
+<script src="{{ js_url('libs/jquery.treeview.min.js')}}" type="text/javascript" charset="utf-8"></script>
+
+
+<!-- bootstrap dropdown collapse -->
   <script src="{{ js_url('libs/bootstrap-dropdown.js' )}}" type="text/javascript" charset="utf-8"></script>
   <script src="{{ js_url('libs/bootstrap-collapse.js' )}}" type="text/javascript" charset="utf-8"></script>
 
   <script src="{{ js_url('libs/bootstrap-tabs.js' )}}" type="text/javascript" charset="utf-8"></script>
 
+<!-- video support -->
   <script src="{{ js_url('swfobject.js')}}"></script>
-<script src="{{url_for('static',filename='js/jwplayer.js')}}"></script>
+  <script src="{{url_for('static',filename='js/jwplayer.js')}}"></script>
+
+
+
+
 <script>
-$(function() {
-    $('.tabs').tabs()
+  $(function() {
+
+      $('.tabs').tabs();
+
+
+      $('#nap37_1browser').treeview();
+      $('#nap38_browser').treeview();
   })
+
+
+
 
   var flashvars = { 'autostart':false ,
     'playlistfile': "http://localhost/me/video.mp4",
     'playlist.position': 'bottom',
     'playlist.size': '300',
     'controlbar': 'over'
-
-    
-
-
-
   };
   var params = { allowfullscreen:'true', allowscriptaccess:'always'    };
   var attributes = { id:'player1', name:'player1' };
@@ -226,51 +239,51 @@ $(function() {
   swfobject.embedSWF('{{url_for('static',filename='swf/player.swf')}}','mediaPlayer','700','700','9.0.115','false',
     flashvars, params, attributes,flashLoaded);
       
-function flashLoaded(e) {
- // e.ref is a reference to the Flash object. We'll pass it to jwplayer() so the API knows where the player is.
+  function flashLoaded(e) {
+   // e.ref is a reference to the Flash object. We'll pass it to jwplayer() so the API knows where the player is.
 
- // Add event listeners
- jwplayer(e.ref).onPlaylistItem(function(e){
+   // Add event listeners
+   jwplayer(e.ref).onPlaylistItem(function(e){
 
-  $.ajax({
-  url: "{{url_for('static',filename='xml/playlists.xml')}}"
-  }).done(function(data) { 
-        $(data).find('item:eq('+e.index+')').each(function(){
-          
-
-          // $('#currentItem')
-          //           .html('current :'+$(this).find('title').text()+'  ')
-        });
-        
-        // $.ajax({
-        //   url: "http://localhost:5000/me/xml/cuepoint-"+e.index+".xml"
-        // }).done(function(data) { 
-        //   $(".pack_list").addClass("done");
-        //   $('#chapterlist').empty();
-        //   $(data).find('CuePoint').each(function(){
-        //         var item_text = $(this).text();
-        //         // <a href="#" onclick="jwplayer().seek(353);">In pursuit</a> (05:53)</li>
-
-        //         $('<li></li>')
-        //             .html("<a href='#' onclick='jwplayer().seek("
-        //               +$(this).find('Time').text()+");'>"
-        //               +$(this).find('Name').text()+"</a>")
-        //             .appendTo('#chapterlist');
-        //     });
-        // });
-
-
-                  console.log("Sample of data:", e.index);
-   });
+    $.ajax({
+    url: "{{url_for('static',filename='xml/playlists.xml')}}"
+    }).done(function(data) { 
+          $(data).find('item:eq('+e.index+')').each(function(){
             
-});
 
- // jwplayer(e.ref).onReady(function() { alert('Player is ready'); });
- // jwplayer(e.ref).onPlay(function() { alert('Player is playing'); });
+            // $('#currentItem')
+            //           .html('current :'+$(this).find('title').text()+'  ')
+          });
+          
+          // $.ajax({
+          //   url: "http://localhost:5000/me/xml/cuepoint-"+e.index+".xml"
+          // }).done(function(data) { 
+          //   $(".pack_list").addClass("done");
+          //   $('#chapterlist').empty();
+          //   $(data).find('CuePoint').each(function(){
+          //         var item_text = $(this).text();
+          //         // <a href="#" onclick="jwplayer().seek(353);">In pursuit</a> (05:53)</li>
 
- // Interact with the player
- jwplayer(e.ref).play();
-}
+          //         $('<li></li>')
+          //             .html("<a href='#' onclick='jwplayer().seek("
+          //               +$(this).find('Time').text()+");'>"
+          //               +$(this).find('Name').text()+"</a>")
+          //             .appendTo('#chapterlist');
+          //     });
+          // });
+
+
+                    console.log("Sample of data:", e.index);
+          });
+              
+      });
+
+       // jwplayer(e.ref).onReady(function() { alert('Player is ready'); });
+       // jwplayer(e.ref).onPlay(function() { alert('Player is playing'); });
+
+       // Interact with the player
+       jwplayer(e.ref).play();
+  }
 
       // PlaylistEvent.JWPLAYER_PLAYLIST_ITEM
 

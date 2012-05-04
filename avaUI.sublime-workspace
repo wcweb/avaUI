@@ -68,6 +68,54 @@
 	"buffers":
 	[
 		{
+			"file": "static/less/app/breadcrumb.less",
+			"settings":
+			{
+				"buffer_size": 368,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/less/app/media.less",
+			"settings":
+			{
+				"buffer_size": 2400,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/less/app/tables.less",
+			"settings":
+			{
+				"buffer_size": 6024,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/less/app/box.less",
+			"settings":
+			{
+				"buffer_size": 2405,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/school/space.html",
+			"settings":
+			{
+				"buffer_size": 14386,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/school/shifanjineng.html",
+			"settings":
+			{
+				"buffer_size": 21998,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "templates/school/header.html",
 			"settings":
 			{
@@ -76,59 +124,51 @@
 			}
 		},
 		{
-			"file": "/E/output/index.htm",
+			"file": "templates/school/layout.html",
 			"settings":
 			{
-				"buffer_size": 23496,
-				"line_ending": "Unix"
+				"buffer_size": 4765,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/E/output/index_files/school.css",
+			"file": "templates/school/index.html",
 			"settings":
 			{
-				"buffer_size": 139923,
-				"line_ending": "Unix"
+				"buffer_size": 17087,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/E/output/videolist.htm",
+			"file": "static/js/script.js",
 			"settings":
 			{
-				"buffer_size": 28620,
-				"line_ending": "Unix"
+				"buffer_size": 10856,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/E/output/video.htm",
+			"file": "static/less/app/variables.less",
 			"settings":
 			{
-				"buffer_size": 14994,
-				"line_ending": "Unix"
+				"buffer_size": 6060,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/E/output/wenhuadajiangtan.htm",
+			"file": "static/less/app/mixins.less",
 			"settings":
 			{
-				"buffer_size": 17093,
-				"line_ending": "Unix"
+				"buffer_size": 19303,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/E/output/shifan_files/school.css",
+			"file": "flaskr.py",
 			"settings":
 			{
-				"buffer_size": 139924,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/E/output/videolist.htm",
-			"settings":
-			{
-				"buffer_size": 28620,
-				"line_ending": "Unix"
+				"buffer_size": 4452,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -160,6 +200,14 @@
 	},
 	"file_history":
 	[
+		"/E/output/videolist.htm",
+		"/E/output/index.htm",
+		"/E/workspaces/avaUI/templates/school/header.html",
+		"/E/output/index_files/school.css",
+		"/E/output/shifan_files/school.css",
+		"/E/output/video.htm",
+		"/E/output/wenhuadajiangtan.htm",
+		"/E/workspaces/avaUI/static/less/app/variables.less",
 		"/E/workspaces/avaUI/templates/school/index.html",
 		"/E/workspaces/avaUI/templates/school/layout.html",
 		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/Terminal/Terminal.sublime-settings",
@@ -171,7 +219,6 @@
 		"/E/workspaces/avaUI/static/less/app/box.less",
 		"/E/workspaces/avaUI/static/less/app/grid.less",
 		"/E/workspaces/avaUI/static/less/app/media.less",
-		"/E/workspaces/avaUI/static/less/app/variables.less",
 		"/E/workspaces/avaUI/static/js/script.js",
 		"/E/workspaces/avaUI/static/style/school.css",
 		"/E/workspaces/avaUI/static/less/school.less",
@@ -186,7 +233,6 @@
 		"/E/workspaces/avaUI/static/js/libs/bootstrap-tabs.js",
 		"/E/workspaces/avaUI/static/xml/playlists.xml",
 		"/E/workspaces/avaUI/static/less/app/functions.less",
-		"/E/workspaces/avaUI/templates/school/header.html",
 		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/docs/assets/css/docs.css",
 		"/E/workspaces/avaUI/static/less/app/navs.less",
 		"/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/less/forms.less",
@@ -281,13 +327,7 @@
 		"/E/workspaces/googleAPP_ENGine/wcweb2/app.yaml",
 		"/C/Users/Administrator/Desktop/MySQL-python-1.2.3/ez_setup.py",
 		"/C/Users/Administrator/Desktop/MySQL-python-1.2.3/README",
-		"/C/Users/Administrator/Desktop/MySQL-python-1.2.3/setup.cfg",
-		"/C/Users/Administrator/Desktop/MySQL-python-1.2.3/setup_windows.py",
-		"/D/goagent/local/proxy.py",
-		"/E/workspaces/googleAPP_ENGine/goagent/local/proxy.py",
-		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/samples-files.html                E%3A%5Cworkspaces%5CavaUI%5Ctemplates%5Cstyle%5Csamples-files.html",
-		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/jquery.min.js                E%3A%5Cworkspaces%5CavaUI%5Cstatic%5Cjs%5Clibs%5Cjquery.min.js",
-		"/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/GBK Encoding Support/tmp/jquery.treeview.min.js                E%3A%5Cworkspaces%5CavaUI%5Cstatic%5Cjs%5Clibs%5Cjquery.treeview.min.js"
+		"/C/Users/Administrator/Desktop/MySQL-python-1.2.3/setup.cfg"
 	],
 	"find":
 	{
@@ -313,6 +353,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"href=\"[\\w\\W].*\\.html\"",
+			"bfbf",
 			"/style/img/",
 			"/static/images",
 			"../../style/",
@@ -438,16 +480,15 @@
 			"$(\"tabs\")",
 			"          <div class=\"vrank\">",
 			"color",
-			"clear",
-			".clear",
-			".pull-right"
+			"clear"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"href=\"#\"",
 			"style/img/",
 			"static/images",
 			"/style/",
@@ -519,23 +560,23 @@
 			[
 				{
 					"buffer": 0,
-					"file": "templates/school/header.html",
+					"file": "static/less/app/breadcrumb.less",
 					"settings":
 					{
-						"buffer_size": 3234,
+						"buffer_size": 368,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2861,
-								2861
+								368,
+								368
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -547,84 +588,84 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/E/output/index.htm",
+					"file": "static/less/app/media.less",
 					"settings":
 					{
-						"buffer_size": 23496,
+						"buffer_size": 2400,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								1094
+								2400,
+								2400
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2880.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/E/output/index_files/school.css",
+					"file": "static/less/app/tables.less",
 					"settings":
 					{
-						"buffer_size": 139923,
+						"buffer_size": 6024,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5181,
-								5181
+								5911,
+								5911
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5503.0,
+						"translation.y": 4943.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "/E/output/videolist.htm",
+					"file": "static/less/app/box.less",
 					"settings":
 					{
-						"buffer_size": 28620,
+						"buffer_size": 2405,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1372,
-								1372
+								1961,
+								1961
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 2580.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -632,23 +673,22 @@
 			]
 		},
 		{
-			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 4,
-					"file": "/E/output/video.htm",
+					"file": "templates/school/space.html",
 					"settings":
 					{
-						"buffer_size": 14994,
+						"buffer_size": 14386,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1094,
-								1094
+								14095,
+								14095
 							]
 						],
 						"settings":
@@ -658,25 +698,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10853.0,
+						"translation.y": 8001.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "/E/output/wenhuadajiangtan.htm",
+					"file": "templates/school/shifanjineng.html",
 					"settings":
 					{
-						"buffer_size": 17093,
+						"buffer_size": 21998,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11026,
-								11026
+								995,
+								486
 							]
 						],
 						"settings":
@@ -686,58 +726,114 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6652.0,
+						"translation.y": 240.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "/E/output/shifan_files/school.css",
+					"file": "templates/school/header.html",
 					"settings":
 					{
-						"buffer_size": 139924,
+						"buffer_size": 3234,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5198,
-								5198
+								2244,
+								2244
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5763.0,
+						"translation.y": 720.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 7,
-					"file": "/E/output/videolist.htm",
+					"file": "templates/school/layout.html",
 					"settings":
 					{
-						"buffer_size": 28620,
+						"buffer_size": 4765,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2168,
+								2168
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1288.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "templates/school/index.html",
+					"settings":
+					{
+						"buffer_size": 17087,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16179,
+								16179
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7901.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "static/js/script.js",
+					"settings":
+					{
+						"buffer_size": 10856,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								47,
+								18
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -750,8 +846,90 @@
 			]
 		},
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 10,
+					"file": "static/less/app/variables.less",
+					"settings":
+					{
+						"buffer_size": 6060,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								429,
+								429
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "static/less/app/mixins.less",
+					"settings":
+					{
+						"buffer_size": 19303,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1714,
+								1714
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1380.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "flaskr.py",
+					"settings":
+					{
+						"buffer_size": 4452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3708,
+								3708
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3000.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -789,8 +967,8 @@
 		"cols":
 		[
 			0.0,
-			0.427008750994,
-			0.858194112967,
+			0.279634049323,
+			0.802704852824,
 			1.0
 		],
 		"rows":

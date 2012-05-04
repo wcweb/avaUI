@@ -7,23 +7,21 @@ list*/
   li{
   display:inline-block;
   list-style:none;
-  font-size:12px;
-  line-height:12px;
   margin:  @gridGutterWidth/2;
   .ie7-inline-block();
   }
   .pagination{
-    margin-left:300px;
-    width: 300px;
+    float:right;
+    margin-right:10px;
+    min-width: 300px;
     li{
+      margin:0px;//fix videolist margin in ie
       .ie7-inline-block();
     }
   }
 }
 
-.box .videolist li{
-    .ie7-inline-block();
-}
+
 .tab-content{
   .videolist {
     background:#fff;
@@ -31,10 +29,7 @@ list*/
     ul{
     margin:0;
     }
-    li{
-      .ie7-inline-block();
-    }
-  }
+}
 
   
 }
@@ -162,3 +157,7 @@ list*/
   font-size:11px;
   line-height:16px;
 }
+
+
+
+

@@ -10,7 +10,7 @@ $(document).ready(function(){
   // Administry.setup();
   
 
-
+  Limit.setup();
 
 // graphs
 

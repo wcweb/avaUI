@@ -165,7 +165,9 @@ def student_in_school(teachername):
 def jpkc_in_school(schoolname):
 	return render_template('school/jpkc.html')
 
-
+@app.route('/space')
+def space():
+	return render_template('school/space.html')
 # temp page
 
 @app.context_processor
