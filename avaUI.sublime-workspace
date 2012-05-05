@@ -71,7 +71,19 @@
 			"file": "static/less/app/navs.less",
 			"settings":
 			{
+<<<<<<< HEAD
 				"buffer_size": 9971,
+=======
+				"buffer_size": 368,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/less/app/media.less",
+			"settings":
+			{
+				"buffer_size": 2340,
+>>>>>>> in mac
 				"line_ending": "Unix"
 			}
 		},
@@ -87,8 +99,13 @@
 			"file": "static/less/app/functions.less",
 			"settings":
 			{
+<<<<<<< HEAD
 				"buffer_size": 1413,
 				"line_ending": "Windows"
+=======
+				"buffer_size": 2512,
+				"line_ending": "Unix"
+>>>>>>> in mac
 			}
 		},
 		{
@@ -98,8 +115,13 @@
 			"file_write_time": 129805961233368619,
 			"settings":
 			{
+<<<<<<< HEAD
 				"buffer_size": 3520,
 				"line_ending": "Windows"
+=======
+				"buffer_size": 14954,
+				"line_ending": "Unix"
+>>>>>>> in mac
 			}
 		},
 		{
@@ -122,15 +144,24 @@
 			"file": "templates/school/space.html",
 			"settings":
 			{
+<<<<<<< HEAD
 				"buffer_size": 14868,
 				"line_ending": "Windows"
+=======
+				"buffer_size": 5078,
+				"line_ending": "Unix"
+>>>>>>> in mac
 			}
 		},
 		{
 			"file": "/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/js/bootstrap-dropdown.js",
 			"settings":
 			{
+<<<<<<< HEAD
 				"buffer_size": 2558,
+=======
+				"buffer_size": 17378,
+>>>>>>> in mac
 				"line_ending": "Unix"
 			}
 		},
@@ -138,6 +169,7 @@
 			"file": "/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/js/bootstrap-collapse.js",
 			"settings":
 			{
+<<<<<<< HEAD
 				"buffer_size": 3966,
 				"line_ending": "Unix"
 			}
@@ -148,14 +180,23 @@
 			{
 				"buffer_size": 2445,
 				"line_ending": "Windows"
+=======
+				"buffer_size": 10872,
+				"line_ending": "Unix"
+>>>>>>> in mac
 			}
 		},
 		{
 			"file": "static/js/libs/lim.it.js",
 			"settings":
 			{
+<<<<<<< HEAD
 				"buffer_size": 2770,
 				"line_ending": "Windows"
+=======
+				"buffer_size": 6120,
+				"line_ending": "Unix"
+>>>>>>> in mac
 			}
 		},
 		{
@@ -605,15 +646,24 @@
 					"file": "static/less/app/dropdowns.less",
 					"settings":
 					{
+<<<<<<< HEAD
 						"buffer_size": 3327,
+=======
+						"buffer_size": 2340,
+>>>>>>> in mac
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								458,
 								458
+=======
+								0,
+								0
+>>>>>>> in mac
 							]
 						],
 						"settings":
@@ -651,7 +701,11 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+<<<<<<< HEAD
 						"translation.y": 1020.0,
+=======
+						"translation.y": 4490.0,
+>>>>>>> in mac
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -661,15 +715,24 @@
 					"file": "static/less/app/tabs.less",
 					"settings":
 					{
+<<<<<<< HEAD
 						"buffer_size": 3520,
+=======
+						"buffer_size": 2512,
+>>>>>>> in mac
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								1028,
 								1028
+=======
+								0,
+								0
+>>>>>>> in mac
 							]
 						],
 						"settings":
@@ -695,15 +758,24 @@
 					"file": "templates/school/shifanjineng.html",
 					"settings":
 					{
+<<<<<<< HEAD
 						"buffer_size": 21998,
+=======
+						"buffer_size": 14954,
+>>>>>>> in mac
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								552,
 								560
+=======
+								0,
+								0
+>>>>>>> in mac
 							]
 						],
 						"settings":
@@ -779,7 +851,11 @@
 					"file": "/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/js/bootstrap-dropdown.js",
 					"settings":
 					{
+<<<<<<< HEAD
 						"buffer_size": 2558,
+=======
+						"buffer_size": 5078,
+>>>>>>> in mac
 						"regions":
 						{
 						},
@@ -807,15 +883,24 @@
 					"file": "/C/Users/Administrator/Desktop/twitter-bootstrap-59503e7/js/bootstrap-collapse.js",
 					"settings":
 					{
+<<<<<<< HEAD
 						"buffer_size": 3966,
+=======
+						"buffer_size": 17378,
+>>>>>>> in mac
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								3364,
 								3364
+=======
+								0,
+								0
+>>>>>>> in mac
 							]
 						],
 						"settings":
@@ -835,7 +920,11 @@
 					"file": "/G/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/BracketHighlighter/Default (Windows).sublime-keymap",
 					"settings":
 					{
+<<<<<<< HEAD
 						"buffer_size": 2445,
+=======
+						"buffer_size": 10872,
+>>>>>>> in mac
 						"regions":
 						{
 						},
@@ -863,15 +952,24 @@
 					"file": "static/js/libs/lim.it.js",
 					"settings":
 					{
+<<<<<<< HEAD
 						"buffer_size": 2770,
+=======
+						"buffer_size": 6120,
+>>>>>>> in mac
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								2707,
 								2707
+=======
+								0,
+								0
+>>>>>>> in mac
 							]
 						],
 						"settings":
@@ -937,7 +1035,11 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+<<<<<<< HEAD
 						"translation.y": 2791.0,
+=======
+						"translation.y": 2852.0,
+>>>>>>> in mac
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -973,7 +1075,12 @@
 		"cols":
 		[
 			0.0,
+<<<<<<< HEAD
 			0.685560859189,
+=======
+			0.368457552209,
+			0.802704852824,
+>>>>>>> in mac
 			1.0
 		],
 		"rows":
