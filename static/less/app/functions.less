@@ -65,13 +65,22 @@ cursor: pointer;
 .ie7-alphaImageLoader("@{iconYoukuPath}lightline.png")}
 
 .content-box .head{}
-.content-box-opened{
-  background:url("@{iconJQPath}toggle-open-close.gif") 0 0 no-repeat;
+.content-box .caption{
+  background:url("@{iconJQPath}toggle-open-close.gif") 0 3px no-repeat;
 
-  height:12px;
+  height:15px;
 }
-.content-box-closed{
-  background:url("@{iconJQPath}toggle-open-close.gif") -32px 0 no-repeat;
+.content-box .content-box-closed{
+  background-position: 0 -21px ;
 
-  height:12px;
+  height:15px;
+}
+
+
+
+
+
+.collapse{
+  height:0px;
+  overflow:hidden;
 }

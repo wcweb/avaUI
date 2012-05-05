@@ -61,20 +61,33 @@ Limit.setup = function () {
             "cursor": "s-resize"
         });
         $(".content-box .body").slideUp();
-        $(".content-box .head .caption").toggleClass("content-box-closed"); 
+        
         // Give the header in content-box a different cursor	
         $(".content-box .head").toggle(
         function () {
-            $(this).parent().find('.body').slideDown('slow'); // Toggle the content     
-            $(this).find('.caption').toggleClass("content-box-opened"); 
+            var that=this;
+            $(this).parent().find('.body').slideDown('slow',function(){
+                $(that).find('.caption').toggleClass("content-box-closed"); 
+            }); // Toggle the content     
+            
         },function(){
-            $(this).parent().find('.body').slideUp('slow'); // Toggle the content
-            $(this).find('.caption').toggleClass("content-box-closed"); 
+            var that=this;
+            $(this).parent().find('.body').slideUp('slow',function(){
+                $(that).find('.caption').toggleClass("content-box-closed");
+            }); // Toggle the content
+             
         });
     }
 
     // custom tooltips to replace the default browser tooltips for <a title=""> <div title=""> and <span title="">
     $("a[title], div[title], span[title]").tipTip();
+    if($('.dropdown-toggle').length){
+      $('.dropdown-toggle').dropdown();
+    }
+    if($(".collapse").length){
+      //$(".collapse").collapse();
+    }
+    
 }
 
 Limit.setup();

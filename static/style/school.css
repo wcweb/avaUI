@@ -886,24 +886,8 @@ a:hover {
 .row-fluid > .span1 {
   width: 6.382978723%;
 }
-.width2 {
-  width: 250px;
-}
-.width3 {
-  width: 20%;
-}
-.width4 {
-  width: 10%;
-}
-.column {
-  margin-left: 18px;
-  display: block;
-}
 .colgroup {
-  display: block;
-}
-.colgroup ul {
-  margin: 0 0 20px 0;
+  overflow: hidden;
 }
 .btn {
   display: inline-block;
@@ -2369,13 +2353,17 @@ legend + .control-group {
   _background: none;
   _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"../../style/img/youku/lightline.png"');
 }
-.content-box-opened {
-  background: url("app/app/../../style/img/jquery/toggle-open-close.gif") 0 0 no-repeat;
-  height: 12px;
+.content-box .caption {
+  background: url("app/app/../../style/img/jquery/toggle-open-close.gif") 0 3px no-repeat;
+  height: 15px;
 }
-.content-box-closed {
-  background: url("app/app/../../style/img/jquery/toggle-open-close.gif") -32px 0 no-repeat;
-  height: 12px;
+.content-box .content-box-closed {
+  background-position: 0 -21px;
+  height: 15px;
+}
+.collapse {
+  height: 0px;
+  overflow: hidden;
 }
 .pull-right {
   float: right;
@@ -3372,11 +3360,13 @@ legend + .control-group {
   filter: alpha(opacity=30);
   content: "";
 }
-.dropdown .caret {
+.dropdown .caret,
+.nav-list .caret {
   margin-top: 8px;
   margin-left: 2px;
 }
 .dropdown:hover .caret,
+.collapse-wrap a:hover .caret,
 .open.dropdown .caret {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -4459,7 +4449,7 @@ table .span24 {
 }
 .tabs > li {
   position: relative;
-  margin-bottom: -3px;
+  margin-bottom: -1px;
 }
 .tabs > li > a {
   padding: 0 15px;

@@ -13,55 +13,52 @@
           
 <ul class="nav nav-list">
   <li class="nav-header">个人空间</li>
-  <li class="noChild active"><a title="我的首页" href="#">我的首页</a> </li>
-  <li><a class="aMenu" onclick="return false;" href="http://media.ava1.com.cn/my/subjectparticipate_1.html#Video">我的视频</a> 
-  <ul style="DISPLAY: none" class="u_s_nav">
+  <li class=" active"><a title="我的首页" href="#">我的首页</a> </li>
+  <li><a class=""  href="#" data-toggle="collapse" data-target="#collapse-video">我的视频<b class="caret"></b></a> 
+  <ul id="collapse-video" class="nav nav-list ">
     <li><a title="我上传的" href="#">我上传的</a> 
     </li></ul></li>
-  <li class="noChild"><a title="我的专辑" href="#">我的专辑</a> </li>
-
-
-<li class=" collapse ">
-                         <a href="#" class="" data-toggle="collapse" data-target="#collapse1"> 我的主题<b class="caret"></b></a>
-                         <ul class="dropdown-menu" id="collapse1">
-                            <li><a title="我发布的" href="#">我发布的</a> 
-    </li>
-    <li class="current"><a title="我参与的" href="#">我参与的</a> 
+  <li class="">
+    <a title="我的专辑" href="#">我的专辑</a> 
   </li>
-</ul>
-
-
-
-
-
+  <li class=" ">
+   <a href="#" class="" data-toggle="collapse" data-target="#collapse-theme"> 我的主题<b class="caret"></b></a>
+    <ul  class="nav nav-list in" id="collapse-theme">
+      <li><a title="我发布的" href="#">我发布的</a> 
+      </li>
+      <li class="current"><a title="我参与的" href="#">我参与的</a> 
+      </li>
+    </ul>
   </li>
-  <li><a class="aMenu" onclick="return false;" href="http://media.ava1.com.cn/my/subjectparticipate_1.html#live">我的直播</a> 
-  <ul style="DISPLAY: none" class="u_s_nav">
+  <li><a class=""  href="#" data-toggle="collapse" data-target="#collapse-live">我的直播<b class="caret"></b></a> 
+  <ul id="collapse-live" class="nav nav-list collapse">
     <li><a title="申请直播" href="#">申请直播</a> </li>
     <li><a title="我的直播" href="#">我的直播</a> </li>
-    <li><a title="我的录像" href="#">我的录像</a> </li></ul></li>
-  <li><a class="aMenu" onclick="return false;" href="http://media.ava1.com.cn/my/subjectparticipate_1.html#My">个人信息管理</a> 
-  <ul style="DISPLAY: none" class="u_s_nav">
+    <li><a title="我的录像" href="#">我的录像</a> </li>
+  </ul>
+</li>
+  <li><a class=""  href="#" data-toggle="collapse" data-target="#collapse-info">个人信息管理<b class="caret"></b></a> 
+  <ul id="collapse-info" class="nav nav-list collapse">
     <li><a title="个人信息" href="#">个人信息</a> 
     </li>
     <li><a title="修改密码" href="#">修改密码</a> 
     </li></ul></li>
-  <li><a class="aMenu" onclick="return false;" href="http://media.ava1.com.cn/my/subjectparticipate_1.html#MySpace">视频空间管理</a> 
+  <li><a class=""  href="#" data-toggle="collapse" data-target="#collapse-setting">视频空间管理<b class="caret"></b> </a>
 
-  <ul style="DISPLAY: none" class="u_s_nav">
+  <ul id="collapse-setting" class="nav nav-list collapse">
     <li><a title="模块设置" href="#">模块设置</a> 
     </li></ul></li></ul>
 
 
         </div>
- 
+
 
         </div>
 
     <div class="span12">
 
 
-      <div class="">
+      <div class="well">
 <div class="p_title mod_b"><span class="title">我的主题：</span> 我参加的2个主题 </div>
 <div class="dataControl box">
 <form id="frmSubjectUserSearch" method="post" action="http://media.ava1.com.cn/proxy.html">主题名称： <input style="WIDTH: 120px" type="text" name="Name"> 日期从 <input style="WIDTH: 80px" type="text" name="BeginTime" id="dp1335944828320" class="hasDatepicker"> 至 
@@ -72,7 +69,7 @@
 
 
 </div>
-<div id="MySubjectUserData" class="data uploadData box">
+<div id="MySubjectUserData" class=" uploadData box">
 <table cellspacing="0" cellpadding="0" width="100%" class="tables">
   <tbody>
   <tr id="dataHead" class="dataHead">
@@ -82,7 +79,7 @@
     <td class="disabled" valign="center">主题时间</td>
     <td class="disabled" valign="center">最后申请时间</td>
     <td style="WIDTH: 60px" class="disabled" valign="center">操作</td></tr><!--注意 数据行 第一行 和 最后一行 有样式 请加判断添加 当只有一行时 class="firstLine lastLine"-->
-  <tr class="firstLine ">
+  <tr class="firstLine data">
     <td class="sel"><input class="trsel" title="选择/不选" value="8638E333C9CC19D3A7679B76CB0C71AF34F9A63C231B5595D09D00034A02FA496DBD2A5F0C22BD454C55454D33AB711C" type="checkbox"></td>
     <td class="v">
       <ul style="WIDTH: auto" class="video_s">
@@ -99,7 +96,7 @@
       <br><a title="我的专辑" href="#">我的专辑</a> 
       <br><a title="我的会议" href="#">我的会议</a> 
       <br><a title="我的直播" href="#">我的直播</a></td></tr>
-  <tr class=" lastLine">
+  <tr class=" lastLine data">
     <td class="sel"><input class="trsel" title="选择/不选" value="2DD707C2D90F20D6E0CDE83EE6E450901161292C07520ACE0A3C75D2D093B3F5D8476B92B12C4F7D76065AE56F9C823F" type="checkbox"></td>
     <td class="v">
       <ul style="WIDTH: auto" class="video_s">
@@ -406,7 +403,7 @@
   <script>
 $(document).ready(function(){if($('.dropdown-toggle').length){
       $('.dropdown-toggle').dropdown();
-      $(".collapse").collapse();
+
     }})
   </script>
 {% endblock %}
