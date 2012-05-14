@@ -80,13 +80,17 @@ def login():
 			session['logged_in'] =True
 			flash('You were logged in')
 			return redirect(url_for('show_entries'))
-	return render_template('login.html',error=error)
+	return render_template('school/login.html',error=error)
 
 @app.route('/logout')
 def logout():
 	session.pop('logged_in',None)
 	flash('You were logged out')
 	return redirect(url_for('show_entries'))
+
+@app.route('/register')
+def register():
+	return render_template('school/reg.html')
 
 
 @app.route('/dashboard')
@@ -168,6 +172,10 @@ def jpkc_in_school(schoolname):
 @app.route('/space')
 def space():
 	return render_template('school/space.html')
+
+@app.route('/me')
+def me():
+	return render_template('school/me.html')
 # temp page
 
 @app.context_processor

@@ -325,6 +325,7 @@ header #header #searchbar {
   margin: 20px 10px;
 }
 .content {
+  min-height: 400px;
   background: #cae1f3;
   background-color: #e0edfa;
   background-image: -moz-linear-gradient(top, #eef5ff, #cae1f3);
@@ -344,6 +345,7 @@ header #header #searchbar {
   background-image: linear-gradient(top, #eef5ff, #cae1f3);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eef5ff', endColorstr='#cae1f3', GradientType=0);
+  min-height: 400px;
 }
 .header #u-center {
   float: right;
@@ -352,6 +354,9 @@ header #header #searchbar {
 .header #searchbar {
   float: right;
   margin: 20px 10px;
+}
+footer {
+  height: 30px;
 }
 footer#animated {
   background: #222;
@@ -386,6 +391,7 @@ footer#animated a:active {
 }
 .Copyright {
   text-align: center;
+  height: 20px;
 }
 /* 
  *  for swfobject
@@ -1377,6 +1383,71 @@ list*/
 .sRank_S .show_sn .top3 {
   background: #FF9600;
   color: #FFD697;
+}
+.mods .mod .con h3 {
+  display: inline;
+}
+.mods .mod .con .view {
+  display: inline;
+}
+.mods .mod .con .index {
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+.mods .mod .con .index li {
+  list-style: none;
+}
+.myIndexMain .space {
+  clear: both;
+}
+.myIndexMain .space h3 {
+  display: inline;
+}
+.myIndexMain .space .tool {
+  display: inline;
+}
+.myIndexMain .aboutMe .items {
+  margin-bottom: 20px;
+}
+.myIndexMain .aboutMe .items div {
+  margin-left: 10px;
+  overflow: hidden;
+}
+.myIndexMain .aboutMe .items .signature {
+  margin-top: 20px;
+}
+.myIndexMain .aboutMe .items .avatar {
+  margin-left: 0px;
+}
+.myIndexMain .aboutMe .items .avatar .label {
+  display: inline;
+}
+.myIndexMain .aboutMe .items .avatar a {
+  overflow: hidden;
+  display: inline;
+}
+.myIndexMain .aboutMe .items .avatar img {
+  display: block;
+}
+.forms {
+  text-align: left;
+}
+.forms .items .item label {
+  display: inline-block;
+  text-align: right;
+  margin-left: 50px;
+  width: 100px;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+}
+.forms .items .indent {
+  margin-left: 150px;
 }
 .breadcrumb {
   padding: 7px 14px;
@@ -3479,6 +3550,56 @@ legend + .control-group {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #c09853;
+}
+.alert-heading {
+  color: inherit;
+}
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 18px;
+}
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+.alert-danger,
+.alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #3a87ad;
+}
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+.alert-block p + p {
+  margin-top: 5px;
+}
 .pager {
   margin-left: 0;
   margin-bottom: 18px;
@@ -4988,6 +5109,7 @@ pre .code {
   background-color: #f5f5f5;
   border: 1px solid #eee;
   border: 1px solid rgba(0, 0, 0, 0.05);
+  overflow: hidden;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;

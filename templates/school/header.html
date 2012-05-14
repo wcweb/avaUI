@@ -53,7 +53,23 @@
                        </li>    
                      
                       <li class="divider-vertical"></li>
-                      <li class="dropdown ">
+
+
+                      <li>
+                      <form id="frmMiniLogin" class="navbar-search " method="post" action=" http://localhost:23041/login.html">
+                      <input type="hidden" name="SRC" value=" http://localhost:23041/index.aspx" /></form>
+                       </li><li>
+                     
+                      <a href="#login" title="登录" onclick="document.getElementById('frmMiniLogin').submit();return false;">登录</a>
+                      
+                    </li>
+                    <li>
+                      <a href=" http://localhost:23041/signup.html" title="注册">注册</a>
+                    </li>
+<li>
+                      <a href=" http://localhost:23041/signup.html" title="注册">注册</a>
+                    </li>
+                      <li class="dropdown " style="display:none">
                          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 欢迎, <b>Admin</b><b class="caret"></b></a>
                          <ul class="dropdown-menu">
                             
