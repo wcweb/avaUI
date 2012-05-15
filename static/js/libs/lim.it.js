@@ -79,8 +79,9 @@ Limit.setup = function () {
         });
     }
 
+    
     // custom tooltips to replace the default browser tooltips for <a title=""> <div title=""> and <span title="">
-    $("a[title], div[title], span[title]").tipTip();
+    // $("a[title], div[title], span[title]").tipTip();
     if($('.dropdown-toggle').length){
       $('.dropdown-toggle').dropdown();
     }

@@ -132,7 +132,7 @@ def video(id):
 	
 @app.route('/videolist')
 def videolist():
-	return render_template('school/videolist.html')
+	return render_template('school/videolist_heng.html')
 
 @app.route('/catalogue')
 def catalogue():
@@ -177,6 +177,17 @@ def space():
 def me():
 	return render_template('school/me.html')
 # temp page
+@app.route('/album')
+def album():
+	return render_template('school/album.html')
+
+@app.route('/article_list')
+def article_list():
+	return render_template('school/article_list.html')
+
+@app.route('/article')
+def article():
+	return render_template('school/article.html')
 
 @app.context_processor
 def inject_user():

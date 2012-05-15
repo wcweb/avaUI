@@ -1,4 +1,8 @@
 {% extends "school/layout.html" %}
+{% block addStyle %}
+<link type="text/css" rel="stylesheet" href="{{css_url('posterOnePic2.css')}}"></link>
+{% endblock %}
+
 {% block body %}
 
       <div class="row">
@@ -16,7 +20,7 @@
 
         <div class="span6">
             <div class="box mbox " id="bulletin_Board">
-              <div class="head"><a href="videolist.html" class="title">系统公告</a></div>
+              <div class="head"><a href="videolist.html" class="title">系统公告</a><span class="more"><a href="" class="">更多</a></span></div>
               <div class="body ">
                 <ul>
         <li> <a  title="系统公告，修正1023号错误" href="" class="">系统公告，修正1023号错误</a>
@@ -336,7 +340,7 @@
 
  <!-- poster -->
 
-<link type="text/css" rel="stylesheet" href="{{css_url('posterOnePic2.css')}}">
+
 
 <script language="javascript" type="text/javascript" src="{{js_url('fx.js')}}"></script>
 

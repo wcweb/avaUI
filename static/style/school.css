@@ -392,6 +392,13 @@ footer#animated a:active {
 .Copyright {
   text-align: center;
   height: 20px;
+  background: #e3e3e3;
+  position: relative;
+  z-index: -2;
+}
+html,
+body {
+  height: 100%;
 }
 /* 
  *  for swfobject
@@ -1123,6 +1130,16 @@ list*/
   display: inline-block;
   overflow: hidden;
 }
+.lt-ie8 .littleblock li {
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+}
 .littleblock li .thumb {
   float: none;
 }
@@ -1185,14 +1202,22 @@ list*/
   float: left;
   margin-right: 10px;
 }
+.lt-ie8 .thumb {
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+}
 .by {
   font-size: 11px;
 }
 .viewcounts {
   color: #999;
   font-size: 11px;
-  padding: 0px!important;
-  line-height: 14px!important;
 }
 .description {
   overflow: hidden;
@@ -1201,6 +1226,18 @@ list*/
 .stat {
   font-size: 11px;
   line-height: 16px;
+}
+.article_list {
+  overflow: hidden;
+  list-style: disc;
+}
+.article_list li {
+  border-bottom: 1px solid #cbcbcb;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.article_list .barName {
+  float: right;
 }
 .box {
   margin: 10px auto;
@@ -2435,6 +2472,66 @@ legend + .control-group {
 .collapse {
   height: 0px;
   overflow: hidden;
+}
+.content-box .body {
+  min-height: 100px;
+}
+.count_wrapper {
+  overflow: hidden;
+  float: right;
+}
+.count_comment {
+  display: inline-block;
+  margin: 18px 0;
+  height: 36px;
+  vertical-align: middle;
+  vertical-align: 10px;
+}
+.comment {
+  border-top: 1px solid #cbcbcb;
+  padding: 10px;
+}
+.comment .bar {
+  float: left;
+  margin-right: 20px;
+  width: 80px;
+}
+.comment .con {
+  overflow: hidden;
+}
+.defaultext {
+  width: 100%;
+  height: 80px;
+}
+.count_wrapper .pagination {
+  min-width: 300px;
+  display: inline-block;
+}
+.videolist-heng li {
+  display: block;
+  height: 100px;
+}
+.videolist-heng .vediodiv {
+  float: left;
+}
+.videolist-heng p {
+  margin-left: 10px;
+  overflow: hidden;
+  padding-left: 20px;
+}
+.baseinfo {
+  list-style: none;
+  margin-top: 20px;
+}
+.intro {
+  text-indent: 20px;
+  overflow: hidden;
+}
+.baseinfo label {
+  display: inline;
+}
+.bulletin_Board body {
+  padding-top: 20px;
 }
 .pull-right {
   float: right;
@@ -5736,6 +5833,10 @@ div.wysiwyg iframe {
     width: auto;
     margin: 0;
   }
+  .posterOnePic2 {
+    width: auto;
+    display: block;
+  }
   .thumbnails [class*="span"] {
     width: auto;
   }
@@ -5806,6 +5907,9 @@ div.wysiwyg iframe {
     -webkit-border-radius: 4px 4px 0 0;
     -moz-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0;
+  }
+  .littleblock {
+    float: right;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
