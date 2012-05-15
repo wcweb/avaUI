@@ -16,9 +16,9 @@ Clone the git repo - `git clone git://github.com/wcweb/avaUI.git` - or [download
 
 1.	HTML5
 2.	Responsive design
-3.	Media more support (todo)
+3.	Media Edit (todo)
 
-##
+
 
 
 ## Contributing

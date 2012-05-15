@@ -1,409 +1,177 @@
-{% extends "school/layout.html" %}
+{% extends "baseStyle/layout.html" %}
 {% block body %}
-      <div class="row">
-        <div class="span16">
-          <div class="breadcrumb"><span>当前位置：</span><a href="#">首页</a><span class="divider">>></span>课程列表<span class="divider">>></span><span class="active"><a href="#" id="">自然科学</a></span></div>
-        </div>
-      </div>
-      <div class="row">
-
-        <div class="span4">
-          
-        <div class="well" >
-          
-<ul class="nav nav-list">
-  <li class="nav-header">个人空间</li>
-  <li class=" active"><a title="我的首页" href="#">我的首页</a> </li>
-  <li><a class=""  href="#" data-toggle="collapse" data-target="#collapse-video">我的视频<b class="caret"></b></a> 
-  <ul id="collapse-video" class="nav nav-list ">
-    <li><a title="我上传的" href="#">我上传的</a> 
-    </li></ul></li>
-  <li class="">
-    <a title="我的专辑" href="#">我的专辑</a> 
-  </li>
-  <li class=" ">
-   <a href="#" class="" data-toggle="collapse" data-target="#collapse-theme"> 我的主题<b class="caret"></b></a>
-    <ul  class="nav nav-list in" id="collapse-theme">
-      <li><a title="我发布的" href="#">我发布的</a> 
-      </li>
-      <li class="current"><a title="我参与的" href="#">我参与的</a> 
-      </li>
-    </ul>
-  </li>
-  <li><a class=""  href="#" data-toggle="collapse" data-target="#collapse-live">我的直播<b class="caret"></b></a> 
-  <ul id="collapse-live" class="nav nav-list collapse">
-    <li><a title="申请直播" href="#">申请直播</a> </li>
-    <li><a title="我的直播" href="#">我的直播</a> </li>
-    <li><a title="我的录像" href="#">我的录像</a> </li>
-  </ul>
-</li>
-  <li><a class=""  href="#" data-toggle="collapse" data-target="#collapse-info">个人信息管理<b class="caret"></b></a> 
-  <ul id="collapse-info" class="nav nav-list collapse">
-    <li><a title="个人信息" href="#">个人信息</a> 
-    </li>
-    <li><a title="修改密码" href="#">修改密码</a> 
-    </li></ul></li>
-  <li><a class=""  href="#" data-toggle="collapse" data-target="#collapse-setting">视频空间管理<b class="caret"></b> </a>
-
-  <ul id="collapse-setting" class="nav nav-list collapse">
-    <li><a title="模块设置" href="#">模块设置</a> 
-    </li></ul></li></ul>
 
 
-        </div>
-
-
-        </div>
-
-    <div class="span12">
-
-
-      <div class="well">
-<div class="p_title mod_b"><span class="title">我的主题：</span> 我参加的2个主题 </div>
-<div class="dataControl box">
-<form id="frmSubjectUserSearch" method="post" action="http://media.ava1.com.cn/proxy.html">主题名称： <input style="WIDTH: 120px" type="text" name="Name"> 日期从 <input style="WIDTH: 80px" type="text" name="BeginTime" id="dp1335944828320" class="hasDatepicker"> 至 
-<input style="WIDTH: 80px" type="text" name="EndTime" id="dp1335944828321" class="hasDatepicker"> <input value="MySubjectUser" type="hidden" name="Key"> <input value="查询" type="submit"> <input onclick="SubjectUserBatchDelete(this);" value="删除" type="button"> </form>
-
-
-
-
-
-</div>
-<div id="MySubjectUserData" class=" uploadData box">
-<table cellspacing="0" cellpadding="0" width="100%" class="tables">
-  <tbody>
-  <tr id="dataHead" class="dataHead">
-    <td style="WIDTH: 20px" class="sel" valign="center"><input class="trselall" type="checkbox"></td>
-    <td valign="center">主题</td>
-    <td class="disabled" valign="center">用户</td>
-    <td class="disabled" valign="center">主题时间</td>
-    <td class="disabled" valign="center">最后申请时间</td>
-    <td style="WIDTH: 60px" class="disabled" valign="center">操作</td></tr><!--注意 数据行 第一行 和 最后一行 有样式 请加判断添加 当只有一行时 class="firstLine lastLine"-->
-  <tr class="firstLine data">
-    <td class="sel"><input class="trsel" title="选择/不选" value="8638E333C9CC19D3A7679B76CB0C71AF34F9A63C231B5595D09D00034A02FA496DBD2A5F0C22BD454C55454D33AB711C" type="checkbox"></td>
-    <td class="v">
-      <ul style="WIDTH: auto" class="video_s">
-        <li class="videoImg"><a title="测试" href="#" target="_blank"><img title="测试" src="{{ temp_img('tmp/tmp1.jpg')}}" class="span2"></a> 
-        </li>
-        <li>
-        <p style="WIDTH: auto"><a title="测试" href="#" target="_blank">测试</a> <br><span class="pass"><nobr>审核通过 启动 
-        </nobr></span><br>公开上传 <br>播放：0 评论：0 </p></li></ul></td>
-    <td>越秀区优质视频资源共享平台 <br><a title="lvjinquan" href="#">admin</a> 
-    )</td>
-    <td>2012-04-07 00:00:00 <br>至 <br>2012-04-20 00:00:00</td>
-    <td>2012-04-20 00:00:00</td>
-    <td><a title="我的视频" href="#">我的视频</a> 
-      <br><a title="我的专辑" href="#">我的专辑</a> 
-      <br><a title="我的会议" href="#">我的会议</a> 
-      <br><a title="我的直播" href="#">我的直播</a></td></tr>
-  <tr class=" lastLine data">
-    <td class="sel"><input class="trsel" title="选择/不选" value="2DD707C2D90F20D6E0CDE83EE6E450901161292C07520ACE0A3C75D2D093B3F5D8476B92B12C4F7D76065AE56F9C823F" type="checkbox"></td>
-    <td class="v">
-      <ul style="WIDTH: auto" class="video_s">
-        <li class="videoImg"><a title="中学生物教学" href="#" target="_blank"><img title="中学生物教学" src="{{ temp_img('tmp/tmp2.jpg')}}" class="span2"></a> 
-        </li>
-        <li>
-        <p style="WIDTH: auto"><a title="中学生物教学" href="#" target="_blank">中学生物教学</a> <br><span class="pass"><nobr>审核通过 启动 
-        </nobr></span><br>公开上传 <br>播放：0 评论：0 </p></li></ul></td>
-    <td>越秀区优质视频资源共享平台 <br><a title="lvjinquan" href="#">admin</a> 
-    )</td>
-    <td>2012-04-09 00:00:00 <br>至 <br>2012-04-27 00:00:00</td>
-    <td>2012-04-09 00:00:00</td>
-    <td><a title="我的视频" href="#">我的视频</a> 
-      <br><a title="我的专辑" href="#">我的专辑</a> 
-      <br><a title="我的会议" href="#">我的会议</a> 
-      <br><a title="我的直播" href="#">我的直播</a></td></tr></tbody></table></div>
-
-
-<div class="p_t_5 p_b_5"><a class="f_r pull-right" href="http://media.ava1.com.cn/my/subjectparticipate_1.html#">返回顶端</a> <a onclick="SelectMySubjectUserAll(); return false;">全选 - 取消</a> </div><!--side end-->
-<div class="clear"></div></div>
-      
-    </div>
-
-
-      </div>
-
-{% endblock %}
-
-
-{% block addScripts %}
-
-<script src="{{ js_url('libs/jquery.ui.core.min.js' )}}" type="text/javascript" charset="utf-8"></script>
-
-<script src="{{ js_url('libs/jquery.ui.widget.min.js' )}}" type="text/javascript" charset="utf-8"></script>
-
-<script src="{{ js_url('libs/jquery.ui.datepicker.js' )}}" type="text/javascript" charset="utf-8"></script>
-
-
-<script src="{{ js_url('libs/DateTimePicker.js' )}}" type="text/javascript" charset="utf-8"></script>
-
-
-
-
-<script type="text/javascript">
-    $(function () {
-      $("#frmSubjectUserSearch [name=BeginTime]").datetimepicker({
-        //maxDate: new Date($("#frmSubjectUserSearch [name=EndTime]").val()),
-        onClose: function () {
-          $("#frmSubjectUserSearch [name=EndTime]").datetimepicker("option", "minDate", new Date(this.value));
-        }
-      });
-      $("#frmSubjectUserSearch [name=EndTime]").datetimepicker({
-        //minDate: new Date($("#frmSubjectUserSearch [name=BeginTime]").val()),
-        onClose: function () {
-          $("#frmSubjectUserSearch [name=BeginTime]").datetimepicker("option", "maxDate", new Date(this.value));
-        }
-      });
-    });
-  </script>
-
-<script type="text/javascript">
-    //批量删除
-    function SubjectUserBatchDelete(send) {
-      var items = $("#MySubjectUserData .trsel:checked");
-      var key = "";
-      for (var i = 0; i <= items.length - 1; i++) {
-        key += "pkid=" + encodeURIComponent(items[i].value);
-        if (i != items.length - 1) {
-          key += "&";
-        }
-      }
-      if (key != "") {
-        if (confirm("确认删除勾选的主题吗？") == true) {
-          $.ajax(
-          {
-            cache: false,
-            type: "POST",
-            url: Global.Site + "/Ajax.aspx?AVA.ResourcesPlatform.Ajax.ClientAjax.SubjectUserBatchDelete",
-            data: key,
-            async: true,
-            dataType: 'json',
-            success: function (result) {
-              $(send).val("删除");
-              alert("主题文件删除成功")
-              Global.Disabled(send, false);
-              $("#frmSubjectUserSearch").submit();
-            },
-            beforeSend: function () {
-              $(send).val("提交删除...");
-              Global.Disabled(send, true);
-            },
-            complete: function () {
-            },
-            error: function (XMLHttpRequest, textStatus, errorThrown) {
-              $(send).val("删除");
-              Global.Disabled(send, false);
-              var message = XMLHttpRequest.responseText;
-              Global.Error(message);
-            }
-          });
-        }
-      }
-      else {
-        alert("请勾选要删除的主题！");
-      }
-    };
-
-    //批量删除
-    function SubjectUserDelete(send, pkid) {
-      if (confirm("确认删除当前主题吗？") == true) {
-        $.ajax(
-        {
-          cache: false,
-          type: "POST",
-          url: Global.Site + "/Ajax.aspx?AVA.ResourcesPlatform.Ajax.ClientAjax.SubjectUserDelete",
-          data: "key=" + pkid,
-          async: true,
-          dataType: 'json',
-          success: function (result) {
-            $(send).html("删除");
-            alert("主题文件删除成功")
-            Global.Disabled(send, false);
-            $("#frmSubjectUserSearch").submit();
-          },
-          beforeSend: function () {
-            $(send).html("删除中");
-            Global.Disabled(send, true);
-          },
-          complete: function () {
-          },
-          error: function (XMLHttpRequest, textStatus, errorThrown) {
-            $(send).html("删除");
-            Global.Disabled(send, false);
-            var message = XMLHttpRequest.responseText;
-            Global.Error(message);
-          }
-        });
-      }
-    };
-
-    //更改状态
-    function SubjectChangeStatusClient(send, pkid) {
-      if (confirm("确认更新当前主题状态吗?") == true) {
-        $.ajax(
-        {
-          cache: false,
-          type: "POST",
-          url: Global.Site + "/Ajax.aspx?AVA.ResourcesPlatform.Ajax.ClientAjax.SubjectChangeStatus",
-          data: "key=" + pkid + "&Status=" + $(send).val(),
-          async: true,
-          dataType: 'json',
-          success: function (result) {
-            alert("主题状态更改成功")
-            send.lang = send.value;
-            Global.Disabled(send, false);
-          },
-          beforeSend: function () {
-            Global.Disabled(send, true);
-          },
-          complete: function () {
-          },
-          error: function (XMLHttpRequest, textStatus, errorThrown) {
-            Global.Disabled(send, false);
-            send.value = send.lang;
-            var message = XMLHttpRequest.responseText;
-            Global.Error(message);
-          }
-        });
-      }
-      else {
-        send.value = send.lang;
-      }
-    };
-    //更改确认状态
-    function SubjectUserConfirmInClient(send, pkid) {
-      if (confirm("确认参与当前主题?")) {
-        var remark = window.prompt("请输入确认备注:", "");
-        $.ajax(
-        {
-          cache: false,
-          type: "POST",
-          url: Global.Site + "/Ajax.aspx?AVA.ResourcesPlatform.Ajax.ClientAjax.SubjectUserConfirm",
-          data: "key=" + pkid + "&ConfirmRemark=" + encodeURIComponent(remark) + "&ConfirmStatus=1",
-          async: true,
-          dataType: 'json',
-          success: function (result) {
-            alert("已更新确认状态")
-            $("#Status" + pkid).val("");
-            $("#ConfirmStatus" + pkid).html("已确认");
-            Global.Disabled(send, false);
-          },
-          beforeSend: function () {
-            Global.Disabled(send, true);
-          },
-          complete: function () {
-          },
-          error: function (XMLHttpRequest, textStatus, errorThrown) {
-            Global.Disabled(send, false);
-            $(send).val($("#Status" + pkid).val());
-            var message = XMLHttpRequest.responseText;
-            Global.Error(message);
-          }
-        });
-      }
-    };
-
-    //更改不参与状态
-    function SubjectUserConfirmOutClient(send, pkid) {
-      if (confirm("确认不参与当前主题?")) {
-        var remark = window.prompt("请输入不参与备注:", "");
-        $.ajax(
-        {
-          cache: false,
-          type: "POST",
-          url: Global.Site + "/Ajax.aspx?AVA.ResourcesPlatform.Ajax.ClientAjax.SubjectUserConfirm",
-          data: "key=" + pkid + "&ConfirmRemark=" + encodeURIComponent(remark) + "&ConfirmStatus=2",
-          async: true,
-          dataType: 'json',
-          success: function (result) {
-            alert("已更新不参与状态")
-            $("#Status" + pkid).val($(send).val());
-            $("#ConfirmStatus" + pkid).html("不参与");
-            Global.Disabled(send, false);
-          },
-          beforeSend: function () {
-            Global.Disabled(send, true);
-          },
-          complete: function () {
-          },
-          error: function (XMLHttpRequest, textStatus, errorThrown) {
-            Global.Disabled(send, false);
-            $(send).val($("#Status" + pkid).val());
-            var message = XMLHttpRequest.responseText;
-            Global.Error(message);
-          }
-        });
-      }
-    };
-
-    //签到
-    function SubjectUserSignClient(send, pkid) {
-      if (confirm("确认进入当前主题?")) {
-        var remark = window.prompt("请输入进入备注:", "");
-        $.ajax(
-        {
-          cache: false,
-          type: "POST",
-          url: Global.Site + "/Ajax.aspx?AVA.ResourcesPlatform.Ajax.ClientAjax.SubjectUserSign",
-          data: "key=" + pkid + "&SignInRemark=" + encodeURIComponent(remark),
-          async: true,
-          dataType: 'json',
-          success: function (result) {
-            $("#Status" + pkid).val($(send).val());
-            $("#ConfirmStatus" + pkid).html("已确认");
-            $("#SignInStatus" + pkid).html("已签到");
-            Global.Disabled(send, false);
-            alert("主题签到成功，点击\"确定\"进入主题，如浏览器屏蔽了弹出窗口，请将浏览器设置为允许当前网页弹出窗口后再重新点击\"进入主题\"");
-            window.open(result);
-          },
-          beforeSend: function () {
-            Global.Disabled(send, true);
-          },
-          complete: function () {
-          },
-          error: function (XMLHttpRequest, textStatus, errorThrown) {
-            Global.Disabled(send, false);
-            $(send).val($("#Status" + pkid).val());
-            var message = XMLHttpRequest.responseText;
-            Global.Error(message);
-          }
-        });
-      }
-    };
-  </script>
+	<!-- Page title -->
+	<div id="pagetitle">
+		<div class="wrapper">
+			<h1>Dashboard</h1>
+			<!-- Quick search box -->
+			<form action="" method="get"><input class="" type="text" id="q" name="q" /></form>
+		</div>
+	</div>
+	<!-- End of Page title -->
+	
+	<!-- row -->
+	<div class="row">
+		<!-- span -->
+		<div class="span10">
+				<!-- Left column/section -->
+				<section class="column width6 first">
+				
+					<div class="colgroup leading">
+						<div class="column width2 first">
+							<h3>Welcome back, <a href="#">Admin</a></h3>
+							<p>
+								You are currently signed up to the <b>Free Trial Plan</b>.<br /><a href="#">Upgrade now?</a>
+							</p>
+						</div>
+						<div class="column width2">
+							<h4>Last login</h4>
+							<p>
+								Monday July 12th, 2010 at 11:32am from 127.0.0.1<br />
+								No error login attempts.
+							</p>
+						</div>
+					</div>
+					
+					<div class="colgroup leading">
+						<div class="column width2 first">
+							<h4>Invoices: <a href="#">10</a></h4>
+							<hr/>
+							<table class="no-style full">
+								<tbody>
+									<tr>
+										<td>Total Invoices</td>
+										<td class="ta-right"><a href="#">10</a></td>
+										<td class="ta-right">1,322.10 &euro;</td>
+									</tr>
+									<tr>
+										<td>Total Paid</td>
+										<td class="ta-right"><a href="#">9</a></td>
+										<td class="ta-right">900.00 &euro;</td>
+									</tr>
+									<tr>
+										<td>Total Due</td>
+										<td class="ta-right"><a href="#">1</a></td>
+										<td class="ta-right">422.10 &euro;</td>
+									</tr>
+									<tr>
+										<td>Total Overdue</td>
+										<td class="ta-right">0</td>
+										<td class="ta-right">0.00 &euro;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="column width2">
+							<h4>Sales: <a href="#">1</a></h4>
+							<hr/>
+							<table class="no-style full">
+								<tbody>
+									<tr>
+										<td>Clients This Month</td>
+										<td class="ta-right"><a href="#">1</a></td>
+										<td class="ta-right"></td>
+									</tr>
+									<tr>
+										<td>Sales This Month</td>
+										<td class="ta-right"><a href="#">9</a></td>
+										<td class="ta-right">900.00 &euro;</td>
+									</tr>
+									<tr>
+										<td>Clients Total</td>
+										<td class="ta-right"><a href="#">5</a></td>
+										<td class="ta-right"></td>
+									</tr>
+									<tr>
+										<td>Sales Total</td>
+										<td class="ta-right"><a href="#">9</a></td>
+										<td class="ta-right">900.00 &euro;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				
+					<div class="colgroup leading">
+						<div class="column width3 first">
+							<h4>Client Stats</h4>
+							<hr/>
+							<table class="no-style full">
+								<tbody>
+									<tr>
+										<td>Active</td>
+										<td class="ta-right">1/5</td>
+										<td><div id="progress1" class="progress full progress-green"><span><b></b></span></div></td>
+									</tr>
+									<tr>
+										<td>Pending</td>
+										<td class="ta-right">2/5</td>
+										<td><div id="progress2" class="progress full progress-blue"><span><b></b></span></div></td>
+									</tr>
+									<tr>
+										<td>Suspended</td>
+										<td class="ta-right">2/5</td>
+										<td><div id="progress3" class="progress full progress-red"><span><b></b></span></div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="column width3">
+							<h4>Reports</h4>
+							<hr/>
+							<p><b>Sales this year</b></p>
+							<div id="placeholder" style="height:100px"></div>
+						</div>
+					</div>
+					<div class="clear">&nbsp;</div>
+				
+				</section>
+				<!-- End of Left column/section -->
+				
+				<!-- Right column/section -->
+				<aside class="column width2">
+					<div id="rightmenu">
+						<header>
+							<h3>Your Account</h3>
+						</header>
+						<dl class="first">
+							<dt><img width="16" height="16" alt="" SRC="img/key.png"></dt>
+							<dd><a href="#">Administry (admin)</a></dd>
+							<dd class="last">Free Account.</dd>
+							
+							<dt><img width="16" height="16" alt="" SRC="img/help.png"></dt>
+							<dd><a href="#">Support</a></dd>
+							<dd class="last">Documentation and FAQ</dd>
+						</dl>
+					</div>
+					<div class="content-box">
+						<header>
+							<h3>Latest in the Community</h3>
+						</header>
+						<section>
+							<dl>
+								<dt>Maximize every interaction with a client</dt>
+								<dd><a href="#">Read more</a></dd>
+								<dt>Diversification for Small Business Owners</dt>
+								<dd><a href="#">Read more</a></dd>
+							</dl>
+						</section>
+					</div>
+				</aside>
+				<!-- End of Right column/section -->
+				
+		</div>
+		<!-- End of Wrapper -->
+	</div>
+	<!-- End of Page content -->
+	
+	
+	
+	<!-- Scroll to top link -->
+	<a href="#" id="totop">^ scroll to top</a>
 
 
 
-
-<script type="text/javascript">
-  $("#MySubjectUserData .trselall").click(function () {
-    if (this.checked == true) {
-      $("#MySubjectUserData .trsel").attr("checked", "checked");
-    }
-    else {
-      $("#MySubjectUserData .trsel").removeAttr("checked");
-    }
-  })
-  function SelectMySubjectUserAll() {
-    var bool = $("#MySubjectUserData .trselall").attr("checked");
-    bool = !bool;
-    if (bool == true) {
-      $("#MySubjectUserData .trsel").attr("checked", "checked");
-      $("#MySubjectUserData .trselall").attr("checked", "checked");
-    }
-    else {
-      $("#MySubjectUserData .trsel").removeAttr("checked");
-      $("#MySubjectUserData .trselall").removeAttr("checked");
-    }
-  }
-</script>
-
-<script src="{{ js_url('libs/bootstrap-collapse.js' )}}" type="text/javascript" charset="utf-8"></script>
-  <script src="{{ js_url('libs/bootstrap-dropdown.js' )}}" type="text/javascript" charset="utf-8"></script>
-  <script>
-$(document).ready(function(){if($('.dropdown-toggle').length){
-      $('.dropdown-toggle').dropdown();
-
-    }})
-  </script>
 {% endblock %}

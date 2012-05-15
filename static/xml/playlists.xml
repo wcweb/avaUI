@@ -1,26 +1,27 @@
 <rss version="2.0" xmlns:jwplayer="http://developer.longtailvideo.com/" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Playlist with HTTP Pseudostreaming</title>
-    <item>
-      <title>jwplayer test</title>
-      <description>Big Buck Bunny is a short animated film by the Blender Institute,
-         part of the Blender Foundation.</description>
-      <enclosure url="rtmp://192.168.0.15:1935/video.mp4" type="video/mp4" length="3192846" />
-      
-      <jwplayer:provider>rtmp</jwplayer:provider>
-      
 
-    </item>
     <item>
       <title>生物-DNA的转录</title>
       <description>本课分三段，遗传信息的定义，遗传信息的转录，遗传信息的转录过程，.</description>
-      <enclosure url="http://127.0.0.1:5000/static/video/video.mp4" type="video/mp4" length="3192846" />
+      <enclosure url="http://localhost/me/34.flv" type="video/mp4" length="3192846" />
+      <media:thumbnail url="http://localhost/me/img/preview0.jpg" />
 
       <jwplayer:provider>http</jwplayer:provider>
       <jwplayer:http.startparam>stop</jwplayer:http.startparam>
 
     </item>
+    <item>
+      <title>jwplayer test</title>
+      <description>Big Buck Bunny is a short animated film by the Blender Institute,
+         part of the Blender Foundation.</description>
+      <enclosure url="http://localhost/me/video.mp4" type="video/flv" length="3192846" />
+      <media:thumbnail url="http://localhost/me/img/preview.jpg" />
+      <jwplayer:provider>http</jwplayer:provider>
+      <jwplayer:http.startparam>start</jwplayer:http.startparam>
 
+    </item>
   </channel>
 
 </rss>
