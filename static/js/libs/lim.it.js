@@ -52,6 +52,21 @@ Limit.setup = function () {
         return this.hostname && this.hostname !== location.hostname;
     }).attr('target', '_blank');
 
+    // build an animated footer
+    $('#animated').each(function () {
+        $(this).hover(function () {
+            $(this).stop().animate({
+                opacity: 0.9
+            }, 400);
+        }, function () {
+            $(this).stop().animate({
+                opacity: 0.0
+            }, 200);
+        });
+    });
+
+
+
         // scroll to top on request
     if ($("a#totop").length) Limit.scrollToTop("a#totop");
 
