@@ -1,0 +1,112 @@
+{% extends "baseStyle/layout.html" %}
+{% block body %}
+
+	
+	<!-- Page content -->
+	<div class="">
+		<!-- Wrapper -->
+		<div class="row">
+				<!-- Left column/section -->
+				<section class="span10">					
+
+					<h3>Add new product</h3>
+					
+					<form id="sampleform" method="post" action="#">
+
+						<fieldset>
+							<legend>Product info</legend>
+
+							<p>
+								<label class="required" for="producttitle">Title</label><br/>
+								<input type="text" id="producttitle" class="half title" value="" name="producttitle"/>
+								<small>e.g. T-Shirt</small>
+							</p>
+
+							<p>
+								<label for="productdesc">Describe your product</label><br/>
+								<textarea id="productdesc" class="" name="productdesc"></textarea>
+							</p>
+							
+							<div class="clearfix leading">
+								<div class="column width3 first">
+									<p>
+										<label for="productcat">Product type</label><br/>
+										<select id="productcat" class="full" name="productcat">
+											<option value="1" selected>T-Shirts</option>
+											<option value="2">Misc.</option>
+										</select>
+										<small>e.g. T-Shirts</small>
+									</p>
+									<p><a href="#">+ Add new product type</a></p>
+								</div>
+								
+								<div class="column width3">
+									<p>
+										<label for="productvendor">Product vendor</label><br/>
+										<select id="productvendor" class="full" name="productvendor">
+											<option value="1" selected>Adidas</option>
+											<option value="2">Unknown</option>
+										</select>
+										<small>Product creator or manufacturer e.g. Adidas</small>
+									</p>
+									<p><a href="#">+ Add new category</a></p>
+								</div>
+							</div>
+						
+							<p class="pit"><input type="submit" class="btn btn-green big" value="Save"/> or <a href="#">Cancel</a></p>
+
+						</fieldset>
+
+					</form>
+
+				</section>
+				<!-- End of Left column/section -->
+				
+				<!-- Right column/section -->
+				<aside class="span6">
+					<p><a href="#" class="btn btn-special btn-green"><img SRC="{{ css_url('img/page_white_go.png')}}" class="icon" alt=""/>Preview Product</a></p>
+					<p><a href="#" class="btn btn-special"><img SRC="{{ css_url('img/page_save.png')}}" class="icon" alt=""/>Save Draft</a></p>
+					<div class="content-box">
+						<header>
+							<h3>Product Visibility</h3>
+						</header>
+						<section>
+							Choose whether or not you want this product to be publicly visible.
+							<p>
+								<select id="visibility" class="full" name="visibility">
+									<option value="1" selected>published</option>
+									<option value="2">draft</option>
+								</select>
+							</p>
+						</section>
+					</div>
+					<div class="content-box">
+						<header>
+							<h3>Product Tags</h3>
+						</header>
+						<section>
+							Enter any number of tags separated by space.
+							<p><textarea id="tags" class="small full" name="tags"></textarea></p>
+						</section>
+					</div>
+					<div id="rightmenu">
+						<dl class="first">
+							<dt><img width="16" height="16" alt="" SRC="{{ css_url('img/help.png')}}"></dt>
+							<dd><a href="#">Help</a></dd>
+							<dd class="last">If you are a new user, you should read "Getting started"</dd>							
+						</dl>
+					</div>
+				</aside>
+				<!-- End of Right column/section -->
+				
+		</div>
+		<!-- End of Wrapper -->
+	</div>
+	<!-- End of Page content -->
+	
+	
+	
+	<!-- Scroll to top link -->
+	<a href="#" id="totop">^ scroll to top</a>
+
+{% endblock %}

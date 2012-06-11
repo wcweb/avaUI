@@ -1,0 +1,381 @@
+{% extends "school/layout.html" %}
+{% block body %}
+<div class="row">
+  <div class="span16">
+    <div class="breadcrumb"><span>当前位置：</span><a href="index.html">首页</a><span class="divider">>></span>课程列表<span class="divider">>></span><span class="active"><a href="#" id="">自然科学</a></span></div>
+  </div>
+</div>
+<div class="row">
+
+  <div class="span12">
+
+    <div class="mediaPlayerWrap">
+      <div id="mediaPlayer"> </div>
+    </div>
+    
+    <hr>
+    <div id="commentArea" class="commentArea well">
+
+     <div  class="commentAction">
+
+      <div class="commentTextArea"><textarea onkeydown="ctlentComments(event,'bt_comment');" name="content" id="content" rows="2" cols="40" class="defaultext"></textarea></div>
+      <div id="toolbar" class="toolbar">
+        <div class="action">              
+          <button  name="bt_comment" id="bt_comment" class="btn">发表评论</button>
+
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <div id="videobodycommentlist" class="well">
+    <div class="count_wrapper">
+      <div class="count_comment">
+        <span>视频评论<em id="allnum_cmt" class="num">(13)</em></span>
+        <div id="pageCommentBar" class="qPager">
+          <div class="stat">第1-<span name="span_currcommenttotal1" id="span_currcommenttotal1">30</span>/<span name="span_commenttotal1" id="span_commenttotal1">261</span>条 </div>
+
+          
+        </div>
+      </div>
+      <div class="pagination">
+        <ul>
+          <li><a href="#">上一页</a></li>
+          <li class="active">
+            <a href="#">1</a>
+          </li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">下一页</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+    <div class="comments box">
+      <div style="margin-top:3px;" id="div_new_comment"></div>
+      <input type="hidden" value="http://v.t.sina.com.cn/share/share.php?appkey=2684493555&amp;title=这个视频下的评论很精彩：%E6%81%8B%E4%BA%BA%E5%95%8A2&amp;ralateUid=1642904381&amp;source=%E4%BC%98%E9%85%B7%E7%BD%91&amp;sourceUrl=http%3A%2F%2Fwww.youku.com%2F&amp;content=utf8&amp;pic=http://g1.ykimg.com/0100011F464BDCA8B4A969005E2DCCC65D461A-3427-EC32-96F0-765004F7472C&amp;url=http://v.youku.com/v_show/id_XMTg4MjU0ODg=.html" id="tran_sina">
+      <input type="hidden" value="http://share.renren.com/share/buttonshare.do?title=这个视频下的评论很精彩：%E6%81%8B%E4%BA%BA%E5%95%8A2&amp;link=http://v.youku.com/v_show/id_XMTg4MjU0ODg=.html" id="tran_renren">
+      <div id="comment196062434" class="comment">
+        <div class="bar">
+         <a name="coment_name_196062434" id="comment_name_196062434" target="_blank" charset="400-4" href="http://u.youku.com/user_show/id_UMzA3OTM4MTcy.html">yukoau</a>
+       </div>
+       <div class="con">
+        <div name="content_196062434" id="content_196062434" class="text">
+          <p id="content_4dc8de7ea834bfb14e4b1d76">感情でむずかしいことだよね！　えいえんの愛はないと信じています！<br> </p>
+        </div>
+
+      </div></div>
+      
+      
+      
+      <div id="comment67940452" class="comment">
+        <div class="bar">
+         <a name="coment_name_67940452" id="comment_name_67940452" target="_blank" charset="400-4" href="http://u.youku.com/user_show/id_UNTgwNjk4NDA=.html">loveTONO</a>
+       </div>
+       <div class="con">
+        <div name="content_67940452" id="content_67940452" class="text">
+          <p id="content_4dc8bdb7a834bfb14eb87f07">好复杂的四个人!!!<img title="无语" src="http://static.youku.com/v1.0.0736/index/img/smiley/Qoo5.gif"><br> </p>
+        </div>
+
+      </div></div>
+    </div>
+    <div class="pagination">
+      <ul>
+        <li><a href="#">上一页</a></li>
+        <li class="active">
+          <a href="#">1</a>
+        </li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">下一页</a></li>
+      </ul>
+    </div>
+
+
+  </div>
+
+
+
+
+</div>
+
+<div class="span4">
+  <div class="toggle">
+    <div class="box ">
+      <div class="">
+        <div class="">
+          <ul class="nav nav-tabs tabs">
+            <li tabidx="rkLst4" id="thrkLst1" class="active"><a href="#cont">课程简介</a></li>
+            <li tabidx="rkLst5" id="thrkLst2" ><a href="#cont2">本单元简介</a>                                           
+
+            </ul>
+          </div>
+
+
+        </div>
+        <!--head end-->
+        <div class="body tabwrap" id="slide-con1">
+         <div class="staff">
+
+          <!--列表模式-->
+          <ul>
+            <li><img src="{{url_for('static',filename='images/tmp/poplar1.gif')}}" /></li>
+            <li>主讲教师：<a href="#"><span>吴宗泽</span></a></li>
+            <li>本讲教师：<a href="#"><span>吴宗泽</span></a></li>
+            <li>课程学校<a href="#"><span>：清华大学</span></a></li>
+            <li>所属学科：<a href="#"><span>工程与科学技术</span></a></li>
+          </ul>
+        </div>
+
+        <div class="pill-content">
+          <div id="cont" data-pills="thrkLst1" class="active">
+            <div class="pill-body textlist">        
+
+              <div class="staff">
+                <div class="clearfix">
+                </div>
+                <div id="toggle-info-1"><p>机械设计课程为大学本科机械类必修的技术基础课程。1995年修订了“机械设计课程教学基本要求”。该课程以常用机械零部件设计理论与方法为主要内容,包括讲课与课程设计,目的是通过学习这些基本内容掌握有关的机械设计步骤、方法、规律和技术措施,从而具有设计其他零部件的能力。课程主要内容包括:机械设计的基本理论(强度、摩擦学等)、连接件、传动件、转动和支承零件等。课程特色:本课程的讲授贯彻“少而精”原则;课程中引入讲课人的实际设计经验和设计范例 ...</p></div>
+                
+              </div>
+              <a href="#" class="toggle-info" rel="toggle-info-1"><span>切换显示详细信息</span></a>
+            </div>
+
+          </div>  
+
+          <div id="cont2" data-pills="thrkLst2" class="">
+           <div class="pill-body"> 
+
+            <div class="staff">
+              <!--列表模式-->
+
+              <div clss="toggle-info-body" id="toggle-info">
+                <p>本单元以常用机械零部件设计理论与方法为主要内容,包括讲课与课程设计,目的是通过学习这些基本内容掌握有关的机械设计步骤、方法、规律和技术措施,从而具有设计其他零部件的能力。课程主要内容包括:机械设计的基本理论(强度、摩擦学等)、连接件、传动件、转动和支承零件等。课程特色:本课程的讲授贯彻“少而精”原则;课程中引入讲课人的实际设计经验和设计范例 ...</p>
+              </div>
+              <a href="#" class="toggle-info-btn" rel="toggle-info"><span>切换显示详细信息</span>n</a>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+        <br class="clearfix" />
+
+
+      </div>
+    </div>
+    <!--body end-->
+
+  </div>
+
+  <div id="VideoTimeInfo_wrap ">
+    <div>
+      <div class="box mbox content-box">
+        <div class="head">
+          <div class="caption">
+            <div class="title">
+              当前视频时间点</div>
+            </div>
+            <div class="extend">
+            </div>
+          </div>
+          <!--head end-->
+          <div class="body">
+            <div class="staff">
+              <!--列表模式-->
+              <p id="currentItem"></p>
+
+              <ul id="chapterlist"></ul>
+
+              <div class="clear">
+              </div>
+            </div>
+          </div>
+          <!--body end-->
+        </div>
+      </div>
+    </div>
+
+    <div class="box mbox content-box">
+      <div class="head">
+        <div class="caption">
+          <div class="title">
+            知识点列表</div>
+          </div>
+
+        </div>
+        <!--head end-->
+        <div class="body clearfix napkee">
+
+
+
+          <div id="nap37_1" class="">
+            <ul id="nap37_1browser" class="filetree treeview-famfamfam treeview">
+              <li id="nap37_1i0" class="closed collapsable"><div class="hitarea closed-hitarea collapsable-hitarea"></div><span class="hand folder">第一大知识点</span><ul style="display: block; "><li id="nap37_1i1" class="collapsable lastCollapsable"><div class="hitarea collapsable-hitarea lastCollapsable-hitarea"></div><span class="hand folder">第一小点</span><ul style="display: none; ">
+                <li>
+                  知识点描述
+                </li>
+                <li>
+                  相关知识
+                </li>
+
+
+              </ul></li></ul></li><li id="nap37_1i2" class="expandable lastExpandable"><div class="hitarea expandable-hitarea lastExpandable-hitarea"></div><span class="hand folder">第二大知识点</span><ul style="display: none; ">
+              <li>
+                知识点描述
+              </li>
+              <li>
+                相关知识
+              </li>
+
+            </ul></li>
+          </ul>
+        </div>
+      </div>
+      <!--body end-->
+    </div>
+
+
+
+
+  </div>
+
+  <div id="VideoAttachment_wrap">
+    <div>
+      <div class="box mbox content-box">
+        <div class="head">
+          <div class="caption">
+            <div class="title ">
+              <a href="#slide-con2" class="slideDown">附件</a></div>
+            </div>
+            <div class="extend">
+            </div>
+          </div>
+          <!--head end-->
+          <div class="body napkee" id="slide-con2">
+           <div id="nap38" class="napkeeComponent napkeeTree">
+            <ul id="nap38_browser" class="filetree  treeview">
+              <li id="nap37_1i0" class="closed collapsable"><div class="hitarea closed-hitarea collapsable-hitarea"></div><span class="hand folder">演示文档一</span><ul style="display: block; "><li id="nap37_1i1" class="collapsable lastCollapsable"><div class="hitarea collapsable-hitarea lastCollapsable-hitarea"></div><span class="hand file">附件 xxx.doc    </span><ul style="display: none; "></ul></li></ul></li><li id="nap37_1i2" class="expandable lastExpandable"><div class="hitarea expandable-hitarea lastExpandable-hitarea"></div><span class="hand folder">附件二</span><ul style="display: none; "></ul></li>
+            </ul>
+          </div>
+        </div>
+        <!--body end-->
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+</div>
+
+{% endblock %}
+{% block addScripts %}
+
+<!-- treeview -->
+<script src="{{ js_url('libs/jquery.treeview.min.js')}}" type="text/javascript" charset="utf-8"></script>
+
+
+<!-- bootstrap dropdown collapse -->
+<script src="{{ js_url('libs/bootstrap-dropdown.js' )}}" type="text/javascript" charset="utf-8"></script>
+<script src="{{ js_url('libs/bootstrap-collapse.js' )}}" type="text/javascript" charset="utf-8"></script>
+
+<script src="{{ js_url('libs/bootstrap-tabs.js' )}}" type="text/javascript" charset="utf-8"></script>
+
+<!-- video support -->
+<script src="{{ js_url('swfobject.js')}}"></script>
+<script src="{{url_for('static',filename='js/jwplayer.js')}}"></script>
+<script src="{{ js_url('libs/lim.it.js' )}}" type="text/javascript" charset="utf-8"></script>
+
+
+
+<script>
+$(function() {
+
+  $('.tabs').tabs();
+
+
+  $('#nap37_1browser').treeview();
+  $('#nap38_browser').treeview();
+})
+
+
+
+
+var flashvars = { 'autostart':false ,
+'playlistfile': "http://localhost/me/video.mp4",
+'playlist.position': 'bottom',
+'playlist.size': '300',
+'controlbar': 'over'
+};
+var params = { allowfullscreen:'true', allowscriptaccess:'always'    };
+var attributes = { id:'player1', name:'player1' };
+
+swfobject.embedSWF('{{url_for('static',filename='swf/player.swf')}}','mediaPlayer','700','700','9.0.115','false',
+  flashvars, params, attributes,flashLoaded);
+
+function flashLoaded(e) {
+   // e.ref is a reference to the Flash object. We'll pass it to jwplayer() so the API knows where the player is.
+
+   // Add event listeners
+   jwplayer(e.ref).onPlaylistItem(function(e){
+
+    $.ajax({
+      url: "{{url_for('static',filename='xml/playlists.xml')}}"
+    }).done(function(data) { 
+      $(data).find('item:eq('+e.index+')').each(function(){
+
+
+            // $('#currentItem')
+            //           .html('current :'+$(this).find('title').text()+'  ')
+          });
+
+          // $.ajax({
+          //   url: "http://localhost:5000/me/xml/cuepoint-"+e.index+".xml"
+          // }).done(function(data) { 
+          //   $(".pack_list").addClass("done");
+          //   $('#chapterlist').empty();
+          //   $(data).find('CuePoint').each(function(){
+          //         var item_text = $(this).text();
+          //         // <a href="#" onclick="jwplayer().seek(353);">In pursuit</a> (05:53)</li>
+
+          //         $('<li></li>')
+          //             .html("<a href='#' onclick='jwplayer().seek("
+          //               +$(this).find('Time').text()+");'>"
+          //               +$(this).find('Name').text()+"</a>")
+          //             .appendTo('#chapterlist');
+          //     });
+          // });
+
+
+    console.log("Sample of data:", e.index);
+  });
+
+});
+
+       // jwplayer(e.ref).onReady(function() { alert('Player is ready'); });
+       // jwplayer(e.ref).onPlay(function() { alert('Player is playing'); });
+
+       // Interact with the player
+       jwplayer(e.ref).play();
+     }
+
+      // PlaylistEvent.JWPLAYER_PLAYLIST_ITEM
+
+
+      </script>
+
+      {% endblock %}

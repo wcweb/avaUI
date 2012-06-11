@@ -1,0 +1,201 @@
+{% extends "school/layout.html" %}
+{% block body %}
+
+	<div class="row">
+	  <div class="span16">
+		<div class="breadcrumb">
+			<span>当前位置：</span><a href="{{url_for('index')}}">首页</a><span class="divider">>></span><a href="{{url_for('cat_list_with_school',schoolname='scnu')}}">课程列表</a><span class="divider">>></span><span class="active"><a href="#">自然科学</a></span>
+		</div>
+
+	  </div>  <!-- /span16 -->
+
+
+	  
+	</div> <!-- /row -->
+
+
+<div class="row">
+          <div class="span10">
+
+
+          <div class="box mbox "  >
+            <div class="head"  >
+              <div class="title ">
+              <a href="videolist.html" target="_blank" class="blue">国家级精品课程</a> 
+              
+              
+              </div>
+            <div class="more">
+            
+            <a href="videolist.html" target="_blank">更多</a>
+            </div>
+            </div>
+          <div class="videolist videolist-heng body clearfix">
+          
+          <ul>
+                      <li>
+                          <div class="vediodiv">
+                              <a href="{{url_for('video')}}"><img src="{{url_for('static',filename='images/tmp/poplar1.gif')}}" alt="">
+                                  <span class="time">02:22</span>
+                                </a>
+                               <a href="#" class="updatelist"><em>更新到第6集</em></a>
+                            </div>
+                          <div class="clear"></div>
+                          <p class="ttle"><a class="colr2" href="{{url_for('video')}}">数学文化</a></p>
+              <p class="viewcounts"> 顾沛 </p>
+              <p> 南开大学 </p>
+                        </li>
+                        <li>
+                          <div class="vediodiv">
+                              <a href="{{url_for('video')}}"><img src="{{url_for('static',filename='images/tmp/poplar2.gif')}}" alt="">
+                                  <span class="time">02:22</span>
+                                </a>
+                               <a href="#" class="updatelist"><em>更新到第5集</em></a>
+                            </div>
+                          <div class="clear"></div>
+                          <p><a class="colr2" href="{{url_for('video')}}"> 视觉文化批评 </a></p>
+              <p class="viewcounts"> 冯原 </p>
+              <p >中山大学</p>
+                        </li>
+                        <li>
+                          <div class="vediodiv">
+                              <a href="{{url_for('video')}}"><img src="{{url_for('static',filename='images/tmp/poplar3.gif')}}" alt="">
+                                  <span class="time">02:22</span>
+                                </a>
+                               <a href="#" class="updatelist"><em>更新到第3集</em></a>
+                            </div>
+                          <div class="clear"></div>
+                          <p><a class="colr2" href="{{url_for('video')}}">文化传承与建筑创新</a></p>
+              <p class="viewcounts"> 何镜堂 </p>
+              <p >华南理工大学<a href="#" class="undrlne"></a></p>
+                        </li>
+                        <li>
+                          <div class="vediodiv">
+                              <a href="{{url_for('video')}}"><img src="{{url_for('static',filename='images/tmp/poplar4.gif')}}" alt="">
+                                  <span class="time">02:22</span>
+                                </a>
+                               <a href="#" class="updatelist"><em>更新到第13集</em></a>
+                            </div>
+                          <div class="clear"></div>
+                          <p><a class="colr2" href="{{url_for('video')}}"> 走进交响音乐的世界 </a></p>
+              <p class="viewcounts"> 何平 </p>
+              <p > 华南理工大学 </p>
+                        </li>
+                        <li>
+                          <div class="vediodiv">
+                              <a href="{{url_for('video')}}"><img src="{{url_for('static',filename='images/tmp/poplar5.gif')}}" alt="">
+                                  <span class="time">02:22</span>
+                                </a>
+                               <a href="#" class="updatelist"><em>更新到第4集</em></a>
+                            </div>
+                          <div class="clear"></div>
+                          <p><a class="colr2" href="{{url_for('video')}}"> 历史与环保 </a></p>
+              <p class="viewcounts"> 梅雪芹 </p>
+              <p > 北京师范大学 </p>
+                        </li>
+                        <li>
+                          <div class="vediodiv">
+                              <a href="{{url_for('video')}}"><img src="{{url_for('static',filename='images/tmp/poplar6.gif')}}" alt="">
+                                  <span class="time">02:22</span>
+                                </a>
+                               <a href="#" class="updatelist"><em>更新到第8集</em></a>
+                            </div>
+                          <div class="clear"></div>
+                          <p><a class="colr2" href="{{url_for('video')}}"> 现代礼仪 </a></p>
+              <p class="viewcounts"> 袁涤非 </p>
+              <p > 湖南大学 </p>
+                        </li>
+          </ul>
+          <div class="pagination">
+            <ul>
+              <li><a href="#">上一页</a></li>
+              <li class="active">
+                <a href="#">1</a>
+              </li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">下一页</a></li>
+            </ul>
+          </div>
+          </div>
+          
+          <div class="clearFloat"></div>
+          </div>
+          </div>  <!-- /span16 -->
+
+          <div class="span6">
+            <div class="box mbox">
+              <div class="head"><a href="videolist.html" class="title">热门播放</a></div>
+              <div class="body videolist block clearfix">
+                <ul class="block">
+                  <li>
+                      <div class="thumb">
+                            <a href="{{url_for('video')}}">
+                                <img src="{{url_for('static',filename='images/tmp/featurevedio1.gif')}}" alt="" width="89" height="59">
+                          <span class="updatelist"><em>更新到第5集</em></span> 
+                            <span class="time">2.30</span>
+                            </a>
+       </div>
+                       <div class="description">
+                         <p><a class="colr2" href="#"> 新材料与社会进步 </a></p>
+                            <p class="viewcounts"> 叶志镇,赵新兵 </p>
+                            <p > 浙江大学 </p>
+                       </div>
+                    </li>
+                    <li>
+                      <div class="thumb">
+                            <a href="{{url_for('video')}}">
+                                <img src="{{url_for('static',filename='images/tmp/featurevedio2.gif')}}" alt="" width="89" height="59">
+                          <span class="updatelist"><em>更新到第5集</em></span> 
+                            <span class="time">2.30</span>
+                            </a>
+                     </div>
+                       <div class="description">
+                            <p><a class="colr2" href="#"> 技术光学 </a></p>
+                            <p class="viewcounts"> 李林 </p>
+                            <p > 北京理工大学 </p>
+                       </div>
+                    </li>
+                    <li>
+                      <div class="thumb">
+                            <a href="{{url_for('video')}}">
+                                <img src="{{url_for('static',filename='images/tmp/featurevedio3.gif')}}" alt="" width="89" height="59">
+                          <span class="updatelist"><em>更新到第5集</em></span> 
+                            <span class="time">2.30</span>
+                            </a>
+                     </div>
+                       <div class="description">
+                            <p><a class="colr2" href="#"> 中国古代思想智慧 </a></p>
+                         <p class="viewcounts"> 郭齐勇 </p>
+                            <p > 武汉大学 </p>
+                       </div>
+                    </li>
+                    <li>
+                      <div class="thumb">
+                            <a href="{{url_for('video')}}">
+                                <img src="{{url_for('static',filename='images/tmp/featurevedio4.gif')}}" alt="" width="89" height="59">
+                          <span class="updatelist"><em>更新到第5集</em></span> 
+                            <span class="time">2.30</span>
+                            </a>
+                </div>
+                       <div class="description">
+                            <p><a class="colr2" href="#"> 学习心理学 </a></p>
+                         <p class="viewcounts"> 庞维国 </p>
+                      <p > 华东师范大学 </p> 
+                      </div>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- /span -->
+
+
+
+
+          </div> <!-- /row -->
+          
+          
+	</div>
+	
+{% endblock body %}
