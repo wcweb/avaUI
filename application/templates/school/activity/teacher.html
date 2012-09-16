@@ -1,0 +1,446 @@
+{% extends "school/layout.html" %}
+{% block body %}
+
+<div class="row">
+  <div class="span16">
+    <div class="breadcrumb">
+      <span>当前位置：</span><a href="{{url_for('index')}}">首页</a><span class="divider">>></span><a href="{{url_for('cat_list_with_school',schoolname='scnu')}}">课程列表</a><span class="divider">>></span><span class="active"><a href="#">自然科学</a></span>
+    </div>
+
+  </div>  <!-- /span16 -->
+
+
+
+</div> <!-- /row -->
+
+
+<div class="row">
+  <div class="span4">
+
+
+    <div class="box mbox "  >
+      <div class="head"  >
+        <div class="title ">
+          <a href="videolist.html" target="_blank" class="blue">名师信息</a> 
+
+
+        </div>
+        <div class="more">
+
+          <a href="videolist.html" target="_blank">更多</a>
+        </div>
+      </div>
+      <div class="body">
+        <div class="avatar teacher-b"><img width="180" height="190" src="http://static.vko.cn/content/teacher/face/300/T040.jpg" alt="王于"></div>
+
+
+        <div class="profile-menu"> 
+         <table class="table table-striped">
+
+          <tbody>
+
+            <tr><td>日访问量</td> <td>200</td></tr> 
+            <tr><td>月访问量</td> <td>200</td></tr>
+            <tr><td>视频资源总数</td> <td>200</td></tr> 
+            <tr><td>视频资源点击量</td> <td>200</td></tr>
+            <tr><td>专辑数量</td> <td>200</td></tr>
+            <tr><td>TA的留言</td> <td>200</td></tr> 
+            <tr><td>TA的粉丝</td> <td>200</td></tr>
+
+
+          </tbody>
+        </table>
+
+      </div>
+
+      <dl class="visitors">
+        <dt>最近来访的同学</dt>
+
+        <dd>
+          <div class="avatar"><a href="http://www.vko.cn/home.html?id=13470995890670210" target="_blank" title="陈曼霞"><img src="http://static.vko.cn/upload/2012/09/09/0e77e30f-8a75-41b0-aa24-b769948cca7d_small.jpg" alt="陈曼霞"></a></div>
+          <span><a href="http://www.vko.cn/home.html?id=13470995890670210" title="陈曼霞">陈曼霞</a></span>
+          <span class="time">9月9日</span>
+        </dd>
+
+        <dd>
+          <div class="avatar"><a href="http://www.vko.cn/home.html?id=13427054157330811" target="_blank" title="罗参峰"><img src="http://static.vko.cn/upload/2012/08/26/004d8212-a799-464d-9030-49fa834beed5_small.jpg" alt="罗参峰"></a></div>
+          <span><a href="http://www.vko.cn/home.html?id=13427054157330811" title="罗参峰">罗参峰</a></span>
+          <span class="time">9月9日</span>
+        </dd>
+
+        <dd>
+          <div class="avatar"><a href="http://www.vko.cn/home.html?id=284" target="_blank" title="冰凌"><img src="http://static.vko.cn/upload/user/A708E4BB27184622AA901A699AEDC609_small.jpg" alt="冰凌"></a></div>
+          <span><a href="http://www.vko.cn/home.html?id=284" title="冰凌">冰凌</a></span>
+          <span class="time">9月7日</span>
+        </dd>
+
+        <dd>
+          <div class="avatar"><a href="http://www.vko.cn/home.html?id=13432750936551163" target="_blank" title="王林"><img src="http://static.vko.cn/vko_web_static/resources/images/default/user_small.jpg" alt="王林"></a></div>
+          <span><a href="http://www.vko.cn/home.html?id=13432750936551163" title="王林">王林</a></span>
+          <span class="time">9月6日</span>
+        </dd>
+
+        <dd>
+          <div class="avatar"><a href="http://www.vko.cn/home.html?id=13468286138490038" target="_blank" title="张军宏"><img src="http://static.vko.cn/vko_web_static/resources/images/default/user_small.jpg" alt="张军宏"></a></div>
+          <span><a href="http://www.vko.cn/home.html?id=13468286138490038" title="张军宏">张军宏</a></span>
+          <span class="time">9月5日</span>
+        </dd>
+
+        <dd>
+          <div class="avatar"><a href="http://www.vko.cn/home.html?id=1765135516" target="_blank" title="徐世超"><img src="http://static.vko.cn/upload/2012/07/06/92ae8f87-6193-490d-8300-54147ce42e44_small.jpg" alt="徐世超"></a></div>
+          <span><a href="http://www.vko.cn/home.html?id=1765135516" title="徐世超">徐世超</a></span>
+          <span class="time">9月5日</span>
+        </dd>
+
+        <dd>
+          <div class="avatar"><a href="http://www.vko.cn/home.html?id=13461648539500180" target="_blank" title="刘文一"><img src="http://static.vko.cn/vko_web_static/resources/images/default/user_small.jpg" alt="刘文一"></a></div>
+          <span><a href="http://www.vko.cn/home.html?id=13461648539500180" title="刘文一">刘文一</a></span>
+          <span class="time">9月4日</span>
+        </dd>
+
+        <dd>
+          <div class="avatar"><a href="http://www.vko.cn/home.html?id=13467342125890768" target="_blank" title="地方官"><img src="http://static.vko.cn/vko_web_static/resources/images/default/user_small.jpg" alt="地方官"></a></div>
+          <span><a href="http://www.vko.cn/home.html?id=13467342125890768" title="地方官">地方官</a></span>
+          <span class="time">9月4日</span>
+        </dd>
+
+        <dd>
+          <div class="avatar"><a href="http://www.vko.cn/home.html?id=10039" target="_blank" title="高雪林"><img src="http://static.vko.cn/upload/user/C33455B596ED425CAD637F4AD7359F39_small.jpg" alt="高雪林"></a></div>
+          <span><a href="http://www.vko.cn/home.html?id=10039" title="高雪林">高雪林</a></span>
+          <span class="time">9月3日</span>
+        </dd>
+
+        <dd>
+          <div class="avatar"><a href="http://www.vko.cn/home.html?id=3246852013" target="_blank" title="小韩同学"><img src="http://static.vko.cn/vko_web_static/resources/images/default/user_small.jpg" alt="小韩同学"></a></div>
+          <span><a href="http://www.vko.cn/home.html?id=3246852013" title="小韩同学">小韩同学</a></span>
+          <span class="time">9月2日</span>
+        </dd>
+
+        <dd>
+          <div class="avatar"><a href="http://www.vko.cn/home.html?id=13464430303850105" target="_blank" title="刘扬"><img src="http://static.vko.cn/vko_web_static/resources/images/default/user_small.jpg" alt="刘扬"></a></div>
+          <span><a href="http://www.vko.cn/home.html?id=13464430303850105" title="刘扬">刘扬</a></span>
+          <span class="time">9月1日</span>
+        </dd>
+
+        <dd>
+          <div class="avatar"><a href="http://www.vko.cn/home.html?id=13463313353570436" target="_blank" title="尹嘉禄"><img src="http://static.vko.cn/vko_web_static/resources/images/default/user_small.jpg" alt="尹嘉禄"></a></div>
+          <span><a href="http://www.vko.cn/home.html?id=13463313353570436" title="尹嘉禄">尹嘉禄</a></span>
+          <span class="time">8月31日</span>
+        </dd>
+
+      </dl>
+
+    </div>
+  </div>
+</div>  <!-- /span4 -->
+
+<div class="span8">
+  <div class="box mbox">
+    <div class="head"  >
+        <div class="title ">
+          <a href="videolist.html" target="_blank" class="blue"><strong>王于</strong>老师</a> 
+
+
+        </div>
+        <div class="more">
+
+          <a href="videolist.html" target="_blank">更多</a>
+        </div>
+      </div>
+
+    <div class="body">
+     <div class="teacher-info">
+      <div class="brief"><span>简介：</span>北京市日坛中学高中示范校高三英语把关教师，优秀青年教师，多年高考总复习辅导经验，功底深厚，高考考点把握精准，深受学生喜爱。<br><span>风格：</span>语言温柔，讲解精细，极具亲和力，以平和温暖的话语鼓励引导学生不断进步，闻之如沐春风。</div>
+
+      <hr />
+      <div class="operate">
+       
+        <!-- 百度分享 start -->
+        <div class="share">
+          <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+            <span class="bds_more">分享到：</span>
+            <a class="bds_qzone" title="分享到QQ空间" href="#"></a>
+            <a class="bds_tsina" title="分享到新浪微博" href="#"></a>
+            <a class="bds_tqq" title="分享到腾讯微博" href="#"></a>
+            <a class="bds_renren" title="分享到人人网" href="#"></a>
+          </div>
+          <script type="text/javascript" id="bdshare_js" data="type=tools&amp;mini=1" src="http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=20120903"></script>
+          <script type="text/javascript" id="bdshell_js" src="http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=16"></script>
+          <script type="text/javascript">
+          document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+          </script>
+        </div>
+        <!-- 百度分享 end -->
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+<div class="box mbox">
+  <div class="body well">
+
+    <ul class="nav nav-tabs tabs">
+      <li tabidx="wodeshipin" id="wodehipin" class="active">
+        <a href="#myVideoes" data-toggle="tab">我的视频</a>
+      </li>
+      <li tabidx="wodezhuanji" id="wodezhuanji" >
+        <a href="#myAlbum" data-toggle="tab">我的专辑</a>
+      </li>
+      <li tabidx="wodepinlun" id="wodepinlun"> 
+        <a href="#myComment" data-toggle="tab">关于我的评论</a>
+      </li>
+    </ul>
+
+    <div class="pill-content body">
+      <div id="myVideoes" data-pills="myVideoes" class="active">
+        <div class="pill-body textlist">  
+          <table class="table table-striped">
+           <caption>我的视频</caption>
+           <thead>
+            <tr>
+              <th>标题</th>  <th>日期</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr><td>日访问量</td> <td>2012/09/10</td></tr> 
+            <tr><td>月访问量</td> <td>2012/09/10</td></tr>
+            <tr><td>视频资源总数</td> <td>2012/09/10</td></tr> 
+            <tr><td>视频资源点击量</td> <td>2012/09/10</td></tr>
+            <tr><td>专辑数量</td> <td>2012/09/10</td></tr>
+            <tr><td>直播课堂次数</td> <td>2012/09/10</td></tr> 
+            <tr><td>教研互动次数</td> <td>2012/09/10</td></tr>
+
+
+          </tbody>
+        </table> 
+      </div>
+    </div>
+
+    <div id="myAlbum" data-pills="myAlbum" >
+      <div class="pill-body textlist">  
+        <table class="table table-striped">
+         <caption>我的专辑</caption>
+         <thead>
+          <tr>
+            <th>标题</th>  <th>日期</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr><td>日访问量</td> <td>2012/09/10</td></tr> 
+          <tr><td>月访问量</td> <td>2012/09/10</td></tr>
+          <tr><td>视频资源总数</td> <td>2012/09/10</td></tr> 
+          <tr><td>视频资源点击量</td> <td>2012/09/10</td></tr>
+          <tr><td>专辑数量</td> <td>2012/09/10</td></tr>
+          <tr><td>直播课堂次数</td> <td>2012/09/10</td></tr> 
+          <tr><td>教研互动次数</td> <td>2012/09/10</td></tr>
+
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="myComment" data-pills="myComment" >
+    <div class="pill-body textlist">  
+
+      <table class="table table-striped">
+       <caption>关于我的评论</caption>
+       <thead>
+        <tr>
+          <th>科组</th> <th>授课人</th> <th>视频名字</th> <th>点击量</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>科组x</td> <td>授课人x</td> <td>视频名字x</td> <td>点击量x</td>
+        </tr>
+        <tr>
+          <td>科组x</td> <td>授课人x</td> <td>视频名字x</td> <td>点击量x</td>
+        </tr>
+        <tr>
+          <td>科组x</td> <td>授课人x</td> <td>视频名字x</td> <td>点击量x</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+</div> <!-- /span -->
+
+<div class="span4">
+  <div class="box mbox">
+    <div class="head"><a href="videolist.html" class="title">热门播放</a></div>
+    <div class="body videolist block clearfix">
+                <ul class="block">
+                  <li>
+                      <div class="thumb">
+                            <a href="detail.html">
+                                <img src="{{url_for('static',filename='images/tmp/featurevedio1.gif')}}" alt="" width="89" height="59">
+                          <span class="updatelist"><em>更新到第5集</em></span> 
+                            <span class="time">2.30</span>
+                            </a>
+       </div>
+                       <div class="description">
+                         <p><a class="colr2" href="#"> 新材料与社会进步 </a></p>
+                            <p class="viewcounts"> 叶志镇,赵新兵 </p>
+                            <p > 浙江大学 </p>
+                       </div>
+                    </li>
+                    <li>
+                      <div class="thumb">
+                            <a href="detail.html">
+                                <img src="{{url_for('static',filename='images/tmp/featurevedio2.gif')}}" alt="" width="89" height="59">
+                          <span class="updatelist"><em>更新到第5集</em></span> 
+                            <span class="time">2.30</span>
+                            </a>
+                     </div>
+                       <div class="description">
+                            <p><a class="colr2" href="#"> 技术光学 </a></p>
+                            <p class="viewcounts"> 李林 </p>
+                            <p > 北京理工大学 </p>
+                       </div>
+                    </li>
+                    <li>
+                      <div class="thumb">
+                            <a href="detail.html">
+                                <img src="{{url_for('static',filename='images/tmp/featurevedio3.gif')}}" alt="" width="89" height="59">
+                          <span class="updatelist"><em>更新到第5集</em></span> 
+                            <span class="time">2.30</span>
+                            </a>
+                     </div>
+                       <div class="description">
+                            <p><a class="colr2" href="#"> 中国古代思想智慧 </a></p>
+                         <p class="viewcounts"> 郭齐勇 </p>
+                            <p > 武汉大学 </p>
+                       </div>
+                    </li>
+                    <li>
+                      <div class="thumb">
+                            <a href="detail.html">
+                                <img src="{{url_for('static',filename='images/tmp/featurevedio4.gif')}}" alt="" width="89" height="59">
+                          <span class="updatelist"><em>更新到第5集</em></span> 
+                            <span class="time">2.30</span>
+                            </a>
+                </div>
+                       <div class="description">
+                            <p><a class="colr2" href="#"> 学习心理学 </a></p>
+                         <p class="viewcounts"> 庞维国 </p>
+                      <p > 华东师范大学 </p> 
+                      </div>
+                    </li>
+                </ul>
+              </div>
+  </div>
+
+  <div class="box mbox">
+    <div class="head"><a href="videolist.html" class="title">你可能感兴趣的老师</a></div>
+    <div class="body videolist block clearfix">
+                <ul class="block">
+                  <li>
+                      <div class="thumb">
+                            <a href="detail.html">
+                                <img src="{{url_for('static',filename='images/tmp/featurevedio1.gif')}}" alt="" width="89" height="59">
+                          <span class="updatelist"><em>更新到第5集</em></span> 
+                            <span class="time">2.30</span>
+                            </a>
+       </div>
+                       <div class="description">
+                         <p><a class="colr2" href="#"> 新材料与社会进步 </a></p>
+                            <p class="viewcounts"> 叶志镇,赵新兵 </p>
+                            <p > 浙江大学 </p>
+                       </div>
+                    </li>
+                    <li>
+                      <div class="thumb">
+                            <a href="detail.html">
+                                <img src="{{url_for('static',filename='images/tmp/featurevedio2.gif')}}" alt="" width="89" height="59">
+                          <span class="updatelist"><em>更新到第5集</em></span> 
+                            <span class="time">2.30</span>
+                            </a>
+                     </div>
+                       <div class="description">
+                            <p><a class="colr2" href="#"> 技术光学 </a></p>
+                            <p class="viewcounts"> 李林 </p>
+                            <p > 北京理工大学 </p>
+                       </div>
+                    </li>
+                    <li>
+                      <div class="thumb">
+                            <a href="detail.html">
+                                <img src="{{url_for('static',filename='images/tmp/featurevedio3.gif')}}" alt="" width="89" height="59">
+                          <span class="updatelist"><em>更新到第5集</em></span> 
+                            <span class="time">2.30</span>
+                            </a>
+                     </div>
+                       <div class="description">
+                            <p><a class="colr2" href="#"> 中国古代思想智慧 </a></p>
+                         <p class="viewcounts"> 郭齐勇 </p>
+                            <p > 武汉大学 </p>
+                       </div>
+                    </li>
+                    <li>
+                      <div class="thumb">
+                            <a href="detail.html">
+                                <img src="{{url_for('static',filename='images/tmp/featurevedio4.gif')}}" alt="" width="89" height="59">
+                          <span class="updatelist"><em>更新到第5集</em></span> 
+                            <span class="time">2.30</span>
+                            </a>
+                </div>
+                       <div class="description">
+                            <p><a class="colr2" href="#"> 学习心理学 </a></p>
+                         <p class="viewcounts"> 庞维国 </p>
+                      <p > 华东师范大学 </p> 
+                      </div>
+                    </li>
+                </ul>
+              </div>
+  </div>
+
+
+
+</div> <!-- /span -->
+
+
+
+</div> <!-- /row -->
+
+
+</div>
+
+{% endblock body %}
+
+
+{% block addScripts %}
+
+
+<!-- bootstrap bootstrap-tabs.jscollapse -->
+<script src="{{ js_url('bootstrap/bootstrap-tab.js' )}}" type="text/javascript" charset="utf-8"></script>
+
+
+<!-- bootstrap dropdown collapse -->
+<script src="{{ js_url('bootstrap/bootstrap-dropdown.js' )}}" type="text/javascript" charset="utf-8"></script>
+
+
+<script type="text/javascript">
+
+$(function(){
+  $('.nav-tabs').tab();
+})
+
+</script>
+{% endblock addScripts %}

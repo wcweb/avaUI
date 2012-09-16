@@ -1,0 +1,19 @@
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+	<channel>
+		<item>
+			<title>Big Buck Bunny</title>
+			<link>http://content.bitsontherun.com/previews/ntPYsD4L-ALJ3XQCI</link>
+			<seekTime>10</seekTime>
+		</item>
+		<item>
+			<title>Elephants Dream</title>
+			<link>http://content.bitsontherun.com/previews/LJSVMnCF-ALJ3XQCI</link>
+			<seekTime>50</seekTime>
+		</item>
+		<item>
+			<title>Sintel</title>
+			<link>http://content.bitsontherun.com/previews/r3ABWwdO-ALJ3XQCI</link>
+			<seekTime>100</seekTime>
+		</item>
+	</channel>
+</rss>

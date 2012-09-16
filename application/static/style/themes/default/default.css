@@ -7,12 +7,14 @@ Version: 1.2
 Author: Gilbert Pellegrom
 Author URI: http://dev7studios.com
 */
+#wrapper{
+	background: #EEE;
+	border: 1px solid #CBCBCB;
+}
 .slider-wrapper{
 	overflow:hidden;
 	position: relative;
-	background: #EEE;
-	border: 1px solid #CBCBCB;
-	padding: 10px;
+	margin:10px;
 }
 .theme-default .nivoSlider {
 	position:relative;
@@ -82,7 +84,7 @@ Author URI: http://dev7studios.com
 }
 
 .theme-default .nivo-controlNav.nivo-thumbs-enabled {
-	width: 180px;
+	width: 130px;
 	position: absolute;
 	right:0px;
 	padding-top: 0;

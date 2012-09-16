@@ -1,0 +1,418 @@
+{% extends "school/layout.html" %}
+
+{% block addStyle %}
+<link href="{{ url_for('static',filename='style/ui-lightness/jquery-ui-1.8.23.custom.css') }}" rel="stylesheet" type="text/css">
+
+<link href="{{ url_for('static',filename='style/jquery.jqplot.min.css') }}" rel="stylesheet" type="text/css">
+
+{% endblock %}
+
+
+{% block body %}
+
+<div class="row">
+  <div class="span16">
+    <div class="breadcrumb">
+      <span>当前位置：</span><a href="{{url_for('index')}}">首页</a><span class="divider">>></span><a href="{{url_for('cat_list_with_school',schoolname='scnu')}}">课程列表</a><span class="divider">>></span><span class="active"><a href="#">自然科学</a></span>
+    </div>
+
+  </div>  <!-- /span16 -->
+
+
+
+</div> <!-- /row -->
+
+<div class="row">
+  <div class="span4">
+    <div class="box mbox "  >
+      <div class="head"  >
+        <div class="title ">
+          <a href="videolist.html" target="_blank" class="blue">教研日历</a> 
+        </div>
+        
+      </div>
+      <div class="body">
+        <div class="datepicker" id="datepicker"></div>
+      </div>
+    </div>
+  </div>  <!-- /span4 -->
+
+  <div class="span8">
+    <div class="box mbox">
+      <div class="head"><a href="videolist.html" class="title">系统概况</a></div>
+      <div class="body ">
+
+        <table class="table table-striped">
+         <caption>系统概况</caption>
+         <thead>
+          <tr>
+            <th>项目</th>  <th>数量</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr><td>日访问量</td> <td>200</td></tr> 
+          <tr><td>月访问量</td> <td>200</td></tr>
+          <tr><td>视频资源总数</td> <td>200</td></tr> 
+          <tr><td>视频资源点击量</td> <td>200</td></tr>
+          <tr><td>专辑数量</td> <td>200</td></tr>
+          <tr><td>直播课堂次数</td> <td>200</td></tr> 
+          <tr><td>教研互动次数</td> <td>200</td></tr>
+
+
+        </tbody>
+      </table>
+
+
+
+    </div>
+  </div>
+</div> <!-- /span8-->
+
+<div class="span4">
+  <div class="box mbox "  >
+    <div class="head"  >
+      <div class="title ">
+        <a href="videolist.html" target="_blank" class="blue">信息公告</a> 
+      </div>
+      <div class="more">
+        <a href="videolist.html" target="_blank">更多</a>
+      </div>
+    </div>
+    <div class="body">
+     <table class="table table-striped">
+       <caption>信息公告</caption>
+       <thead>
+        <tr>
+          <th>标题</th>  <th>日期</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr><td>日访问量</td> <td>2012/09/10</td></tr> 
+        <tr><td>月访问量</td> <td>2012/09/10</td></tr>
+        <tr><td>视频资源总数</td> <td>2012/09/10</td></tr> 
+        <tr><td>视频资源点击量</td> <td>2012/09/10</td></tr>
+        <tr><td>专辑数量</td> <td>2012/09/10</td></tr>
+        <tr><td>直播课堂次数</td> <td>2012/09/10</td></tr> 
+        <tr><td>教研互动次数</td> <td>2012/09/10</td></tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</div>  <!-- /span4 -->
+</div> <!-- /row -->
+
+<div class="row">
+  <div class="span4">
+    <div class="box mbox "  >
+      <div class="head"  >
+        <div class="title ">
+          <a href="videolist.html" target="_blank" class="blue">教研活动统计</a> 
+        </div>
+        <div class="more">
+          <a href="videolist.html" target="_blank">更多</a>
+        </div>
+      </div>
+      <div class="body">
+
+       <table class="table table-striped">
+         <caption>参与人数最多排行</caption>
+         <thead>
+          <tr>
+            <th>活动名称</th>  <th>参与人数</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>活动名称abccc</td>  <td>100</td>
+          </tr>
+          <tr>
+            <td>活动名称abccc</td>  <td>100</td>
+          </tr>
+          <tr>
+            <td>活动名称abccc</td>  <td>100</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped">
+       <caption>点击量最大排行</caption>
+       <thead>
+        <tr>
+          <th>活动名称</th>  <th>点击量</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>活动名称abccc</td>  <td>100</td>
+        </tr>
+        <tr>
+          <td>活动名称abccc</td>  <td>100</td>
+        </tr>
+        <tr>
+          <td>活动名称abccc</td>  <td>100</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>  <!-- /span4 -->
+
+<div class="span8">
+  <div class="box mbox">
+    <div class="head"><a href="videolist.html" class="title">视频资源统计</a></div>
+    <div class="body">
+
+
+
+      <table class="table table-striped">
+       <caption>点击排行</caption>
+       <thead>
+        <tr>
+          <th>科组</th> <th>授课人</th> <th>视频名字</th> <th>点击量</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>科组x</td> <td>授课人x</td> <td>视频名字x</td> <td>点击量x</td>
+        </tr>
+        <tr>
+          <td>科组x</td> <td>授课人x</td> <td>视频名字x</td> <td>点击量x</td>
+        </tr>
+        <tr>
+          <td>科组x</td> <td>授课人x</td> <td>视频名字x</td> <td>点击量x</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <table class="table table-striped">
+     <caption>好评排行</caption>
+     <thead>
+      <tr>
+        <th>科组</th> <th>授课人</th> <th>视频名字</th> <th>点击量</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>科组x</td> <td>授课人x</td> <td>视频名字x</td> <td>点击量x</td>
+      </tr>
+      <tr>
+        <td>科组x</td> <td>授课人x</td> <td>视频名字x</td> <td>点击量x</td>
+      </tr>
+      <tr>
+        <td>科组x</td> <td>授课人x</td> <td>视频名字x</td> <td>点击量x</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-striped">
+   <caption>评论排行</caption>
+   <thead>
+    <tr>
+      <th>科组</th> <th>授课人</th> <th>视频名字</th> <th>点击量</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>科组x</td> <td>授课人x</td> <td>视频名字x</td> <td>点击量x</td>
+    </tr>
+    <tr>
+      <td>科组x</td> <td>授课人x</td> <td>视频名字x</td> <td>点击量x</td>
+    </tr>
+    <tr>
+      <td>科组x</td> <td>授课人x</td> <td>视频名字x</td> <td>点击量x</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<div class="box mbox "  >
+  <div class="head"  >
+    <div class="title ">
+      <a href="videolist.html" target="_blank" class="blue">教师活跃度统计</a> 
+    </div>
+    <div class="more">
+      <a href="videolist.html" target="_blank">更多</a>
+    </div>
+  </div>
+  <div class="body">
+    <table class="table table-striped">
+     <caption>教师活跃度统计</caption>
+     <thead>
+      <tr>
+        <th>教师名字</th>  
+        <th>共享资源</th> 
+        <th>专辑数</th> 
+        <th>直播课程</th> 
+        <th>参与互动课堂次数</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>abccc</td>  
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>abccc</td>  
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>abccc</td>  
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+      </tr>
+    </tbody>
+  </table>
+</div>  
+</div>
+</div> <!-- /span8-->
+
+<div class="span4">
+  <div class="box mbox "  >
+    <div class="head"  >
+      <div class="title ">
+        <a href="videolist.html" target="_blank" class="blue">资源数据统计</a> 
+      </div>
+      <div class="more">
+        <a href="videolist.html" target="_blank">更多</a>
+      </div>
+    </div>
+    <div class="body">
+
+
+
+      <div id="xuekefenbu" style="height:300px;width:200px; "></div>
+      <hr />
+      <div id="leibiefenbu" style="height:300px;width:200px; "></div>
+
+    </div>  
+  </div>
+</div>  <!-- /span4 -->
+</div> <!-- /row -->
+
+<div class="row">
+  <div class="span8 offset4">
+
+
+  </div>
+</div>
+
+</div>
+
+{% endblock body %}
+{% block addScripts %}
+<!-- treeview -->
+<script src="{{ js_url('jquery/jquery.ui.datepicker.js')}}" type="text/javascript" charset="utf-8"></script>
+
+<!--jqplot-->
+<script src="{{ js_url('jquery/jquery.jqplot.min.js')}}" type="text/javascript" charset="utf-8"></script>
+<script src="{{ js_url('jquery/plugins/jqplot.lineRenderer.js')}}" type="text/javascript" charset="utf-8"></script>
+
+
+<script src="{{ js_url('jquery/plugins/jqplot.barRenderer.js')}}" type="text/javascript" charset="utf-8"></script>
+
+
+
+<script src="{{ js_url('jquery/plugins/jqplot.categoryAxisRenderer.min.js')}}" type="text/javascript" charset="utf-8"></script>
+
+<script src="{{ js_url('jquery/plugins/jqplot.pointLabels.min.js')}}" type="text/javascript" charset="utf-8"></script>
+
+
+<script src="{{ js_url('jquery/plugins/jqplot.canvasAxisTickRenderer.min.js')}}" type="text/javascript" charset="utf-8"></script>
+
+<script src="{{ js_url('jquery/plugins/jqplot.canvasAxisTickRenderer.min.js')}}" type="text/javascript" charset="utf-8"></script>
+
+<script src="{{ js_url('jquery/plugins/jqplot.dateAxisRenderer.min.js')}}" type="text/javascript" charset="utf-8"></script>
+
+
+<!-- bootstrap dropdown collapse -->
+<script src="{{ js_url('bootstrap/bootstrap-dropdown.js' )}}" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+ if($.jqplot!==undefined){
+
+
+  if($('#leibiefenbu').length){
+    $.jqplot.config.enablePlugins = true;
+
+    var ss2 = [["讲解", 7], ["数学", 9], ["英语", 15], 
+    ["政治", 12], ["生物", 3], 
+    ["化学", 6], ["物理", 18],["历史", 18]];
+
+    $.jqplot('leibiefenbu',  [ss2],
+      { title:'类别分布统计', 
+      seriesDefaults:{
+        renderer:$.jqplot.BarRenderer,
+        rendererOptions: {
+          // barDirection : 'vertical',
+          barMargin : 2,
+          barPadding : 1
+        },
+        pointLabels: {show: true}
+
+      },
+      axes: {
+        xaxis: {
+          renderer: $.jqplot.CategoryAxisRenderer
+        }
+      }
+    });
+  }
+
+
+  if($('#xuekefenbu').length){
+    $.jqplot.config.enablePlugins = true;
+
+    var ss2 = [["语文", 7], ["数学", 9], ["英语", 15], 
+    ["政治", 12], ["生物", 3], 
+    ["化学", 6], ["物理", 18],["历史", 18]];
+
+    $.jqplot('xuekefenbu',  [ss2],
+      { title:'类别分布统计', 
+      seriesDefaults:{
+        renderer:$.jqplot.BarRenderer,
+        rendererOptions: {
+          // barDirection : 'vertical',
+          barMargin : 2,
+          barPadding : 1
+        },
+        pointLabels: {show: true}
+
+      },
+      axes: {
+        xaxis: {
+          renderer: $.jqplot.CategoryAxisRenderer
+        }
+      }
+    });
+  }
+
+  
+  
+
+
+
+}
+
+});
+
+
+</script>
+
+
+
+{% endblock addScripts %}

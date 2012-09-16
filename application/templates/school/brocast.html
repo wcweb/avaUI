@@ -1,0 +1,658 @@
+{% extends "school/layout.html" %}
+
+
+{% block addStyle %}
+<link rel=stylesheet type=text/css href="{{ url_for('static',filename='style/jquery.rating.css')}}" >
+<link rel=stylesheet type=text/css href="{{ url_for('static',filename='style/jquery.stupid.css')}}" >
+<link href="{{ url_for('static',filename='style/jquery.jqplot.min.css') }}" rel="stylesheet" type="text/css">
+
+<style>
+
+
+</style>
+
+{% endblock %}
+
+{% block body %}
+<div class="row">
+  <div class="span16">
+    <div class="breadcrumb"><span>当前位置：</span><a href="index.html">首页</a><span class="divider">>></span>课程列表<span class="divider">>></span><span class="active"><a href="#" id="">自然科学</a></span></div>
+  </div>
+</div>
+<div class="row">
+
+  <div class="span10">
+
+    <div class="mediaPlayerWrap">
+
+
+      <video id="mediaPlayer"></video>
+    </div>
+    
+    
+    <hr>
+    
+    <div class="box">
+      <div class="">
+        <div class="">
+          <ul class="tabs" style="list-style:none;">
+            <li tabidx="rkLst1" id="thrkLst1" ><a href="#content1" class="btn">评价量表</a></li>
+            <li tabidx="rkLst2" id="thrkLst2" ><a href="#content2" class="btn">语音打点</a></li>
+            <li tabidx="rkLst3" id="thrkLst3" ><a href="#content3" class="btn">教学行为分析</a></li>
+            <li tabidx="rkLst4" id="thrkLst4" class="active"><a href="#content4" class="btn">行为分析图</a></li>
+            
+          </ul>
+        </div>
+        
+        <div class="pill-content body">
+          <div id="content1" data-pills="rkLst1" >
+            <div class="pill-body hor-tabs"> 
+
+              <ul class="tabs" style="list-style:none;">
+                <li tabidx="rkLst11" id="thrkLst11" class="active"><a href="#content11" class="btn">教学目标</a></li>
+                <li tabidx="rkLst21" id="thrkLst21" ><a href="#content21" class="btn">教学过程</a></li>
+                <li tabidx="rkLst31" id="thrkLst31" ><a href="#content31" class="btn">教学效果分析</a></li>
+                
+              </ul>
+              
+              <div class="pill-content hor-content">
+                <div id="content11" data-pills="rkLst11" class="active">
+                  <div class="pill-body"> 
+                    评估内容
+                    <table class="table">
+                      <tr>
+                        <th>要求</th>
+                        <th>得分</th>
+                        <th>权重</th>
+                      </tr>
+                      <tr>
+                        <td>教学目的明确，符合教学大纲要求；</td>
+                        <td>
+                          <input name="pingfen1" type="radio" value="1" class="pingfen"/>
+                          <input name="pingfen1" type="radio" value="2" class="pingfen"/>
+                          <input name="pingfen1" type="radio" value="3" class="pingfen"/>
+                          <input name="pingfen1" type="radio" value="4" class="pingfen"/>
+                          <input name="pingfen1" type="radio" value="5" class="pingfen"/>
+                        </td>
+                        <td>0.5</td>
+                      </tr>
+                      <tr>
+                        <td>教学目的明确，符合教学大纲要求；</td>
+                        <td>
+                          <input name="pingfen2" type="radio" class="pingfen"/>
+                          <input name="pingfen2" type="radio" class="pingfen"/>
+                          <input name="pingfen2" type="radio" class="pingfen"/>
+                          <input name="pingfen2" type="radio" class="pingfen"/>
+                          <input name="pingfen2" type="radio" class="pingfen"/>
+                        </td>
+                        <td>0.5</td>
+                      </tr>
+                      <tr>
+                        <td>教学目的明确，符合教学大纲要求；</td>
+                        <td>
+                          <input name="pingfen3" type="radio" class="pingfen"/>
+                          <input name="pingfen3" type="radio" class="pingfen"/>
+                          <input name="pingfen3" type="radio" class="pingfen"/>
+                          <input name="pingfen3" type="radio" class="pingfen"/>
+                          <input name="pingfen3" type="radio" class="pingfen"/>
+                        </td>
+                        <td>0.5</td>
+                      </tr>
+                    </table> 
+                    
+                    
+                    
+                  </div>
+                </div>
+                <div id="content21" data-pills="rkLst21" class="">
+                  <div class="pill-body"> 
+                    教学过程
+                  </div>
+                </div>
+                <div id="content31" data-pills="rkLst31" class="">
+                  <div class="pill-body"> 
+                    教学效果
+                  </div>
+                </div>
+                
+              </div>
+              
+              
+            </div>
+          </div>
+          <div id="content2" data-pills="rkLst2" class="">
+            <div class="pill-body"> 
+              语音打点
+            </div>
+          </div>
+          <div id="content3" data-pills="rkLst3" class="">
+            <div class="pill-body"> 
+              教学行为分析
+              <div id="st_wraper"></div>
+            </div>
+          </div>
+          
+          <div id="content4" data-pills="rklst4" class="active" >
+            <div class="pill-body">
+              行为分析图
+              <div id="chart2" style="height:400px;width:500px; "></div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+
+    
+  </div>
+  
+  <div class="span6">
+    <div class="toggle">
+      <div class="box ">
+        <div class="">
+          <div class="">
+            <ul class="nav nav-tabs tabs">
+              <li tabidx="kechengjianjie" id="kechengjianjie" class="active"><a href="#cont">课程信息</a></li>
+              <li tabidx="xingweifenxi" id="xingweifenxi" ><a href="#cont2">评课信息</a>                                           
+
+                <li tabidx="kechengjianjie" id="kechengjianjie"><a href="#cont">专家评课</a></li>
+                <li tabidx="xingweifenxi" id="xingweifenxi" ><a href="#comments">浏览感言</a>                                           
+                </ul>
+              </div>
+
+
+            </div>
+            <!--head end-->
+
+            <div class="pill-content body">
+              <div id="cont" data-pills="kechengjianjie" class="active">
+                <div class="pill-body textlist">        
+
+
+                  <div class=" tabwrap" id="slide-con1">
+                    <div class="staff">
+
+                      <!--列表模式-->
+                      <ul>
+                        <li><img src="{{url_for('static',filename='images/tmp/poplar1.gif')}}" /></li>
+                        <li>主讲教师：<a href="#"><span>吴宗泽</span></a></li>
+                        <li>本讲教师：<a href="#"><span>吴宗泽</span></a></li>
+                        <li>课程学校<a href="#"><span>：清华大学</span></a></li>
+                        <li>所属学科：<a href="#"><span>工程与科学技术</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="toggle-info" id="toggle-info-1"><p>机械设计课程为大学本科机械类必修的技术基础课程。1995年修订了“机械设计课程教学基本要求”。该课程以常用机械零部件设计理论与方法为主要内容,包括讲课与课程设计,目的是通过学习这些基本内容掌握有关的机械设计步骤、方法、规律和技术措施,从而具有设计其他零部件的能力。课程主要内容包括:机械设计的基本理论(强度、摩擦学等)、连接件、传动件、转动和支承零件等。课程特色:本课程的讲授贯彻“少而精”原则;课程中引入讲课人的实际设计经验和设计范例 ...</p></div>
+
+                  </div>
+                  <a href="#" class="toggle-info-btn" rel="toggle-info-1"><span>切换显示详细信息</span></a>
+                </div>
+
+              </div>  
+
+              <div class="zhuangjia_comments">
+                
+                <div class="pill-body">
+
+                  <div class="count_wrapper">
+                    <div class="count_comment">
+                      
+                      <div id="pageCommentBar" class="qPager">
+                        <span>视频评论<em id="allnum_cmt" class="num">(13)</em></span>
+                        <div class="stat">第1-<span >30</span>/<span >261</span>条 </div>
+
+
+                      </div>
+                    </div>
+
+                  </div>
+
+
+
+
+                  <div class="comments box">
+                    <div style="margin-top:3px;" id="div_new_comment"></div>
+                    <input type="hidden" value="http://v.t.sina.com.cn/share/share.php?appkey=2684493555&amp;title=这个视频下的评论很精彩：%E6%81%8B%E4%BA%BA%E5%95%8A2&amp;ralateUid=1642904381&amp;source=%E4%BC%98%E9%85%B7%E7%BD%91&amp;sourceUrl=http%3A%2F%2Fwww.youku.com%2F&amp;content=utf8&amp;pic=http://g1.ykimg.com/0100011F464BDCA8B4A969005E2DCCC65D461A-3427-EC32-96F0-765004F7472C&amp;url=http://v.youku.com/v_show/id_XMTg4MjU0ODg=.html" id="tran_sina">
+                    <input type="hidden" value="http://share.renren.com/share/buttonshare.do?title=这个视频下的评论很精彩：%E6%81%8B%E4%BA%BA%E5%95%8A2&amp;link=http://v.youku.com/v_show/id_XMTg4MjU0ODg=.html" id="tran_renren">
+                    <div id="comment196062434" class="comment">
+                      <div class="bar">
+                        <a name="coment_name_196062434" id="comment_name_196062434" target="_blank" charset="400-4" href="http://u.youku.com/user_show/id_UMzA3OTM4MTcy.html">yukoau</a>
+                      </div>
+                      <div class="con">
+                        <div name="content_196062434" id="content_196062434" class="text">
+                          <p id="content_4dc8de7ea834bfb14e4b1d76">感情でむずかしいことだよね！　えいえんの愛はないと信じています！<br> </p>
+                        </div>
+
+                      </div></div>
+
+                      <div id="toggle-info-comments" class="hidden_first">
+
+
+                        <div id="comment196062434" class="comment">
+                          <div class="bar">
+                            <a name="coment_name_67940452" id="comment_name_67940452" target="_blank" charset="400-4" href="http://u.youku.com/user_show/id_UNTgwNjk4NDA=.html">loveTONO</a>
+                          </div>
+                          <div class="con">
+                            <div name="content_67940452" id="content_67940452" class="text">
+                              <p id="content_4dc8bdb7a834bfb14eb87f07">好复杂的四个人!!!<img title="无语" src="http://static.youku.com/v1.0.0736/index/img/smiley/Qoo5.gif"><br> </p>
+                            </div>
+
+                          </div></div>
+
+                          <div class="pagination">
+                            <ul>
+                              <li><a href="#">上一页</a></li>
+                              <li class="active">
+                                <a href="#">1</a>
+                              </li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">下一页</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>  
+                    <a href="#" class="toggle-info-btn" rel="toggle-info-comments"><span>切换显示详细信息</span></a>
+
+
+                     <div id="commentArea" class="commentArea">
+
+                          <div  class="commentAction">
+
+                            <div class="commentTextArea"><textarea onkeydown="" name="content" id="commentPlayer" rows="2" cols="40" class="defaultext"></textarea></div>
+
+                            <script></script>
+                            <div id="toolbar" class="toolbar">
+                              <div class="action">              
+                                <button  name="bt_comment" id="bt_comment" class="btn">发表评论</button>
+
+                              </div>
+                              <div class="clear"></div>
+                            </div>
+                          </div>
+
+
+                        </div>
+                  
+
+              </div>
+
+              <div id="comments">
+                <div class="pill-body">
+
+                  <div class="count_wrapper">
+                    <div class="count_comment">
+                      
+                      <div id="pageCommentBar" class="qPager">
+                        <span>视频评论<em id="allnum_cmt" class="num">(13)</em></span>
+                        <div class="stat">第1-<span >30</span>/<span >261</span>条 </div>
+
+
+                      </div>
+                    </div>
+
+                  </div>
+
+
+
+
+                  <div class="comments box">
+                    <div style="margin-top:3px;" id="div_new_comment"></div>
+                    <input type="hidden" value="http://v.t.sina.com.cn/share/share.php?appkey=2684493555&amp;title=这个视频下的评论很精彩：%E6%81%8B%E4%BA%BA%E5%95%8A2&amp;ralateUid=1642904381&amp;source=%E4%BC%98%E9%85%B7%E7%BD%91&amp;sourceUrl=http%3A%2F%2Fwww.youku.com%2F&amp;content=utf8&amp;pic=http://g1.ykimg.com/0100011F464BDCA8B4A969005E2DCCC65D461A-3427-EC32-96F0-765004F7472C&amp;url=http://v.youku.com/v_show/id_XMTg4MjU0ODg=.html" id="tran_sina">
+                    <input type="hidden" value="http://share.renren.com/share/buttonshare.do?title=这个视频下的评论很精彩：%E6%81%8B%E4%BA%BA%E5%95%8A2&amp;link=http://v.youku.com/v_show/id_XMTg4MjU0ODg=.html" id="tran_renren">
+                    <div id="comment196062434" class="comment">
+                      <div class="bar">
+                        <a name="coment_name_196062434" id="comment_name_196062434" target="_blank" charset="400-4" href="http://u.youku.com/user_show/id_UMzA3OTM4MTcy.html">yukoau</a>
+                      </div>
+                      <div class="con">
+                        <div name="content_196062434" id="content_196062434" class="text">
+                          <p id="content_4dc8de7ea834bfb14e4b1d76">感情でむずかしいことだよね！　えいえんの愛はないと信じています！<br> </p>
+                        </div>
+
+                      </div></div>
+
+                      <div id="toggle-info-comments" class="hidden_first">
+
+
+                        <div id="comment196062434" class="comment">
+                          <div class="bar">
+                            <a name="coment_name_67940452" id="comment_name_67940452" target="_blank" charset="400-4" href="http://u.youku.com/user_show/id_UNTgwNjk4NDA=.html">loveTONO</a>
+                          </div>
+                          <div class="con">
+                            <div name="content_67940452" id="content_67940452" class="text">
+                              <p id="content_4dc8bdb7a834bfb14eb87f07">好复杂的四个人!!!<img title="无语" src="http://static.youku.com/v1.0.0736/index/img/smiley/Qoo5.gif"><br> </p>
+                            </div>
+
+                          </div></div>
+
+                          <div class="pagination">
+                            <ul>
+                              <li><a href="#">上一页</a></li>
+                              <li class="active">
+                                <a href="#">1</a>
+                              </li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">下一页</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>  
+                    <a href="#" class="toggle-info-btn" rel="toggle-info-comments"><span>切换显示详细信息</span></a>
+
+
+                     <div id="commentArea" class="commentArea">
+
+                          <div  class="commentAction">
+
+                            <div class="commentTextArea"><textarea onkeydown="" name="content" id="commentPlayer" rows="2" cols="40" class="defaultext"></textarea></div>
+
+                            <script></script>
+                            <div id="toolbar" class="toolbar">
+                              <div class="action">              
+                                <button  name="bt_comment" id="bt_comment" class="btn">发表评论</button>
+
+                              </div>
+                              <div class="clear"></div>
+                            </div>
+                          </div>
+
+
+                        </div>
+                  </div>  
+
+
+
+                  <div id="cont2" data-pills="xingweifenxi" class="">
+                    <div class="pill-body"> 
+
+                      <div class="staff">
+                        <!--列表模式-->
+                        <a data-toggle="modal" href="#myModal"><img src="{{url_for('static',filename='images/tmp/i.png')}}" alt="" style="width:200px;"/></a>
+
+                        <div class="modal hide" id="myModal">
+                          <div class="modal-header">
+                            <h3>S-T 图</h3>
+                          </div>
+                          <div class="modal-body">
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" class="btn" data-dismiss="modal">Close</a>
+                          </div>
+                        </div>
+
+                        <div clss="toggle-info" id="toggle-info">
+                          <p>师生活动比例</p>
+                          <p>老师活动比例  <span>55%</span></p>
+                          <p>学生活动比例  <span>45%</span></p>
+                          <p> 师生行为判断 <span>（30’取样）</span></p>
+                          <p>教师讲解行为 <span>8次</span></p>
+                          <p>教师板书行为 <span>4次</span></p>
+
+                        </div>
+                        <a href="#" class="toggle-info-btn" rel="toggle-info"><span>切换显示详细信息</span></a>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+
+
+
+                  <br class="clearfix" />
+
+
+                </div>
+              </div>
+              <!--body end-->
+              <div class="box">    
+                <div class="accordion body" id="accordion2">
+                  <div class="accordion-group">
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                        知识点
+                      </a>
+                    </div>
+                    <div id="collapseOne" class="accordion-body collapse">
+                      <div class="accordion-inner">
+                        <p id="currentItem"></p>
+
+                        <ul id="chapterlist"></ul>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-group">
+                    <div class="accordion-heading">
+                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                        教学环节
+                      </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse">
+                      <div class="accordion-inner">
+                        <ul>
+                          <li>板书</li>
+                          <li>师生互动</li>
+                          <li>教师讲授</li>
+                          <li>学生回答问题</li>
+                          <li>学生讨论 </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div></div>
+
+
+
+
+                <div id="VideoAttachment_wrap">
+                  <div>
+                    <div class="box mbox content-box">
+                      <div class="head">
+                        <div class="caption">
+                          <div class="title ">
+                            <a href="#slide-con2" class="slideDown">附件</a></div>
+                          </div>
+                          <div class="extend">
+                          </div>
+                        </div>
+                        <!--head end-->
+                        <div class="body napkee" id="slide-con2">
+                          <div id="nap38" class="napkeeComponent napkeeTree">
+                            <ul id="nap38_browser" class="filetree  treeview">
+                              <li id="nap37_1i0" class="closed collapsable"><div class="hitarea closed-hitarea collapsable-hitarea"></div><span class="hand folder">演示文档一</span><ul style="display: block; "><li id="nap37_1i1" class="collapsable lastCollapsable"><div class="hitarea collapsable-hitarea lastCollapsable-hitarea"></div><span class="hand file">附件 xxx.doc    </span><ul style="display: none; "></ul></li></ul></li><li id="nap37_1i2" class="expandable lastExpandable"><div class="hitarea expandable-hitarea lastExpandable-hitarea"></div><span class="hand folder">附件二</span><ul style="display: none; "></ul></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!--body end-->
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="box mbox content-box">
+                    <div class="head">
+                      <div class="caption">
+                        <div class="title ">
+                          <a href="#slide-comment" class="slideDown">评论</a></div>
+                        </div>
+                        <div class="extend">
+                        </div>
+                      </div>
+                      <!--head end-->
+                      <div class="body " id="slide-comment">
+                        <div id="commentArea" class="commentArea well">
+
+                          <div  class="commentAction">
+
+                            <div class="commentTextArea"><textarea onkeydown="" name="content" id="commentPlayer" rows="2" cols="40" class="defaultext"></textarea></div>
+
+                            <script></script>
+                            <div id="toolbar" class="toolbar">
+                              <div class="action">              
+                                <button  name="bt_comment" id="bt_comment" class="btn">发表评论</button>
+
+                              </div>
+                              <div class="clear"></div>
+                            </div>
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div> <!-- end span4 -->
+
+
+                </div>
+
+                {% endblock %}
+                {% block addScripts %}
+
+                <!-- treeview -->
+                <script src="{{ js_url('jquery/jquery.treeview.min.js')}}" type="text/javascript" charset="utf-8"></script>
+
+                <!-- start -->
+                <script src="{{ js_url('jquery/jquery.rating.pack.js')}}" type="text/javascript" charset="utf-8"></script>
+                <!--stupid-->
+                <script src="{{ js_url('jquery/jquery.stupid.js')}}" type="text/javascript" charset="utf-8"></script>
+                <script src="{{ js_url('jquery/jquery.jqplot.min.js')}}" type="text/javascript" charset="utf-8"></script>
+                <script src="{{ js_url('jquery/plugins/jqplot.lineRenderer.js')}}" type="text/javascript" charset="utf-8"></script>
+
+                <!-- bootstrap dropdown collapse -->
+                <script src="{{ js_url('bootstrap/bootstrap-dropdown.js' )}}" type="text/javascript" charset="utf-8"></script>
+                <script src="{{ js_url('bootstrap/bootstrap-collapse.js' )}}" type="text/javascript" charset="utf-8"></script>
+                <script src="{{ js_url('bootstrap/bootstrap-modal.js' )}}" type="text/javascript" charset="utf-8"></script>
+                <script src="{{ js_url('bootstrap/bootstrap-tabs.js' )}}" type="text/javascript" charset="utf-8"></script>
+
+                <!-- video support -->
+                <script src="{{ js_url('swfobject.js')}}"></script>
+                <script src="{{url_for('static',filename='player/jwplayer.js')}}"></script>
+               
+
+
+                <script>
+
+                $(function() {
+                  $('.tabs').tabs();
+                  $('#nap37_1browser').treeview();
+                  $('#nap38_browser').treeview();
+                })
+
+                $.ajax({
+                  url: "{{url_for('static',filename='xml/cuepoint.xml')}}"
+                }).done(function(data) { 
+                  $(".pack_list").addClass("done");
+                  $('#chapterlist').empty();
+                  $(data).find('CuePoint').each(function(){
+                    var item_text = $(this).text();
+        // <a href="#" onclick="jwplayer().seek(353);">In pursuit</a> (05:53)</li>
+        
+        $('<li></li>')
+        .html("<a href='#' onclick='jwplayer(&quot;mediaPlayer&quot;).seek("
+          +$(this).find('Time').text()+");''>"
+        +$(this).find('Name').text()+"</a>")
+        .appendTo('#chapterlist');
+      });
+
+                  var wrapper= $('#chapterlist').clone().wrap($('<div class="body" id="cueboy_wraper" />')).parent().wrap($('<div />')).parent();
+
+                  function getRnd(){
+                    return String('?rand='+Math.random()*10000);
+                  }
+
+                  jwplayer('mediaPlayer').setup({
+                    modes: [
+            /*{ type: 'html5' 
+              
+              // plugins:{
+                //	          '{{url_for('static',filename='player/cueboy.js')}}': {
+                  //	          	            dockname: '',......
+                  //	          	          },
+                //}	
+              },*/
+              { type: 'flash', src: '{{url_for('static',filename='swf/player.swf')}}'+'?debug=none' }
+
+              ],
+              file: '{{url_for('static',filename='video/video.mp4') }}',
+              plugins: {
+              //hd: { file: "{{url_for('static',filename='video/5.mp4') }}", fullscreen: true },
+              '{{url_for('static',filename='swf/hdswitcher.swf') }}': { file: "{{url_for('static',filename='video/video.mp4') }}", fullscreen: true },
+              '{{url_for('static',filename='swf/cueboy.swf') }}':	{file:	"{{url_for('static',filename='xml/empty.xml')}}",
+              dockname:'打点信息',
+              heading: '打点列表',
+              dimensions:'100x48',
+              onclick:'play',
+              editable:true,
+              url:'http://localhost/url/url.php',
+            }
+
+          },
+          height: 270,
+          width: 580
+        });
+
+});
+
+
+$(document).ready(function(){
+  $('#st_wraper').stupid(
+  {
+    x_axise:[1,2,3,4,5,6,7,8,9,10],
+
+    y_axise:[1,2,3,4],
+    blurFunc:function(item){
+      console.log("output");
+      console.log(item);
+    },
+    dtime:[['12','12','14','21','11','3','33','1','22','5'],['s','t','s','t','s','t','s','s','s','s']],
+    data:[['s','t','s','t','s','t','s','s','s','s'],['s','t','s','t','s','t','s','s','s','s']],
+            //todo data.row,data.colum
+            'size':{'height':20,'width':20,'margin':10,'border':2}
+          },jwplayer('mediaPlayer')
+          );
+});
+
+
+        $(function(){ // wait for document to load
+          var temp;
+          $('input.pingfen').rating(	{
+            select: function(value, link){
+              //alert(value);
+              
+              console.log(link);
+            },
+            callback:function(value,link){
+              console.log(this);
+              
+              this.checked="";
+              temp.checked="checked";
+              
+              //	$(this).rating('select',3);
+            },
+            focus: function(value, link){
+              link.title = '我想评'+value+'分';
+            },
+            drain:function(){
+              console.log("what habbppend");
+            },
+            draw:function(){
+              console.log("drawing");
+            }
+          });
+        });
+        
+        </script>
+
+        {% endblock %}

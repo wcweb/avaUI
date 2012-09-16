@@ -2399,7 +2399,7 @@ legend + .control-group {
 .changeStyle {
   display: block;
   text-indent: -9000px;
-  background: url(app/app/colorS.gif);
+  background: url(colorS.gif);
   width: 12px;
   height: 12px;
   float: right;
@@ -2447,21 +2447,21 @@ legend + .control-group {
   _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"../../style/img/youku/lightline.png"');
 }
 .posterOnePic2 .control .btnprev {
-  background: url("app/app/../../style/img/youku/btnprew.png") no-repeat 0 0;
+  background: url("../../style/img/youku/btnprew.png") no-repeat 0 0;
   _background: none;
   _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"../../style/img/youku/lightline.png"');
   _background: none;
   _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"../../style/img/youku/lightline.png"');
 }
 .posterOnePic2 .control .btnnext {
-  background: url("app/app/../../style/img/youku/btnnext.png") no-repeat 0 0;
+  background: url("../../style/img/youku/btnnext.png") no-repeat 0 0;
   _background: none;
   _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"../../style/img/youku/lightline.png"');
   _background: none;
   _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"../../style/img/youku/lightline.png"');
 }
 .content-box .caption {
-  background: url("app/app/../../style/img/jquery/toggle-open-close.gif") 0 3px no-repeat;
+  background: url("../../style/img/jquery/toggle-open-close.gif") 0 3px no-repeat;
   height: 15px;
 }
 .content-box .content-box-closed {
@@ -2577,11 +2577,11 @@ legend + .control-group {
   z-index: 101;
 }
 #products .prev {
-  background: url("app/app/../../style/img/slidejs/arrow-prev.png");
+  background: url("../../style/img/slidejs/arrow-prev.png");
 }
 #products .next {
   left: 398px;
-  background: url("app/app/../../style/img/slidejs/arrow-next.png");
+  background: url("../../style/img/slidejs/arrow-next.png");
 }
 /*
   Pagination
@@ -3108,6 +3108,7 @@ legend + .control-group {
 .navbar {
   *position: relative;
   *z-index: 2;
+  height: 100px;
   overflow: visible;
   margin-bottom: 18px;
 }
@@ -4227,31 +4228,31 @@ table .span24 {
   float: left;
 }
 .paginate_disabled_previous {
-  background-image: url("app/app/../../style/img/datatable/back_disabled.png");
+  background-image: url("../../style/img/datatable/back_disabled.png");
 }
 .paginate_enabled_previous {
-  background-image: url("app/app/../../style/img/datatable/back_enabled.png");
+  background-image: url("../../style/img/datatable/back_enabled.png");
 }
 .paginate_disabled_next {
-  background-image: url("app/app/../../style/img/datatable/forward_disabled.png");
+  background-image: url("../../style/img/datatable/forward_disabled.png");
 }
 .paginate_enabled_next {
-  background-image: url("app/app/../../style/img/datatable/forward_enabled.png");
+  background-image: url("../../style/img/datatable/forward_enabled.png");
 }
 .sorting_asc {
-  background: url("app/app/../../style/img/datatable/sort_asc.png") no-repeat center right;
+  background: url("../../style/img/datatable/sort_asc.png") no-repeat center right;
 }
 .sorting_desc {
-  background: url("app/app/../../style/img/datatable/sort_desc.png") no-repeat center right;
+  background: url("../../style/img/datatable/sort_desc.png") no-repeat center right;
 }
 .sorting {
-  background: url("app/app/../../style/img/datatable/sort_both.png") no-repeat center right;
+  background: url("../../style/img/datatable/sort_both.png") no-repeat center right;
 }
 .sorting_asc_disabled {
-  background: url("app/app/../../style/img/datatable/sort_asc_disabled.png") no-repeat center right;
+  background: url("../../style/img/datatable/sort_asc_disabled.png") no-repeat center right;
 }
 .sorting_desc_disabled {
-  background: url("app/app/../../style/img/datatable/sort_desc_disabled.png") no-repeat center right;
+  background: url("../../style/img/datatable/sort_desc_disabled.png") no-repeat center right;
 }
 .dataHead {
   background: #E5E5E5;
@@ -4320,7 +4321,7 @@ table .span24 {
   height: 14px;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("app/app/../../style/img/glyphicons-halflings.png");
+  background-image: url("../../style/img/glyphicons-halflings.png");
   background-position: 14px 14px;
   background-repeat: no-repeat;
   *margin-right: .3em;
@@ -4335,7 +4336,7 @@ table .span24 {
   *margin-left: 0;
 }
 .icon-white {
-  background-image: url("app/app/../../style/img/glyphicons-halflings-white.png");
+  background-image: url("../../style/img/glyphicons-halflings-white.png");
 }
 .icon-glass {
   background-position: 0      0;
@@ -4704,11 +4705,11 @@ table .span24 {
   line-height: 999px;
   overflow: hidden;
   font-size: 0;
-  background: url(app/app/bg.png) no-repeat 0 -275px;
+  background: url(bg.png) no-repeat 0 -275px;
 }
 .time_ico {
   float: left;
-  background: url(app/app/images/ico/16_ico_date.gif) no-repeat;
+  background: url(images/ico/16_ico_date.gif) no-repeat;
   width: 16px;
   height: 16px;
 }
@@ -5358,7 +5359,7 @@ div.wysiwyg ul.panel li a {
   display: block;
   width: 16px;
   height: 16px;
-  background: url("app/app/../../style/img/jquery/jquery.wysiwyg.gif") no-repeat -64px -80px;
+  background: url("../../style/img/jquery/jquery.wysiwyg.gif") no-repeat -64px -80px;
   border: 0;
   cursor: pointer;
   margin: 1px;
@@ -5656,7 +5657,7 @@ div.wysiwyg iframe {
   margin-top: 4px;
 }
 .treeview .hitarea {
-  background: url("app/app/../../style/img/jquery/treeview/treeview-default.gif") -64px -25px no-repeat;
+  background: url("../../style/img/jquery/treeview/treeview-default.gif") -64px -25px no-repeat;
   height: 16px;
   width: 16px;
   margin-left: -16px;
@@ -5684,7 +5685,7 @@ div.wysiwyg iframe {
   cursor: pointer;
 }
 .treeview li {
-  background: url("app/app/../../style/img/jquery/treeview/treeview-default-line.gif") 0 0 no-repeat;
+  background: url("../../style/img/jquery/treeview/treeview-default-line.gif") 0 0 no-repeat;
 }
 .treeview li.collapsable,
 .treeview li.expandable {
@@ -5698,7 +5699,7 @@ div.wysiwyg iframe {
 }
 .treeview li.lastCollapsable,
 .treeview li.lastExpandable {
-  background-image: url("app/app/../../style/img/jquery/treeview/treeview-default.gif");
+  background-image: url("../../style/img/jquery/treeview/treeview-default.gif");
 }
 .treeview li.lastCollapsable {
   background-position: 1px -112px;
@@ -5711,36 +5712,36 @@ div.wysiwyg iframe {
   background-position: 0;
 }
 .treeview-red li {
-  background-image: url("app/app/../../style/img/jquery/treeview/treeview-red-line.gif");
+  background-image: url("../../style/img/jquery/treeview/treeview-red-line.gif");
 }
 .treeview-red .hitarea,
 .treeview-red li.lastCollapsable,
 .treeview-red li.lastExpandable {
-  background-image: url("app/app/../../style/img/jquery/treeview/treeview-red.gif");
+  background-image: url("../../style/img/jquery/treeview/treeview-red.gif");
 }
 .treeview-black li {
-  background-image: url("app/app/../../style/img/jquery/treeview/treeview-black-line.gif");
+  background-image: url("../../style/img/jquery/treeview/treeview-black-line.gif");
 }
 .treeview-black .hitarea,
 .treeview-black li.lastCollapsable,
 .treeview-black li.lastExpandable {
-  background-image: url("app/app/../../style/img/jquery/treeview/treeview-black.gif");
+  background-image: url("../../style/img/jquery/treeview/treeview-black.gif");
 }
 .treeview-gray li {
-  background-image: url("app/app/../../style/img/jquery/treeview/treeview-gray-line.gif");
+  background-image: url("../../style/img/jquery/treeview/treeview-gray-line.gif");
 }
 .treeview-gray .hitarea,
 .treeview-gray li.lastCollapsable,
 .treeview-gray li.lastExpandable {
-  background-image: url("app/app/../../style/img/jquery/treeview/treeview-gray.gif");
+  background-image: url("../../style/img/jquery/treeview/treeview-gray.gif");
 }
 .treeview-famfamfam li {
-  background-image: url("app/app/../../style/img/jquery/treeview/treeview-famfamfam-line.gif");
+  background-image: url("../../style/img/jquery/treeview/treeview-famfamfam-line.gif");
 }
 .treeview-famfamfam .hitarea,
 .treeview-famfamfam li.lastCollapsable,
 .treeview-famfamfam li.lastExpandable {
-  background-image: url("app/app/../../style/img/jquery/treeview/treeview-famfamfam.gif");
+  background-image: url("../../style/img/jquery/treeview/treeview-famfamfam.gif");
 }
 .filetree li {
   padding: 3px 0 2px 16px;
@@ -5751,13 +5752,13 @@ div.wysiwyg iframe {
   display: block;
 }
 .filetree span.folder {
-  background: url("app/app/../../style/img/jquery/treeview/folder.gif") 0 0 no-repeat;
+  background: url("../../style/img/jquery/treeview/folder.gif") 0 0 no-repeat;
 }
 .filetree li.expandable span.folder {
-  background: url("app/app/../../style/img/jquery/treeview/folder-closed.gif") 0 0 no-repeat;
+  background: url("../../style/img/jquery/treeview/folder-closed.gif") 0 0 no-repeat;
 }
 .filetree span.file {
-  background: url("app/app/../../style/img/jquery/treeview/file.gif") 0 0 no-repeat;
+  background: url("../../style/img/jquery/treeview/file.gif") 0 0 no-repeat;
 }
 /*!
  * Bootstrap Responsive v2.0.2

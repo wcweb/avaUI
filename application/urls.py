@@ -195,7 +195,42 @@ def liveon():
 @app.route('/search')
 def ad_search():
 	return render_template('school/ad_search.html')
+@app.route('/live_list')
+def live_list():
+	return render_template('school/live_list.html')
+	
+@app.route('/edit_video')
+def edit_video():
+	return render_template('school/edit_video.html')
 
+@app.route('/admin/master')
+def admin_master():
+	return render_template('school/admin/master_face.html')
+	
+@app.route('/admin/teacher')
+def admin_teacher():
+	return render_template('school/admin/teacher_face.html')
+
+@app.route('/brocast')
+def new_brocast():
+	"""docstring for new_brocast"""
+	return render_template('school/brocast.html')
+
+@app.route('/activity/teacher')
+def activity_teacher():
+	"""docstring for activity"""
+	return render_template('school/activity/teacher.html')
+
+@app.route('/activity/classes')
+def activity_classes():
+	"""docstring for activity"""
+	return render_template('school/activity/classes.html')
+		
+@app.route('/getVar',methods=['GET','POST'])
+def getVar():
+	if request.method == 'POST':
+		return  '?name='+request['name']+'&position='+request['position']
+	return 'get'
 
 @app.context_processor
 def inject_user():

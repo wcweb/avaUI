@@ -1,0 +1,367 @@
+{% extends "school/layout.html" %}
+
+{% block addStyle %}
+<link href="{{ url_for('static',filename='style/ui-lightness/jquery-ui-1.8.23.custom.css') }}" rel="stylesheet" type="text/css">
+
+<link href="{{ url_for('static',filename='style/jquery.jqplot.min.css') }}" rel="stylesheet" type="text/css">
+
+{% endblock %}
+{% block body %}
+
+<div class="row">
+  <div class="span16">
+    <div class="breadcrumb">
+      <span>当前位置：</span><a href="{{url_for('index')}}">首页</a><span class="divider">>></span><a href="{{url_for('cat_list_with_school',schoolname='scnu')}}">课程列表</a><span class="divider">>></span><span class="active"><a href="#">自然科学</a></span>
+    </div>
+
+  </div>  <!-- /span16 -->
+
+
+
+</div> <!-- /row -->
+
+<div class="row">
+  <div class="span4">
+    <div class="box mbox "  >
+      <div class="head"  >
+        <div class="title ">
+          <a href="videolist.html" target="_blank" class="blue">教研日历</a> 
+        </div>
+        
+      </div>
+      <div class="body">
+        <div class="datepicker" id="datepicker"></div>
+      </div>
+    </div>
+  </div>  <!-- /span4 -->
+
+  <div class="span8">
+    <div class="box mbox">
+      <div class="head"><a href="videolist.html" class="title">系统概况</a></div>
+      <div class="body ">
+
+        <table class="table table-striped">
+         <caption>系统概况</caption>
+         <thead>
+          <tr>
+            <th>项目</th>  <th>数量</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr><td>日访问量</td> <td>200</td></tr> 
+          <tr><td>月访问量</td> <td>200</td></tr>
+          <tr><td>视频资源总数</td> <td>200</td></tr> 
+          <tr><td>视频资源点击量</td> <td>200</td></tr>
+          <tr><td>专辑数量</td> <td>200</td></tr>
+          <tr><td>直播课堂次数</td> <td>200</td></tr> 
+          <tr><td>教研互动次数</td> <td>200</td></tr>
+
+
+        </tbody>
+      </table>
+
+
+
+    </div>
+  </div>
+</div> <!-- /span8-->
+
+<div class="span4">
+  <div class="box mbox "  >
+    <div class="head"  >
+      <div class="title ">
+        <a href="videolist.html" target="_blank" class="blue">信息公告</a> 
+      </div>
+      <div class="more">
+        <a href="videolist.html" target="_blank">更多</a>
+      </div>
+    </div>
+    <div class="body">
+     <table class="table table-striped">
+       <caption>信息公告</caption>
+       <thead>
+        <tr>
+          <th>标题</th>  <th>日期</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr><td>日访问量</td> <td>2012/09/10</td></tr> 
+        <tr><td>月访问量</td> <td>2012/09/10</td></tr>
+        <tr><td>视频资源总数</td> <td>2012/09/10</td></tr> 
+        <tr><td>视频资源点击量</td> <td>2012/09/10</td></tr>
+        <tr><td>专辑数量</td> <td>2012/09/10</td></tr>
+        <tr><td>直播课堂次数</td> <td>2012/09/10</td></tr> 
+        <tr><td>教研互动次数</td> <td>2012/09/10</td></tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</div>  <!-- /span4 -->
+</div> <!-- /row -->
+
+<div class="row">
+  <div class="span4">
+    <div class="box mbox "  >
+      <div class="head"  >
+        <div class="title ">
+          <a href="videolist.html" target="_blank" class="blue">教研工具箱</a> 
+        </div>
+        <div class="more">
+          <a href="videolist.html" target="_blank">更多</a>
+        </div>
+      </div>
+      
+      <div class="body">
+        <ul>
+          <li>
+            <a href="#">教研主题</a>
+          </li>
+          <li>
+            <a href="">教研互动</a>
+          </li>
+          <li>
+            <a href="">评课任务</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box mbox "  >
+      <div class="head"  >
+        <div class="title ">
+          <a href="videolist.html" target="_blank" class="blue">个人工具箱</a> 
+        </div>
+        <div class="more">
+          <a href="videolist.html" target="_blank">更多</a>
+        </div>
+      </div>
+      <div class="body">
+        <ul>
+          <li>
+            <a href="#">我的视频</a>
+          </li>
+          <li>
+            <a href="">我的专辑</a>
+          </li>
+          <li>
+            <a href="">关于我的评论</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+  </div>  <!-- /span4 -->
+
+  <div class="span8">
+    <div class="box mbox">
+      <div class="head"><a href="videolist.html" class="title">视频记录动态</a></div>
+      <div class="body">
+
+        <div class="well">
+          <ul class="nav nav-tabs tabs">
+            <li tabidx="wodeshipin" id="wodehipin" class="active">
+              <a href="#myVideoes" data-toggle="tab">我的视频</a>
+            </li>
+            <li tabidx="wodezhuanji" id="wodezhuanji" >
+              <a href="#myAlbum" data-toggle="tab">我的专辑</a>
+            </li>
+            <li tabidx="wodepinlun" id="wodepinlun"> 
+              <a href="#myComment" data-toggle="tab">关于我的评论</a>
+            </li>
+          </ul>
+
+          <div class="pill-content body">
+            <div id="myVideoes" data-pills="myVideoes" class="active">
+              <div class="pill-body textlist">  
+<table class="table table-striped">
+       <caption>我的视频</caption>
+       <thead>
+        <tr>
+          <th>标题</th>  <th>日期</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr><td>日访问量</td> <td>2012/09/10</td></tr> 
+        <tr><td>月访问量</td> <td>2012/09/10</td></tr>
+        <tr><td>视频资源总数</td> <td>2012/09/10</td></tr> 
+        <tr><td>视频资源点击量</td> <td>2012/09/10</td></tr>
+        <tr><td>专辑数量</td> <td>2012/09/10</td></tr>
+        <tr><td>直播课堂次数</td> <td>2012/09/10</td></tr> 
+        <tr><td>教研互动次数</td> <td>2012/09/10</td></tr>
+
+        
+      </tbody>
+    </table> 
+              </div>
+            </div>
+         
+            <div id="myAlbum" data-pills="myAlbum" >
+              <div class="pill-body textlist">  
+<table class="table table-striped">
+       <caption>我的专辑</caption>
+       <thead>
+        <tr>
+          <th>标题</th>  <th>日期</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr><td>日访问量</td> <td>2012/09/10</td></tr> 
+        <tr><td>月访问量</td> <td>2012/09/10</td></tr>
+        <tr><td>视频资源总数</td> <td>2012/09/10</td></tr> 
+        <tr><td>视频资源点击量</td> <td>2012/09/10</td></tr>
+        <tr><td>专辑数量</td> <td>2012/09/10</td></tr>
+        <tr><td>直播课堂次数</td> <td>2012/09/10</td></tr> 
+        <tr><td>教研互动次数</td> <td>2012/09/10</td></tr>
+
+        
+      </tbody>
+    </table>
+              </div>
+            </div>
+         
+            <div id="myComment" data-pills="myComment" >
+              <div class="pill-body textlist">  
+
+          <table class="table table-striped">
+           <caption>关于我的评论</caption>
+           <thead>
+            <tr>
+              <th>科组</th> <th>授课人</th> <th>视频名字</th> <th>点击量</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>科组x</td> <td>授课人x</td> <td>视频名字x</td> <td>点击量x</td>
+            </tr>
+            <tr>
+              <td>科组x</td> <td>授课人x</td> <td>视频名字x</td> <td>点击量x</td>
+            </tr>
+            <tr>
+              <td>科组x</td> <td>授课人x</td> <td>视频名字x</td> <td>点击量x</td>
+            </tr>
+          </tbody>
+        </table>
+              </div>
+            </div>
+          </div>
+
+          
+
+
+
+      </div>
+
+    </div>
+  </div>
+</div> <!-- /span8-->
+
+<div class="span4">
+  <div class="box mbox "  >
+    <div class="head"  >
+      <div class="title ">
+        <a href="videolist.html" target="_blank" class="blue">科组视频点击排行</a> 
+      </div>
+      <div class="more">
+        <a href="videolist.html" target="_blank">设置</a>
+      </div>
+    </div>
+    <div class="body">
+
+      <table class="table table-striped">
+       <caption>科组视频点击排行</caption>
+       <thead>
+        <tr>
+          <th>项目</th>  <th>数量</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr><td>日访问量</td> <td>200</td></tr> 
+        <tr><td>月访问量</td> <td>200</td></tr>
+        <tr><td>视频资源总数</td> <td>200</td></tr> 
+        <tr><td>视频资源点击量</td> <td>200</td></tr>
+        <tr><td>专辑数量</td> <td>200</td></tr>
+        <tr><td>直播课堂次数</td> <td>200</td></tr> 
+        <tr><td>教研互动次数</td> <td>200</td></tr>
+
+
+      </tbody>
+    </table>
+
+  </div>
+</div>
+</div>  <!-- /span4 -->
+</div> <!-- /row -->
+
+<div class="row">
+  
+  <div class="span8 offset4">
+    <div class="box mbox "  >
+      <div class="head"  >
+        <div class="title ">
+          <a href="videolist.html" target="_blank" class="blue">我的教研小组活动动态</a> 
+        </div>
+        <div class="more">
+          <a href="videolist.html" target="_blank">更多</a>
+        </div>
+      </div>
+      <div class="body">
+        <ul>
+          <li><a href="#">最新教研小组活动</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="span4">
+    <div class="box mbox "  >
+      <div class="head"  >
+        <div class="title ">
+          <a href="videolist.html" target="_blank" class="blue">教研活动点击排行</a> 
+        </div>
+        <div class="more">
+          <a href="videolist.html" target="_blank">设置</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+{% endblock body %}
+
+{% block addScripts %}
+
+
+<!-- treeview -->
+<script src="{{ js_url('jquery/jquery.ui.datepicker.js')}}" type="text/javascript" charset="utf-8"></script>
+
+
+
+<!-- bootstrap bootstrap-tabs.jscollapse -->
+<script src="{{ js_url('bootstrap/bootstrap-tab.js' )}}" type="text/javascript" charset="utf-8"></script>
+
+
+<!-- bootstrap dropdown collapse -->
+<script src="{{ js_url('bootstrap/bootstrap-dropdown.js' )}}" type="text/javascript" charset="utf-8"></script>
+
+
+<script type="text/javascript">
+
+$(function(){
+  $('.nav-tabs').tab();
+})
+
+</script>
+{% endblock addScripts %}

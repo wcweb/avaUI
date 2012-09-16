@@ -1,0 +1,29 @@
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+	<channel>
+		<item>
+			<title>导入</title>
+			<link>http://content.bitsontherun.com/previews/ntPYsD4L-ALJ3XQCI</link>
+			<seekTime>10000</seekTime>
+		</item>
+		<item>
+			<title>演示</title>
+			<link>http://content.bitsontherun.com/previews/LJSVMnCF-ALJ3XQCI</link>
+			<seekTime>50000</seekTime>
+		</item>
+		<item>
+			<title>引导</title>
+			<link>http://content.bitsontherun.com/previews/r3ABWwdO-ALJ3XQCI</link>
+			<seekTime>100000</seekTime>
+		</item>
+		<item>
+			<title>探究</title>
+			<link>http://content.bitsontherun.com/previews/ntPYsD4L-ALJ3XQCI</link>
+			<seekTime>10000</seekTime>
+		</item>
+		<item>
+			<title>总结 </title>
+			<link>http://content.bitsontherun.com/previews/LJSVMnCF-ALJ3XQCI</link>
+			<seekTime>50000</seekTime>
+		</item>
+	</channel>
+</rss>

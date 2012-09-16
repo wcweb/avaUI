@@ -172,10 +172,7 @@
     width: auto;
     margin: 0;
   }
-  .posterOnePic2{
-    width:auto;
-    display:block;
-  }
+
   // THUMBNAILS
   // ----------
   .thumbnails [class*="span"] {
@@ -229,6 +226,7 @@
   .littleblock {
     float:right;
   }
+
 }
 
 
@@ -239,13 +237,38 @@
 @media (min-width: 768px) and (max-width: 979px) {
 
   // Fixed grid
-  #grid > .core(42px, 20px);
+/*  #grid > .core(42px, 20px);
 
   // Fluid grid
   #grid > .fluid(5.801104972%, 2.762430939%);
 
   // Input grid
   #grid > .input(42px, 20px);
+*/
+
+
+	// GRID & CONTAINERS
+  // -----------------
+  // Remove width from containers
+  .container {
+    width: auto;
+  }
+  // Fluid rows
+  .row-fluid {
+    width: 100%;
+  }
+  // Undo negative margin on rows
+  .row {
+    margin-left: 0;
+  }
+  // Make all columns even
+  .row > [class*="span"],
+  .row-fluid > [class*="span"] {
+    float: none;
+    display: block;
+    width: auto;
+    margin: 0;
+  }
 
 }
 
