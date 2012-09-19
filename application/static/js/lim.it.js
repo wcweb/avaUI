@@ -231,8 +231,8 @@ $(function(){
 $(function(){
 
     if(commentInit == 0){
-      $("#commentPlayer").focus( function(evt){
-        if($('#mediaPlayer').length>0){
+      $("#").focus( function(evt){
+        if($('#mediaPlcommentPlayerayer').length>0){
           var currentPosition = jwplayer('mediaPlayer').getPosition();
           console.log("currentPosition :"+currentPosition);
           commentInit = 1;
@@ -243,6 +243,93 @@ $(function(){
     }
     
 });
+
+var userAgent = navigator.userAgent.toLowerCase();
+var is_opera = userAgent.indexOf('opera') != -1 && opera.version();
+var is_moz = (navigator.product == 'Gecko') && userAgent.substr(userAgent.indexOf('firefox') + 8, 3);
+var is_ie = (userAgent.indexOf('msie') != -1 && !is_opera) && userAgent.substr(userAgent.indexOf('msie') + 5, 3);
+var is_safari = (userAgent.indexOf('webkit') != -1 || userAgent.indexOf('safari') != -1);
+
+
+//复制代码
+function setcopy(id, type){
+  if(isUndefined(type)) {
+      type = 'copycode'
+    }
+  msgid = type+'_msg';
+  
+  text = document.getElementById(id).value;
+  document.getElementById(id).select();
+  if(text == null || text == "") {
+    setWord(msgid, '没有要复制的内容');
+    return false;
+  }
+  if(is_ie) {
+    clipboardData.setData('Text', text);
+    
+    if(type == 'copyinvitelink'){
+      setWord(msgid, '复制成功,这是您的专用邀请链接，登录QQ或MSN发送给好友吧~');
+    } else {
+      setWord(msgid, '代码复制成功,直接可以粘贴使用');
+    }
+  } 
+else if(prompt('你使用的是非IE核心浏览器，请按下 Ctrl+C 复制内容到剪贴板', text)) {
+  setWord(msgid, '你使用的是非IE核心浏览器，请按下 Ctrl+C 复制内容到剪贴板');
+   document.getElementById(msgid).style.color = 'red';
+ } 
+  else {
+    if(type == 'copyinvitelink'){
+      setWord(msgid, '你使用的是非IE核心浏览器，请按下 Ctrl+C 复制邀请链接到剪贴板');
+    } else {
+      setWord(msgid, '你使用的是非IE核心浏览器，请按下 Ctrl+C 复制代码到剪贴板');
+    }
+    
+    document.getElementById(msgid).style.color = 'red';
+  }
+}
+function setWord(id,value) {
+  $(id).innerHTML = value;
+}
+function isUndefined(variable) {
+  return typeof variable == 'undefined' ? true : false;
+}
+// site_path ="localhost";
+// $(function({
+//   if($('#share_it').length >0){
+//       "http://localhost:8080/static/player/jwplayer.js
+//        jwplayer('mediaPlayer').setup({
+//                     modes: [
+//             /*{ type: 'html5' 
+              
+//               // plugins:{
+//                 //            '{{url_for('static',filename='player/cueboy.js')}}': {
+//                   //                          dockname: '',......
+//                   //                        },
+//                 //} 
+//               },*/
+//               { type: 'flash', src: '{{url_for('static',filename='swf/player.swf')}}'+'?debug=none' }
+
+//               ],
+//               file: '{{url_for('static',filename='video/video.mp4') }}',
+//               plugins: {
+//               //hd: { file: "{{url_for('static',filename='video/5.mp4') }}", fullscreen: true },
+//               '{{url_for('static',filename='swf/hdswitcher.swf') }}': { file: "{{url_for('static',filename='video/video.mp4') }}", fullscreen: true },
+//               '{{url_for('static',filename='swf/cueboy.swf') }}': {file:  "{{url_for('static',filename='xml/empty.xml')}}",
+//               dockname:'打点信息',
+//               heading: '打点列表',
+//               dimensions:'100x48',
+//               onclick:'play',
+//               editable:true,
+//               url:'http://localhost/url/url.php',
+//             }
+
+//           },
+//           height: 270,
+//           width: 580
+//         });
+//   }
+// }))
+
 
 
 

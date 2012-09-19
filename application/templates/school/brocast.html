@@ -29,6 +29,41 @@
       <video id="mediaPlayer"></video>
     </div>
     
+    <div >
+      分享连接：
+      <input id="share_it" type="text-area" value="
+&lt;div id=&quot;mediaPlayer&quot;&gt;&lt;/div&gt;
+      &lt;script type=&quot;text/javascript&quot; src=&quot;http://localhost:8080/static/player/jwplayer.js&quot;&gt;&lt;/script&gt;
+      &lt;script&gt;
+        jwplayer(&#39;mediaPlayer&#39;).setup({
+                    modes: [
+           
+              { type: &#39;flash&#39;, src: &#39;http://localhost:8080/static/swf/player.swf&#39;+&#39;?debug=none&#39; }
+
+              ],
+              file: &#39;http://localhost:8080/static/video/video.mp4&#39;,
+              plugins: {
+              //hd: { file: &quot;/static/video/5.mp4&quot;, fullscreen: true },
+              &#39;http://localhost:8080/static/swf/hdswitcher.swf&#39;: { file: &quot;http://localhost:8080/static/video/video.mp4&quot;, fullscreen: true },
+              &#39;http://localhost:8080/static/swf/cueboy.swf&#39;: {file:  &quot;http://localhost:8080/static/xml/empty.xml&quot;,
+              dockname:&#39;打点信息&#39;,
+              heading: &#39;打点列表&#39;,
+              dimensions:&#39;100x48&#39;,
+              onclick:&#39;play&#39;,
+              editable:true,
+              url:&#39;http://localhost/url/url.php&#39;,
+            }
+
+          },
+          height: 270,
+          width: 200
+        });
+&lt;/script&gt;
+
+      "/> 
+      <input type="button" class="btn" value="复制" onclick="setcopy('share_it');" />
+      <label id="copycode_msg"></label>
+    </div>
     
     <hr>
     
@@ -157,7 +192,7 @@
               <li tabidx="kechengjianjie" id="kechengjianjie" class="active"><a href="#cont">课程信息</a></li>
               <li tabidx="xingweifenxi" id="xingweifenxi" ><a href="#cont2">评课信息</a>                                           
 
-                <li tabidx="kechengjianjie" id="kechengjianjie"><a href="#cont">专家评课</a></li>
+                <li tabidx="kechengjianjie" id="kechengjianjie"><a href="#zhuangjia_comments">专家评课</a></li>
                 <li tabidx="xingweifenxi" id="xingweifenxi" ><a href="#comments">浏览感言</a>                                           
                 </ul>
               </div>
@@ -191,7 +226,7 @@
 
               </div>  
 
-              <div class="zhuangjia_comments">
+              <div class="zhuangjia_comments" id="zhuangjia_comments">
                 
                 <div class="pill-body">
 
@@ -256,14 +291,14 @@
                       </div>
 
                     </div>  
-                    <a href="#" class="toggle-info-btn" rel="toggle-info-comments"><span>切换显示详细信息</span></a>
+                    <a href="#" class="toggle-info-btn" rel="zhuangjia_comments"><span>切换显示详细信息</span></a>
 
 
                      <div id="commentArea" class="commentArea">
 
                           <div  class="commentAction">
 
-                            <div class="commentTextArea"><textarea onkeydown="" name="content" id="commentPlayer" rows="2" cols="40" class="defaultext"></textarea></div>
+                            <div class="commentTextArea"><textarea onkeydown="" name="content" id="commentPlayer2" rows="2" cols="40" class="defaultext"></textarea></div>
 
                             <script></script>
                             <div id="toolbar" class="toolbar">
@@ -283,7 +318,7 @@
 
               <div id="comments">
                 <div class="pill-body">
-
+                    <h1>滚动</h1>
                   <div class="count_wrapper">
                     <div class="count_comment">
                       

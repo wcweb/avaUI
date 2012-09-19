@@ -286,6 +286,36 @@
   <div class="box mbox">
     <div class="head"><a href="videolist.html" class="title">热门播放</a></div>
     <div class="body videolist block clearfix">
+
+      
+      <div id="mediaPlayer"></div>
+      <script type="text/javascript" src="http://localhost:8080/static/player/jwplayer.js"></script>
+      <script>
+        jwplayer('mediaPlayer').setup({
+                    modes: [
+           
+              { type: 'flash', src: 'http://localhost:8080/static/swf/player.swf'+'?debug=none' }
+
+              ],
+              file: 'http://localhost:8080/static/video/video.mp4',
+              plugins: {
+              //hd: { file: "/static/video/5.mp4", fullscreen: true },
+              'http://localhost:8080/static/swf/hdswitcher.swf': { file: "http://localhost:8080/static/video/video.mp4", fullscreen: true },
+              'http://localhost:8080/static/swf/cueboy.swf': {file:  "http://localhost:8080/static/xml/empty.xml",
+              dockname:'打点信息',
+              heading: '打点列表',
+              dimensions:'100x48',
+              onclick:'play',
+              editable:true,
+              url:'http://localhost/url/url.php',
+            }
+
+          },
+          height: 270,
+          width: 200
+        });
+</script>
+
                 <ul class="block">
                   <li>
                       <div class="thumb">
